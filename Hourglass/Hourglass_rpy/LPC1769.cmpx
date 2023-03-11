@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IComponent type="e">
+			<_id type="a">GUID 6b551d12-0b1e-442b-88c7-649cefd2d350</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">RXF</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Deployer</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">IDEProject</_Name>
+													<_Value type="a">C:\Users\joklappe\Rhapsody</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">DeployerFolders</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">RTOS</_Name>
+													<_Value type="a">FreeRTOS</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">CMSIS2, FreeRTOS, Linux, Windows, OORTX_ARM, AUTOSAR</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">LPC1769</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\RXF\RXF\Profiles\Rhapsody\RXF.sbsx</_hfilename>
+							<_hsubsystem type="a">RXF</_hsubsystem>
+							<_hname type="a">RXF</_hname>
+							<_hid type="a">GUID 4d5c3dae-e8e2-f8f6-8fb6-684201102337</_hid>
+							<_hrmmServerID type="a">1008397</_hrmmServerID>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTime type="a">8.2.2022::15:50:6</_modifiedTime>
+			<m_buildType type="a">Executable</m_buildType>
+			<m_configActive type="r">
+				<ICodeGenConfigInfoHandle type="e">
+					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
+					<_hid type="a">GUID c51bd6cf-3668-4594-a5ce-3bd12bb06d8c</_hid>
+				</ICodeGenConfigInfoHandle>
+			</m_configActive>
+			<VariationPoints type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</VariationPoints>
+			<SelectedVariants type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</SelectedVariants>
+			<AggregatesList type="e">
+				<value>GUID 2c623bb5-7cc0-4c47-8de5-21f1da273d17</value>
+				<value>GUID c51bd6cf-3668-4594-a5ce-3bd12bb06d8c</value>
+			</AggregatesList>
+		</IComponent>
+		<IFolder type="e">
+			<_id type="a">GUID 2c623bb5-7cc0-4c47-8de5-21f1da273d17</_id>
+			<_myState type="a">73728</_myState>
+			<_name type="a">Files</_name>
+			<_modifiedTime type="a">8.2.2022::15:3:23</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Application.sbsx</_hfilename>
+							<_hname type="a">Application</_hname>
+							<_hid type="a">GUID 5ac272b1-e5d9-448a-b53e-55d20b79c45d</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\LPC1769.sbsx</_hfilename>
+							<_hname type="a">LPC1769</_hname>
+							<_hid type="a">GUID 2bad6325-b876-4a7d-836d-68ef00eb79f6</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		<ICodeGenConfigInfo type="e">
+			<_id type="a">GUID c51bd6cf-3668-4594-a5ce-3bd12bb06d8c</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">RXF</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Configuration</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">MS_PER_TICK</_Name>
+													<_Value type="a">1U</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Deployer</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">IDEProject</_Name>
+													<_Value type="a">C:\Users\joklappe\Rhapsody</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">DefaultConfig</_name>
+			<_modifiedTime type="a">8.2.2022::15:30:16</_modifiedTime>
+			<_scopeType type="a">Explicit</_scopeType>
+			<_instrumentation type="a">None</_instrumentation>
+			<_timeModel type="a">RealTime</_timeModel>
+			<m_generateActors type="a">1</m_generateActors>
+			<_statechartImplementation type="a">Flat</_statechartImplementation>
+			<_checksList type="a">0 ,</_checksList>
+			<_checksList_Default type="a">1</_checksList_Default>
+			<ScopeElements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</ScopeElements>
+			<InitialInstances type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</InitialInstances>
+			<AnimScopeElements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</AnimScopeElements>
+			<m_allInAnimScope type="a">1</m_allInAnimScope>
+			<m_generateUsecases type="a">0</m_generateUsecases>
+			<AggregatesList type="e">
+				<value>GUID 893bdcad-47bf-47c3-b2db-9339423e4b5f</value>
+				<value>GUID 8cbd81fa-a715-448a-8022-69125994affa</value>
+				<value>GUID e63392c2-f795-46c9-9f4e-ba3f2fe19e2a</value>
+			</AggregatesList>
+		</ICodeGenConfigInfo>
+		<IMHyperLink type="e">
+			<_id type="a">GUID 893bdcad-47bf-47c3-b2db-9339423e4b5f</_id>
+			<_modifiedTime type="a">8.2.2022::15:4:31</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Makefile</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">LPC1769.bat</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IMHyperLink type="e">
+			<_id type="a">GUID 8cbd81fa-a715-448a-8022-69125994affa</_id>
+			<_modifiedTime type="a">8.2.2022::15:4:31</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Main File</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">MainLPC1769</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IFolder type="e">
+			<_id type="a">GUID e63392c2-f795-46c9-9f4e-ba3f2fe19e2a</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DefaultConfig</_name>
+			<_modifiedTime type="a">8.2.2022::15:2:26</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

@@ -1,0 +1,1 @@
+This Profile belongs to the Willert RXF Framework and needs to be included in all models containing components which generate code for the Realtime eXecution Framework. It allows the user to select the required Stereotypes. 

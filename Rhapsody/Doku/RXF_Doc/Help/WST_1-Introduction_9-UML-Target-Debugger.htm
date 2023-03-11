@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Embedded UML Target Debugger Introduction - RXF Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head>
+<body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+  <h1><a name="Animation" id="Animation"></a><a name="Target_Animation" id="Target_Animation"></a><a name="Debugging_on_UML_level" id="Debugging_on_UML_level"></a><a name="UML_Debugger" id="UML_Debugger"></a><a name="Monitor_on_target" id="Monitor_on_target"></a>Embedded UML Target Debugger - Introduction</h1>
+
+  <p>The Embedded UML Target Debugger is a product developed by Willert Software Tools GmbH.
+  It allows you to analyse the software behavior on target.
+  This is similar to a conventional high level language debugger, but on UML level.
+  This includes:</p>
+
+  <ul>
+    <li>live animation of sequence diagrams to trace the event order and state changes on target.</li>
+  <li>live animation of embedded timing diagrams showing the events and state changes on a tick timer granularity timeline.</li>
+
+    <li>see which instances of your objects which have a statechart have been created and destroyed.</li>
+
+    <li>navigate through a model element tree to show attributes or the current state of a statechart for any instance.</li>
+
+    
+
+    <li>inject
+events from the host-side and track the reaction of the target.</li><li>see timeout events which have elapsed on target in the diagrams.</li>
+
+    <li>monitor the elapsed time-ticks between two events.</li>
+  </ul>
+  <br>
+  <img style="width: 800px;" alt="" src="Images/TD/example/TDWorking.JPG"><br>
+  <br>
+It consists of a Windows application which let you control the
+debugging and see the feedback from target and a monitor solution which
+is part of the executable on target. <p>The Embedded UML Target Debugger has been designed with a
+minimal overhead in footprint and disturbance of the behavior of your
+model in mind. Therefore, most of the work is done at runtime on your
+PC and as little as possible on your target. On the PC, you can view an
+animated sequence diagram of your target live. The target only sends
+very short messages when objects are created, destroyed or events are
+being send. It also can react to commands from the host. The messages
+and commands never contain symbolic data, but only memory addresses or
+identification codes to keep the data size small. This requires:</p>
+<ul>
+<li>Information used at startup of the&nbsp;Embedded UML Target Debugger on your PC.
+    This information is stored in an XML file.
+This file is created&nbsp;using a simplifier helper
+during Rhapsody's code generation.</li><li>Information send from the target, like which
+object has been created or destroyed, which event is send etc. For
+sending information and receiving commands from the&nbsp;Embedded UML
+Target Debugger on the PC, we need some interface. This can be a serial
+interface but also CAN, JTAG or whatever I/O interface can be used. For
+this example, we are working with a serial interface. But other
+interfaces are available and you are free to implement whatever I/O you
+like. A sample DLL interface for the host side is bundled with the
+Embedded UML Target Debugger.<br>
+</li>
+</ul>
+
+  You can also use TestConductor in combination with Animation via an additional plugin.
+
+  </div>
+
+  <p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+</body></html>

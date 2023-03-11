@@ -1,0 +1,8 @@
+../platform/bsp/src/errorlog.cpp:104:13:void Platform::BSP::printElement(uint16_t, Platform::BSP::ErrorLog_t*)	80	static
+../platform/bsp/src/errorlog.cpp:123:13:bool Platform::BSP::isHeader(uint32_t)	32	static
+../platform/bsp/src/errorlog.cpp:145:17:uint32_t Platform::BSP::formatLogSeg(uint32_t)	32	static
+../platform/bsp/src/errorlog.cpp:178:13:void Platform::BSP::updateWriteAddress()	24	static
+../platform/bsp/src/errorlog.cpp:210:17:uint32_t Platform::BSP::getFreeSlotAddress(uint32_t)	32	static
+../platform/bsp/src/errorlog.cpp:251:13:void Platform::BSP::initErrorLog()	24	static
+../platform/bsp/src/errorlog.cpp:292:6:void Platform::BSP::createErrorLog(Platform::BSP::Error_e, const char*, uint16_t)	88	static
+../platform/bsp/src/errorlog.cpp:342:6:void Platform::BSP::printErrorLog()	24	static

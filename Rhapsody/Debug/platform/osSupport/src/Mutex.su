@@ -1,0 +1,12 @@
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Mutex.h:89:10:void RTOS::Mutex::unlock() const	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Mutex.h:250:10:bool RTOS::unique_lock::owns_lock()	16	static
+../platform/osSupport/src/Mutex.cpp:13:1:RTOS::Mutex::Mutex(const osMutexDef_t*)	16	static
+../platform/osSupport/src/Mutex.cpp:21:1:RTOS::Mutex::~Mutex()	16	static
+../platform/osSupport/src/Mutex.cpp:21:1:virtual RTOS::Mutex::~Mutex()	16	static
+../platform/osSupport/src/Mutex.cpp:29:6:bool RTOS::Mutex::lock() const	24	static
+../platform/osSupport/src/Mutex.cpp:42:6:bool RTOS::Mutex::try_lock() const	24	static
+../platform/osSupport/src/Mutex.cpp:56:6:bool RTOS::unique_lock::try_lock()	16	static
+../platform/osSupport/src/Mutex.cpp:64:6:void RTOS::unique_lock::unlock()	16	static
+../platform/osSupport/src/Mutex.cpp:72:14:RTOS::unique_lock& RTOS::unique_lock::operator=(RTOS::unique_lock&&)	16	static
+../platform/osSupport/src/Mutex.cpp:86:6:void RTOS::unique_lock::swap(RTOS::unique_lock&)	24	static
+../platform/osSupport/src/Mutex.cpp:98:8:RTOS::Mutex* RTOS::unique_lock::release()	24	static

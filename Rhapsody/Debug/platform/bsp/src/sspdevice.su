@@ -1,0 +1,16 @@
+C:\Users\joklappe\Rhapsody\platform\chip\inc/ssp_17xx_40xx.h:239:20:void Chip_SSP_Enable(LPC_SSP_T*)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/ssp_17xx_40xx.h:413:20:void Chip_SSP_SetFormat(LPC_SSP_T*, uint32_t, uint32_t, uint32_t)	24	static
+../platform/bsp/src/sspdevice.cpp:17:1:Platform::BSP::SSPDevice::SSPDevice(Platform::BSP::SSPDevice::Interface, uint8_t, uint8_t)	24	static
+../platform/bsp/src/sspdevice.cpp:28:6:static bool Platform::BSP::SSPDevice::initialize(Platform::BSP::SSPDevice::Interface)	24	static
+../platform/bsp/src/sspdevice.cpp:48:6:bool Platform::BSP::SSPDevice::read(uint8_t*, uint32_t&) const	32	static
+../platform/bsp/src/sspdevice.cpp:70:6:bool Platform::BSP::SSPDevice::write(uint8_t*, uint32_t&) const	32	static
+../platform/bsp/src/sspdevice.cpp:95:6:bool Platform::BSP::SSPDevice::write(uint8_t) const	24	static
+../platform/bsp/src/sspdevice.cpp:100:6:bool Platform::BSP::SSPDevice::assignLockFct(Platform::BSP::LockFctType, Platform::BSP::LockFctType)	24	static
+../platform/bsp/src/sspdevice.cpp:107:6:void Platform::BSP::SSPDevice::acquire() const	16	static
+../platform/bsp/src/sspdevice.cpp:113:6:void Platform::BSP::SSPDevice::release() const	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/sspdevice.h:75:13:Platform::BSP::SSPDevice::~SSPDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/sspdevice.h:75:13:virtual Platform::BSP::SSPDevice::~SSPDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:virtual Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:Platform::BSP::DigitalInOut::~DigitalInOut()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:virtual Platform::BSP::DigitalInOut::~DigitalInOut()	16	static

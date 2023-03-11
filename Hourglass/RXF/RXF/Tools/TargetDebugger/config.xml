@@ -1,0 +1,22 @@
+<ApplicationConfiguration>
+    <GUI>
+        <Width>1000</Width>
+        <Height>800</Height>
+        <PosX>150</PosX>
+        <PosY>150</PosY>
+        <FullScrean>0</FullScrean>
+    </GUI>
+    <XMLFile/>
+    <LogServerPort>1234</LogServerPort>
+    <TestConductorPort>5050</TestConductorPort>
+    <!--
+    <DirectPluginConfiguration>
+        <PluginName>Serial.dll</PluginName>
+        <ConfigText>Com1::115200</ConfigText>
+    </DirectPluginConfiguration>
+    <DirectPluginConfiguration>
+        <PluginName>Keil.dll</PluginName>
+        <ConfigText>5102::C:\Program Files\Willert\Rpy_CPP_KeilRTX_Keil_ARM_MCB1700_TD_Dev\Samples\Code\GettingStarted\GettingStarted.uvproj</ConfigText>
+    </DirectPluginConfiguration>
+    -->
+</ApplicationConfiguration>

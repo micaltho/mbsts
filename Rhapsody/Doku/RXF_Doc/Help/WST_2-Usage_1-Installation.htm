@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Installation - RXF Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head>
+<body>
+ 
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+  <h1><a name="Installation_of_Product" id="Installation_of_Product"></a>Installation</h1>The
+installation of a generic RXF by Willert Software Tools requires you to already
+have installed:<br>
+<ul>
+  <li>Your Modeling tool IBM Rational Rhapsody</li>
+</ul>
+A release of an RXF always comes with a Setup,
+which needs to be executed in order to install the RXF. It will ask you
+for some program paths. It will copy files, expand macros inside files and
+configure all tools. Since each RXF is installed in a
+separate directory, there is no need to make a backup of a previous
+installation with an older version number.<br><br>Its
+highly recommended to have the RXF&nbsp; installed in the same
+directory on every Developers PC. Use for example C:\Willert or
+C:\DevTools\Willert. It also makes config management and collaborative
+work easier. Read <a href="file:///C:/V7/Component/Core/CPP/Doc/Help/WST_3-Technology_9-Configuration-Management.htm">Configuration Management</a> for best practice config management with Rhapsody and the RXF.<br>
+<br>
+To install a product just launch <span style="font-weight: bold;">Setup.exe</span> and follow the steps which are displayed.<br>
+<br>
+<img style="width: 488px; height: 355px;" alt="" src="Images/Installation_SetupSteps02.png"><br>
+<h2><a name="Installation_Problems"></a><a name="Setup_Problems"></a>Possible Problems During Setup</h2>
+If you experience any problems, please first check the following possible solutions:<br>
+<ul>
+  <li>Make sure you have the necessary read/write access privileges in the destination directory or directories.<br>
+    <br>
+  </li>
+  <li>Make sure you have enough disk space available.<br>
+    <br>
+  </li>
+  <li>Only Windows 7 and Windows 10 are supported operating systems.<br>
+    <br>
+  </li>
+  <li>Sometimes direct installation from or to a network drive, long source
+path names and in rare cases directly from a DVD may cause problems. If
+setup failed you may retry it after copying all files from the
+installation folder (including "WILLERT" folder) onto a directory on
+your local drive (e.g. "C:\Temp\WillertSetup\") and launching Setup.exe from there.<br>
+    <br>
+  </li>
+  <li>Setup will write an installation log file with helpful
+information for our support team into the destination folder. It will
+be named WST_Install_Log_<span style="font-style: italic;">&lt;date&gt;</span>_<span style="font-style: italic;">&lt;time&gt;</span>.txt.
+If Setup can not access the specified destination path to write the log
+file, it will show this error message and try to write it to drive C:
+in the root directory:<br>
+    <img style="width: 444px; height: 159px;" alt="" src="Images/Installation_Error_WritingProtocol0.png"><br>
+    <br>
+  </li>
+  <li>The "WILLERT" folder beside Setup.exe contains all the files that will be copied to your
+installation directory. But it will perform several operations on them
+during installation like macro expansions, conditional operations, path
+replacements etc. So please don't copy any files from the WILLERT
+folder contents to your destination directory manually, always use
+Setup.exe.</li>
+</ul>
+If these possible solutions do not help, please contact our <a href="WST_9-Support.htm">support</a>, if possible including the log file.<br>
+<h2><a name="Installation_Directory"></a>Contents of an Installation Directory</h2>
+
+There are some files and a folder located beside Setup.exe. This section briefly describes what they are.<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 166px;"><img style="width: 164px; height: 149px;" alt="" src="Images/Installation_Directory0.png"><br>
+      </td>
+      <td style="vertical-align: top;"><small>1. Folder containing files required by the Setup. Please never copy contents manually.<br>
+2. Autorun information, useful if the Setup is located on a DVD<br>
+3. License information, will also be displayed during Setup<br>
+4. Readme, specific for your product, will also be displayed during Setup<br>
+5. An entry point to the HTML RXF Documentation<br>
+6. The actual Setup that has the be executed<br>
+7. Configuration and command file in a proprietary format for Setup.exe </small><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2><a name="Multi-User_Setup"></a><a name="Installation_Path"></a>Multi-User Setup with Windows 7<br>
+</h2>
+When installing the RXF in Windows 7 the default paths for the Willert
+folder is located under the user's homepath. It is recommended if a single user
+should work on one PC with the RXF and makes sure read/write access to
+that directory is no problem. But if multiple users on one machine
+should work with the RXF, it is recommended to install the RXF and also
+other toolchains (like IBM Rational Rhapsody and your IDE and Compiler) directly in a dedicated
+directory on the hard disk's root. For exaple C:\Willert\ or
+C:\Dev\Willert. This makes sure these folders are accessible for all
+users on most setups.<br>
+<br>
+
+
+  </div>
+
+  <p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

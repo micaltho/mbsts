@@ -1,0 +1,4 @@
+C:\Users\joklappe\Rhapsody\platform\chip\inc/sysctl_17xx_40xx.h:153:20:Chip_SYSCTL_SetFLASHAccess	24	static
+../platform/board/src/board_sysinit.c:87:6:Board_SetupMuxing	8	static
+../platform/board/src/board_sysinit.c:93:6:Board_SetupClocking	8	static
+../platform/board/src/board_sysinit.c:102:6:Board_SystemInit	8	static

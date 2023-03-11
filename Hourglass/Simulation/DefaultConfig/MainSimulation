@@ -1,0 +1,14 @@
+/*********************************************************************
+	Rhapsody	: 9.0 
+	Login		: joklappe
+	Component	: Simulation 
+	Configuration 	: DefaultConfig
+	Model Element	: DefaultConfig
+//!	Generated Date	: Wed, 22, Jun 2022  
+	File Path	: Simulation/DefaultConfig/MainSimulation.h
+*********************************************************************/
+
+#include <oxf/oxf.h>
+/*********************************************************************
+	File Path	: Simulation/DefaultConfig/MainSimulation.h
+*********************************************************************/

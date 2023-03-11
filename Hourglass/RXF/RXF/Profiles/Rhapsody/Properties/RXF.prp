@@ -1,0 +1,77 @@
+Subject RXF
+    Metaclass Class
+        Property ActiveInitializer                  MultiLine "RXF::Active(ActiveThreadName,ActiveThreadPriority,ActiveStackSize,ActiveMessageQueueSize,getQueueMemory())"
+        Property TimeoutGuaranteeTime               Bool      "False"
+    end
+
+    Metaclass Simplifier
+        Property GenerateOverrideKeyword            Bool   "False"
+        Property DebugEnabled                       Bool   "False"
+    end
+
+    Metaclass Hooks
+        Property PreDeployHook                      String "\"\""
+        Property PostDeployHook                     String "\"\""
+        Property PostMakeHook                       String "\"\""
+    end
+
+    Metaclass Configuration
+        Property ReceptionsAsOperations             Bool   "True"
+        Property ReceptionPrefix                    String "send_"
+        Property REACTIVE_MAX_NULL_STEPS            String "10U"
+        Property MS_PER_TICK                        String "10U"
+
+        Property MAIN_TASK_QUEUE_SIZE               String "100U"
+        Property MAIN_TASK_PRIORITY                 String "RXF::Priority::NORMAL"
+        Property MAIN_TASK_STACK_SIZE               String "1024U"
+
+        Property TASK_PARAMETERS_IsVisible          String "?<IsConditionalProperty>
+                                                            ?<begin>
+                                                                 $<RXF::DeployerFolders::RTOS>?<==>OORTX_ARM
+                                                            ?<||>$<RXF::DeployerFolders::RTOS>?<==>OORTX_Windows
+                                                            ?<||>$<RXF::DeployerFolders::RTOS>?<==>COORTX
+                                                            ?<?>False?<:>True?<end>"
+
+        Property TIMER_TASK_PRIORITY                String "RXF::Priority::HIGHEST"
+        Property TIMER_TASK_STACK_SIZE              String "256U"
+        Property TIMER_TASK_IsVisible               String "?<IsConditionalProperty>
+                                                            ?<begin>
+                                                                 $<RXF::DeployerFolders::RTOS>?<==>Linux
+                                                            ?<||>$<RXF::DeployerFolders::RTOS>?<==>AUTOSAR
+                                                            ?<?>True?<:>False?<end>"
+
+        Property EVENT_DEFAULT_BLOCK_COUNT          String "64U"
+        Property EVENT_SMALL_PARAMETER_BLOCK_COUNT  String "32U"
+        Property EVENT_SMALL_PARAMETER_SIZE         String "4U"
+        Property EVENT_MEDIUM_PARAMETER_BLOCK_COUNT String "32U"
+        Property EVENT_MEDIUM_PARAMETER_SIZE        String "8U"
+        Property EVENT_LARGE_PARAMETER_BLOCK_COUNT  String "16U"
+        Property EVENT_LARGE_PARAMETER_SIZE         String "16U"
+        Property EVENT_USE_HEAP                     Bool   "False"
+    end
+end
+
+Subject CPP_CG
+    Metaclass Configuration
+        Property ContainerSet                       Enum   "Disabled,OMContainers,RXFContainers,RXFContainersStatic,STLContainers" "RXFContainers"
+    end
+end
+
+Include "Style.prp"
+Include "ConfigurationManagement.prp"
+
+Include "Deployer.prp"
+
+Include "RXF_GeneratedFiles.prp"
+Include "RXF_PropertiesPerspectives.prp"
+Include "RXFContainers.prp"
+Include "RXFContainersStatic.prp"
+Include "OMContainers.prp"
+
+Include "Environment.prp"
+Include "Environment_RXF.prp"
+Include "Environment_RXF_uVision5.prp"
+
+Include "ModelChecks.prp"
+
+end

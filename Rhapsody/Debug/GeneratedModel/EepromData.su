@@ -1,0 +1,3 @@
+../GeneratedModel/EepromData.cpp:15:1:EepromData::EepromData()	16	static
+../GeneratedModel/EepromData.cpp:18:1:EepromData::~EepromData()	16	static
+../GeneratedModel/EepromData.cpp:18:1:virtual EepromData::~EepromData()	16	static

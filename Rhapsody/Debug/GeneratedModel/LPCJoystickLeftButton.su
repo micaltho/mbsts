@@ -1,0 +1,8 @@
+../GeneratedModel/LPCJoystickLeftButton.cpp:16:1:LPCJoystickLeftButton::LPCJoystickLeftButton()	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:19:1:LPCJoystickLeftButton::~LPCJoystickLeftButton()	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:19:1:virtual LPCJoystickLeftButton::~LPCJoystickLeftButton()	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:23:6:virtual void LPCJoystickLeftButton::onClick()	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:31:6:virtual void LPCJoystickLeftButton::onReleased()	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:36:13:Controller* LPCJoystickLeftButton::getItsController() const	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:40:6:void LPCJoystickLeftButton::setItsController(Controller*)	16	static
+../GeneratedModel/LPCJoystickLeftButton.cpp:44:6:void LPCJoystickLeftButton::cleanUpRelations()	16	static

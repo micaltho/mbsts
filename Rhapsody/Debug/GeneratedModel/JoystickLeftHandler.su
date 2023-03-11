@@ -1,0 +1,3 @@
+../GeneratedModel/JoystickLeftHandler.cpp:15:1:JoystickLeftHandler::JoystickLeftHandler()	16	static
+../GeneratedModel/JoystickLeftHandler.cpp:18:1:JoystickLeftHandler::~JoystickLeftHandler()	16	static
+../GeneratedModel/JoystickLeftHandler.cpp:18:1:virtual JoystickLeftHandler::~JoystickLeftHandler()	16	static

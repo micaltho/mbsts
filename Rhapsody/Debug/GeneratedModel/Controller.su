@@ -1,0 +1,49 @@
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:53:21:RXF::Event::Id_t RXF::Event::getId() const	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Reactive.h:179:29:const RXF::Event* RXF::Reactive::getCurrentEvent() const	16	static
+../GeneratedModel/Controller.cpp:19:1:Controller::Controller(uint32_t, uint32_t, uint32_t)	40	static
+../GeneratedModel/Controller.cpp:26:1:Controller::Controller()	32	static
+../GeneratedModel/Controller.cpp:31:1:Controller::~Controller()	16	static
+../GeneratedModel/Controller.cpp:31:1:virtual Controller::~Controller()	16	static
+../GeneratedModel/Controller.cpp:35:6:void Controller::raiseStartTime()	16	static
+../GeneratedModel/Controller.cpp:55:6:void Controller::raiseTimeFactor()	16	static
+../GeneratedModel/Controller.cpp:77:6:void Controller::reduceStartTime()	16	static
+../GeneratedModel/Controller.cpp:97:6:void Controller::reduceTimeFactor()	16	static
+../GeneratedModel/Controller.cpp:130:6:void Controller::setTime(uint32_t)	16	static
+../GeneratedModel/Controller.cpp:135:14:int32_t Controller::getBackward_threshold() const	16	static
+../GeneratedModel/Controller.cpp:139:6:void Controller::setBackward_threshold(int32_t)	16	static
+../GeneratedModel/Controller.cpp:143:14:int32_t Controller::getForward_threshold() const	16	static
+../GeneratedModel/Controller.cpp:147:6:void Controller::setForward_threshold(int32_t)	16	static
+../GeneratedModel/Controller.cpp:151:15:uint32_t Controller::getStartTime() const	16	static
+../GeneratedModel/Controller.cpp:155:6:void Controller::setStartTime(uint32_t)	16	static
+../GeneratedModel/Controller.cpp:159:14:uint8_t Controller::getStartTimeTest() const	16	static
+../GeneratedModel/Controller.cpp:163:6:void Controller::setStartTimeTest(uint8_t)	16	static
+../GeneratedModel/Controller.cpp:167:15:uint32_t Controller::getTickTimeController() const	16	static
+../GeneratedModel/Controller.cpp:171:6:void Controller::setTickTimeController(uint32_t)	16	static
+../GeneratedModel/Controller.cpp:175:15:uint32_t Controller::getTimeFactor() const	16	static
+../GeneratedModel/Controller.cpp:179:6:void Controller::setTimeFactor(uint32_t)	16	static
+../GeneratedModel/Controller.cpp:183:24:AccelerationMeasuring* Controller::getItsAccelerationMeasuring() const	16	static
+../GeneratedModel/Controller.cpp:187:6:void Controller::setItsAccelerationMeasuring(AccelerationMeasuring*)	16	static
+../GeneratedModel/Controller.cpp:191:16:ConfigStorage* Controller::getItsConfigStorage() const	16	static
+../GeneratedModel/Controller.cpp:195:6:void Controller::setItsConfigStorage(ConfigStorage*)	16	static
+../GeneratedModel/Controller.cpp:199:14:DisplayTask* Controller::getItsDisplayTask() const	16	static
+../GeneratedModel/Controller.cpp:203:6:void Controller::setItsDisplayTask(DisplayTask*)	16	static
+../GeneratedModel/Controller.cpp:207:14:TimeCounter* Controller::getItsTimeCounter() const	16	static
+../GeneratedModel/Controller.cpp:211:6:void Controller::setItsTimeCounter(TimeCounter*)	16	static
+../GeneratedModel/Controller.cpp:215:6:virtual bool Controller::startBehavior()	24	static
+../GeneratedModel/Controller.cpp:225:6:void Controller::cleanUpRelations()	16	static
+../GeneratedModel/Controller.cpp:244:6:virtual void Controller::send_evMenu()	32	static
+../GeneratedModel/Controller.cpp:248:6:virtual void Controller::send_evMenuExit()	32	static
+../GeneratedModel/Controller.cpp:252:6:virtual void Controller::send_evRaiseStartTime()	32	static
+../GeneratedModel/Controller.cpp:256:6:virtual void Controller::send_evReduceStartTime()	32	static
+../GeneratedModel/Controller.cpp:260:6:virtual void Controller::send_evRaiseTimeFactor()	32	static
+../GeneratedModel/Controller.cpp:264:6:virtual void Controller::send_evReduceTimeFactor()	32	static
+../GeneratedModel/Controller.cpp:268:6:virtual void Controller::send_evStartTimeSetting()	32	static
+../GeneratedModel/Controller.cpp:272:6:virtual void Controller::send_evTimeFactorSetting()	32	static
+../GeneratedModel/Controller.cpp:276:6:virtual void Controller::send_evGoBack()	32	static
+../GeneratedModel/Controller.cpp:280:6:virtual void Controller::send_evReset()	32	static
+../GeneratedModel/Controller.cpp:284:6:virtual void Controller::send_evCalibrate()	32	static
+../GeneratedModel/Controller.cpp:288:6:virtual void Controller::send_evGoBackToRunHourglass()	32	static
+../GeneratedModel/Controller.cpp:292:6:virtual void Controller::send_evResetTime()	32	static
+../GeneratedModel/Controller.cpp:296:14:RXF::Event** Controller::getQueueMemory()	16	static
+../GeneratedModel/Controller.cpp:300:6:virtual void Controller::rootState_entDef()	40	static
+../GeneratedModel/Controller.cpp:333:32:virtual RXF::Reactive::TakeEventStatus Controller::rootState_processEvent()	56	static

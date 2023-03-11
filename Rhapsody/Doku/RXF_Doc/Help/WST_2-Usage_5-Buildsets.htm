@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Product Usage - RXF Documentation</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="Debug_Buildset" id="Usage"></a><a name="Release_Buildset"></a><a name="RxfConstants.h_File_Generation" id="RxfConstants.h"></a><a style="font-style: italic;" name="BuildCommandSet_Property" id="Property_BuildCommandSet"></a><a name="CPPCompileSwitches_Property"></a>
+Buildsets (Debug / Release)</h1>
+It is very likely that you want to distinguish between optimized
+production code, and code you want to debug. For this, your product
+supports two buildsets, as defined in the property <span style="font-style: italic;">CPP_CG::WillertRXF::</span><span style="font-style: italic;">BuildCommandSet</span>.<br>
+<br>
+The main difference is the defines which will be generated into WST_CFG.h.<br>
+The Debug Buildset will define <span style="font-family: monospace;">_DEBUG</span>
+and <span style="font-family: monospace;">HIGHWATERMARKS</span> per
+default, while Release will define <span style="font-family: monospace;">NDEBUG</span>. This is because the
+Rhapsody generated makefile will use one of the properties <span style="font-style: italic;">CPPCompileDebug</span> or <span style="font-style: italic;">CPPCompileRelease</span> inside the <span style="font-style: italic;">CPPCompileSwitches</span> property.<br>
+<br>
+These resulting <span style="font-style: italic;">CppCompileSwitches</span>
+should include <span style="font-weight: bold;">-D&lt;macro
+definition&gt; options only</span>. The reason for this, is that you
+build your application in your IDE. That is where you specify for
+example include paths and other options. The options or macros set via the property <span style="font-style: italic;">CppCompileSwitches</span> result in
+#defines in a generated CFG.h when you select <span style="font-style: italic;">Code&nbsp;|&nbsp;Build</span> or <span style="font-style: italic;">Code&nbsp;|&nbsp;Rebuild</span> in
+Rhapsody.<br>
+<br>
+<table style="text-align: left; width: 100%; background-color: rgb(255, 255, 204);" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 100px; vertical-align: top;"><span style="font-weight: bold;">NOTE</span></td>
+      <td>If you are creating a library from the RXF sources which gets used inside your application, the options or constants set
+via property <span style="font-style: italic;">CppCompileSwitches</span> must match the options in your IDE project to
+create RXF libraries. You should not compile the RXF libraries with for
+example support for UML ports, or use highwatermarks in a debug
+version, and use different options to compile your application with.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

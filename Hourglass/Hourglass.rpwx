@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>*</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<CGEMdiWorkspace type="e">
+			<stubList type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</stubList>
+			<isLoadOnDemand type="a">0</isLoadOnDemand>
+			<myViewsWithID type="c">
+				<IRPYRawContainer type="e">
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">52</m_nLeft>
+								<m_nTop type="a">52</m_nTop>
+								<m_nRight type="a">1739</m_nRight>
+								<m_nBottom type="a">718</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">AccelerationMeasuring</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 27068cc5-8aff-4a0c-ad29-eccdc2e5f8fd</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1650 606 </_DownRight>
+						<m_nDiagramIndex type="a">10</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">156</m_nLeft>
+								<m_nTop type="a">156</m_nTop>
+								<m_nRight type="a">2027</m_nRight>
+								<m_nBottom type="a">732</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">ConfigStorage</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 1a691969-fabc-47bc-a8b4-0e87b0822e75</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1834 516 </_DownRight>
+						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">130</m_nLeft>
+								<m_nTop type="a">130</m_nTop>
+								<m_nRight type="a">1969</m_nRight>
+								<m_nBottom type="a">796</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IActivityDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">Controller</_hclass>
+								<_hname type="a">FlowchartDiagram</_hname>
+								<_hid type="a">GUID ea21dc26-ed52-4d6d-90e2-c0a29083a833</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1802 606 </_DownRight>
+						<m_nDiagramIndex type="a">6</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">182</m_nLeft>
+								<m_nTop type="a">182</m_nTop>
+								<m_nRight type="a">2021</m_nRight>
+								<m_nBottom type="a">848</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IActivityDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">Controller</_hclass>
+								<_hname type="a">FlowchartDiagram</_hname>
+								<_hid type="a">GUID 92cb2336-a8b0-4364-9bd2-2683043059f8</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1802 606 </_DownRight>
+						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">78</m_nLeft>
+								<m_nTop type="a">78</m_nTop>
+								<m_nRight type="a">1850</m_nRight>
+								<m_nBottom type="a">786</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">Controller</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 27fbca00-55a4-4284-8fc6-1e106ffeed3a</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 205 </_UpLeft>
+						<_DownRight type="a">1522 773 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">156</m_nLeft>
+								<m_nTop type="a">156</m_nTop>
+								<m_nRight type="a">2065</m_nRight>
+								<m_nBottom type="a">688</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">DisplayTask</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 5769cabc-84d6-4b3e-a7a0-6c2a213febc9</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1872 472 </_DownRight>
+						<m_nDiagramIndex type="a">12</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">104</m_nLeft>
+								<m_nTop type="a">104</m_nTop>
+								<m_nRight type="a">1876</m_nRight>
+								<m_nBottom type="a">812</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hname type="a">HourglassClassdiagramm</_hname>
+								<_hid type="a">GUID f92f0935-877d-4c0b-90cf-c33fce2534b0</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">27 88 </_UpLeft>
+						<_DownRight type="a">1661 698 </_DownRight>
+						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">286</m_nLeft>
+								<m_nTop type="a">286</m_nTop>
+								<m_nRight type="a">2083</m_nRight>
+								<m_nBottom type="a">952</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IActivityDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">TimeCounter</_hclass>
+								<_hname type="a">FlowchartDiagram</_hname>
+								<_hid type="a">GUID a5b2ed7a-f12a-41de-8f08-b28a516eb396</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1760 606 </_DownRight>
+						<m_nDiagramIndex type="a">11</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">2</m_nFlags>
+								<m_showCmd type="a">3</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">0</m_nLeft>
+								<m_nTop type="a">0</m_nTop>
+								<m_nRight type="a">1871</m_nRight>
+								<m_nBottom type="a">576</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Application.sbsx</_hfilename>
+								<_hsubsystem type="a">Application</_hsubsystem>
+								<_hclass type="a">TimeCounter</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 310dcda9-b143-4fe9-b10b-6f90e668b9f3</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 11 </_UpLeft>
+						<_DownRight type="a">1594 788 </_DownRight>
+						<m_nDiagramIndex type="a">9</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">26</m_nLeft>
+								<m_nTop type="a">26</m_nTop>
+								<m_nRight type="a">1798</m_nRight>
+								<m_nBottom type="a">734</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\LPC1769.sbsx</_hfilename>
+								<_hsubsystem type="a">LPC1769</_hsubsystem>
+								<_hname type="a">LPC1769ClassDiagram</_hname>
+								<_hid type="a">GUID 187a7f94-f40f-4053-8715-96fcf93e74eb</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1735 648 </_DownRight>
+						<m_nDiagramIndex type="a">8</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">130</m_nLeft>
+								<m_nTop type="a">130</m_nTop>
+								<m_nRight type="a">1902</m_nRight>
+								<m_nBottom type="a">838</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStructureDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\LPC1769.sbsx</_hfilename>
+								<_hsubsystem type="a">LPC1769</_hsubsystem>
+								<_hclass type="a">LPCBuilder</_hclass>
+								<_hname type="a">LPCBuilderStructureDiagram</_hname>
+								<_hid type="a">GUID ce8465dd-0e51-491f-aa03-22f91745e58a</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 127 </_UpLeft>
+						<_DownRight type="a">2115 917 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">26</m_nLeft>
+								<m_nTop type="a">26</m_nTop>
+								<m_nRight type="a">1109</m_nRight>
+								<m_nBottom type="a">559</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IPanelDiagram</_hm2Class>
+								<_hfilename type="a">.\Hourglass_rpy\Simulation.sbsx</_hfilename>
+								<_hsubsystem type="a">Simulation</_hsubsystem>
+								<_hname type="a">Simulation_Panel</_hname>
+								<_hid type="a">GUID fd30b834-273f-4142-8429-e75239a47418</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1382 625 </_DownRight>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+				</IRPYRawContainer>
+			</myViewsWithID>
+			<_fullName type="a">C:\Users\joklappe\Hourglass\Hourglass</_fullName>
+			<_selectedPerspective type="a">Advanced</_selectedPerspective>
+			<m_SearchScopeList type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</m_SearchScopeList>
+			<bUsingBrowserCustomView type="a">0</bUsingBrowserCustomView>
+			<bApplyOnDiagrams type="a">0</bApplyOnDiagrams>
+			<liCustomViewIDs type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</liCustomViewIDs>
+			<mapOslcRmCollections type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</mapOslcRmCollections>
+			<favoritesItem type="e">
+				<generation type="a">0</generation>
+				<name type="a">Favorites</name>
+				<idOrFolder type="a">folder</idOrFolder>
+			</favoritesItem>
+			
+		</CGEMdiWorkspace>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

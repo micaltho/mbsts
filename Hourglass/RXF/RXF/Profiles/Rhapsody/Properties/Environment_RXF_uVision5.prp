@@ -1,0 +1,28 @@
+Subject CPP_CG
+    Metaclass RXF_uVision5
+        Property BuildCommandSet                          Enum "External" "External"
+        Property EntryPoint                               String "RXF::MainTask::execute"
+        Property ExeExtension                             String ""
+        Property InvokeExecutable                         String ""
+        Property InvokeMake                               String "?<IsConditionalProperty>\"$OMROOT/etc/Executer.exe\" $<RXF::Hooks::PreDeployHook>;\"deploy.bat $maketarget\";$<RXF::Hooks::PostDeployHook>;\"$makefile $maketarget $BuildCommandSet\";$<RXF::Hooks::PostMakeHook>"
+        Property LibExtension                             String ""
+        Property MakeExtension                            String ".bat"
+        Property MakeFileContent                          MultiLine "?<IsConditionalProperty>
+@echo off
+echo.
+\"$<CPP_CG::RXF_uVision5::uVisionExe>\" -b \"$<RXF::Deployer::IDEProject>\" -t \"$<CPP_CG::RXF_uVision5::uVisionBuildSet>\" -o \"%~dp0BuildLog.txt\"
+type \"BuildLog.txt\"
+
+"
+        Property NullValue                                String "nullptr"
+        Property ErrorMessageTokensFormat                 String "ToTalNumberOfTokens=3,FileTokenPosition=1,LineTokenPosition=2"
+        Property ParseErrorDescript                       String ".+(error|warning|fatal error): +(.*)"
+        Property ParseErrorMessage                        String ".*\\/(.*)\\(([0-9]*)\\): (error|fatal error|warning).*"
+        Property ParseErrorMoreInfo                       String "^[( )]"
+        Property ParseSeverityError                       String "[:] (error|fatal error)"
+        Property ParseSeverityWarning                     String "[:] (warning)"
+        Property uVisionExe                               String "C:\\Dev Tools\\Keil\\Keil_v5\\UV4\\UV4.exe"
+        Property uVisionBuildSet                          String "ARMCLANG_O0_Simulation"
+    end
+
+end

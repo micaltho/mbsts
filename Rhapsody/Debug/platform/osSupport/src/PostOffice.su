@@ -1,0 +1,33 @@
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PostOffice.h:176:8:RTOS::PostOffice::MboxData_t::MboxData_t(osMailQId, size_t)	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PostOffice.h:185:4:RTOS::PostOffice::~PostOffice()	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/TaskBase.h:61:16:void* RTOS::Task::getTaskHandle() const	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/TaskBase.h:67:18:const char* RTOS::Task::getTaskName() const	16	static
+../platform/osSupport/src/PostOffice.cpp:29:1:RTOS::PostOffice::PostOffice()	32	static
+../platform/osSupport/src/PostOffice.cpp:52:13:static RTOS::PostOffice& RTOS::PostOffice::getInstance()	8	static
+../platform/osSupport/src/PostOffice.cpp:60:6:bool RTOS::PostOffice::registerMailBox(const RTOS::Task&, osMailQId, size_t)	64	static
+../platform/osSupport/src/PostOffice.cpp:85:6:bool RTOS::PostOffice::sendMail(osThreadId, osThreadId, void*, RTOS::mailNumber_e, RTOS::PostOffice::mailType_e) const	48	static
+../platform/osSupport/src/PostOffice.cpp:166:6:bool RTOS::PostOffice::freeMail(osThreadId, RTOS::PostOffice::mailStruct_t*, bool) const	40	static
+../platform/osSupport/src/PostOffice.cpp:210:6:bool RTOS::PostOffice::registerMessageBox(const RTOS::Task&, osMessageQId)	56	static
+../platform/osSupport/src/PostOffice.cpp:234:6:bool RTOS::PostOffice::sendMessage(osThreadId, uint32_t) const	32	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:180:1:RTOS::Embmap<T, U>::~Embmap() [with T = void*; U = RTOS::PostOffice::MboxData_t]	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:180:1:RTOS::Embmap<T, U>::~Embmap() [with T = void*; U = os_messageQ_cb*]	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:165:1:RTOS::Embmap<T, U>::Embmap(size_t) [with T = void*; U = RTOS::PostOffice::MboxData_t]	40	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:165:1:RTOS::Embmap<T, U>::Embmap(size_t) [with T = void*; U = os_messageQ_cb*]	40	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:186:4:U& RTOS::Embmap<T, U>::operator[](const T&) [with T = void*; U = RTOS::PostOffice::MboxData_t]	48	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:201:8:size_t RTOS::Embmap<T, U>::erase(const T&) [with T = void*; U = RTOS::PostOffice::MboxData_t]	32	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:223:22:const RTOS::EmbPair<T, U>* RTOS::Embmap<T, U>::find(const T&) const [with T = void*; U = RTOS::PostOffice::MboxData_t]	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:102:20:RTOS::EmbPair<T, U>* RTOS::Embmap<T, U>::end() const [with T = void*; U = RTOS::PostOffice::MboxData_t]	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:186:4:U& RTOS::Embmap<T, U>::operator[](const T&) [with T = void*; U = os_messageQ_cb*]	40	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:201:8:size_t RTOS::Embmap<T, U>::erase(const T&) [with T = void*; U = os_messageQ_cb*]	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:223:22:const RTOS::EmbPair<T, U>* RTOS::Embmap<T, U>::find(const T&) const [with T = void*; U = os_messageQ_cb*]	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:102:20:RTOS::EmbPair<T, U>* RTOS::Embmap<T, U>::end() const [with T = void*; U = os_messageQ_cb*]	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:66:3:RTOS::EmbPair<T, U>::EmbPair() [with T = void*; U = RTOS::PostOffice::MboxData_t]	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:66:3:RTOS::EmbPair<T, U>::EmbPair() [with T = void*; U = os_messageQ_cb*]	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:238:16:RTOS::EmbPair<T, U>* RTOS::Embmap<T, U>::find(const T&) [with T = void*; U = RTOS::PostOffice::MboxData_t]	32	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:249:31:RTOS::EmbPair<RTOS::EmbPair<T, U>*, bool> RTOS::Embmap<T, U>::insert(const RTOS::EmbPair<T, U>&) [with T = void*; U = RTOS::PostOffice::MboxData_t]	40	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:62:3:RTOS::EmbPair<T, U>::EmbPair(T, U) [with T = void*; U = RTOS::PostOffice::MboxData_t]	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:238:16:RTOS::EmbPair<T, U>* RTOS::Embmap<T, U>::find(const T&) [with T = void*; U = os_messageQ_cb*]	32	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:249:31:RTOS::EmbPair<RTOS::EmbPair<T, U>*, bool> RTOS::Embmap<T, U>::insert(const RTOS::EmbPair<T, U>&) [with T = void*; U = os_messageQ_cb*]	40	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:62:3:RTOS::EmbPair<T, U>::EmbPair(T, U) [with T = void*; U = os_messageQ_cb*]	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:62:3:RTOS::EmbPair<T, U>::EmbPair(T, U) [with T = RTOS::EmbPair<void*, RTOS::PostOffice::MboxData_t>*; U = bool]	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/Embmap.h:62:3:RTOS::EmbPair<T, U>::EmbPair(T, U) [with T = RTOS::EmbPair<void*, os_messageQ_cb*>*; U = bool]	24	static

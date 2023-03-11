@@ -1,0 +1,24 @@
+[Helpers]
+numberOfElements=3
+
+#REM: Rhapsody Helpers and Plugins associated with the WSTMonitor
+#REM: $Id$
+#REM: $URL$
+
+#REM: Manipulate Code Generation by WSTSimplifier for Target Debugger:
+name1=TD Simplifier
+isPlugin1=1
+DLLServerCompatible1=TRUE
+isVisible1=0
+JavaMainClass1=rxf.simplifier8.td.cpp.SimplifiersConnector
+JavaClassPath1=.\Helper\SimplifierRXF.jar
+
+name2=TDLauncher
+isPlugin2=1
+JavaMainClass2=rxf.helper8.td.Launcher
+JavaClassPath2=".\Helper\SimplifierRXF.jar"
+
+name3=Start Embedded UML Target Debugger
+isPluginCommand3=1
+command3=TDLauncher
+isVisible3=1

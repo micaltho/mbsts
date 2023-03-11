@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Error Handling - RXF Documentation</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="Error_handler" id="Error_handler"></a>Error Handling</h1>
+Runtime errors in the RXF are handled by the error
+handler <span style="font-style: italic;">WST_ERR::error()</span>.
+The error handler will catch use of NULL pointers, lack of resources,
+etc.<br>
+<br>
+The error handler function is called from several places in the Framework, the first argument
+indicates the error that occured, the second parameter is not always used but for instance
+in case of an RTOS failure, the RTOS error code is passed here.
+<br>
+<br>
+The function <span style="font-style: italic;">WST_ERR::error()</span>&nbsp;is&nbsp;implemented
+as an endless loop in the source file WST_ERR.cpp. It is strongly
+recommended to provide an own error handler
+implementation which fits your application needs.<br>
+The recommended way to modify the error handler is using the RXFConfigurationPackage-Stereotype of this Framework:<br>
+<ul>
+  <li>Create a new Package in you UML Model</li>
+  <li>Apply the stereotype RXFConfigurationPackage to this Package. The
+Package now is located under RXFConfigurationPackages and a Template
+Implementation of WST_ERR is copied to this Package.</li>
+  <li>Modify the Implementation of WST_ERR::error() to fit your needs.<br>
+  </li>
+</ul>
+<h2>Documentation of Enumerated Error Codes</h2>The error code names
+are mostly self explaining and mostly used only in one or few places in
+the RXF code. I you are manually debugging your code on source code
+level it is recommended to look at the error code and use the call
+stack feature or your debugger to examine where the error has occured.<br>
+<br>
+Detailed Documentation of the Error Codes is located in the RXF Model and can be found as comments in WST_ERR.h<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+</body></html>

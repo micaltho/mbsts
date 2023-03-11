@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>Willert</vendor>
+  <name>Embedded UML Studio</name>
+  <description>Integration for Realtime Execution Framwork (RXF) and generated code from Embedded UML Studio (EUS)</description>
+  <url>https://www.willert.de/software-tools/modellgetriebene-softwareentwicklung/willert-embedded-uml-studio/</url>
+  <supportContact>support@willert.de</supportContact>
+  
+  <releases>
+    <release version="0.0.0">
+      Prerelease Beta Version
+    </release>
+  </releases>
+
+  <keywords>
+    <keyword>Willert</keyword>
+    <keyword>RXF</keyword>
+    <keyword>IBM</keyword>
+    <keyword>Rational</keyword>
+    <keyword>Rhapsody</keyword>
+    <keyword>Modeling</keyword>
+    <keyword>UML</keyword>
+    <keyword>EUS</keyword>
+    <keyword>Embedded UML Studio</keyword>
+  </keywords>
+
+  <generators>
+    <generator id="WillertRXF">
+      <gpdsc name="$PWillertRXF.gpdsc"/>
+    </generator>
+  </generators>
+
+  <components>
+    <component generator="WillertRXF" Cclass="RXF" Cgroup="Integrate Generated Code"></component>
+  </components>
+
+</package>

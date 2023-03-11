@@ -1,0 +1,7 @@
+../RXF/RXF_MainTask.cpp:18:10:static void RXF::MainTask::start()	8	static
+../RXF/RXF_MainTask.cpp:25:5:RXF::MainTask::MainTask()	32	static
+../RXF/RXF_MainTask.cpp:29:15:static RXF::MainTask* RXF::MainTask::getInstance()	8	static
+../RXF/RXF_MainTask.cpp:35:10:static bool RXF::MainTask::initializeFramework()	8	static
+../RXF/RXF_MainTask.cpp:41:13:static RXF::Event** RXF::MainTask::getQueueMemory()	4	static
+../RXF/RXF_MainTask.h:17:11:RXF::MainTask::~MainTask()	16	static
+../RXF/RXF_MainTask.h:17:11:virtual RXF::MainTask::~MainTask()	16	static

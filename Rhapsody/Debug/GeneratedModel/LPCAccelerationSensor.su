@@ -1,0 +1,18 @@
+../GeneratedModel/LPCAccelerationSensor.cpp:15:1:LPCAccelerationSensor::LPCAccelerationSensor()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:21:1:LPCAccelerationSensor::~LPCAccelerationSensor()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:21:1:virtual LPCAccelerationSensor::~LPCAccelerationSensor()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:24:14:virtual int32_t LPCAccelerationSensor::readAccelerationX()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:30:14:virtual int32_t LPCAccelerationSensor::readAccelerationY()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:36:14:virtual int32_t LPCAccelerationSensor::readAccelerationZ()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:42:6:virtual void LPCAccelerationSensor::readXYZ()	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:48:13:int8_t LPCAccelerationSensor::getAccelerationX() const	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:52:6:void LPCAccelerationSensor::setAccelerationX(int8_t)	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:56:13:int8_t LPCAccelerationSensor::getAccelerationY() const	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:60:6:void LPCAccelerationSensor::setAccelerationY(int8_t)	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:64:13:int8_t LPCAccelerationSensor::getAccelerationZ() const	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:68:6:void LPCAccelerationSensor::setAccelerationZ(int8_t)	16	static
+../GeneratedModel/LPCAccelerationSensor.cpp:72:25:Platform::BSP::MMA7455* LPCAccelerationSensor::getItsMMA7455() const	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:virtual Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mma7455.h:16:7:Platform::BSP::MMA7455::~MMA7455()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mma7455.h:16:7:virtual Platform::BSP::MMA7455::~MMA7455()	16	static

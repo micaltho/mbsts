@@ -1,0 +1,2 @@
+../platform/os/src/portable/MemMang/mallocReentrant.c:42:6:__malloc_lock	16	static
+../platform/os/src/portable/MemMang/mallocReentrant.c:48:6:__malloc_unlock	16	static

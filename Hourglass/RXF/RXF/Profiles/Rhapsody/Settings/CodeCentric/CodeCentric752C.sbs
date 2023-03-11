@@ -1,0 +1,79 @@
+I-Logix-RPY-Archive version 8.5.2 C 1159120
+{ IProfile 
+	- _id = GUID d712fe40-e8ec-475a-98a8-dd347f5ded7a;
+	- _name = "CodeCentricC";
+	- Stereotypes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IHandle 
+			- _m2Class = "IStereotype";
+			- _filename = "PredefinedTypes.sbs";
+			- _subsystem = "PredefinedTypes";
+			- _class = "";
+			- _name = "Settings";
+			- _id = GUID c4916b7f-5ca2-41a3-b8a9-6ac22b145b51;
+		}
+	}
+	- _lastID = 1;
+	- Declaratives = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IStereotype 
+			- _id = GUID ba6daa8c-d3c4-4df2-bc87-33c762a9d2ea;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "File";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Regenerate";
+										- _Value = "Always";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Always,UntilRoundTrip,WhileAnimated,Never";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Regenerate";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 3;
+				- value = "Class"; "Module"; "File"; 
+			}
+		}
+	}
+	- weakCGTime = 9.8.2009::14:49:23;
+	- strongCGTime = 9.8.2009::14:48:27;
+	- _defaultComposite = GUID 7bb7f518-dcba-496f-ac16-aca66ee664ef;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 7bb7f518-dcba-496f-ac16-aca66ee664ef;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 9.8.2009::14:46:54;
+			- strongCGTime = 9.8.2009::14:46:54;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

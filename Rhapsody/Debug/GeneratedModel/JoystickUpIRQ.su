@@ -1,0 +1,10 @@
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:46:25:RXF::Event::Event(RXF::Event::Id_t, bool)	24	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:62:21:void RXF::Event::setId(RXF::Event::Id_t)	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:128:24:RXF::Event::~Event()	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:128:24:virtual RXF::Event::~Event()	16	static
+../GeneratedModel/JoystickUpIRQ.cpp:17:1:evJoystickUpPressed::evJoystickUpPressed()	16	static
+../GeneratedModel/JoystickUpIRQ.cpp:23:1:evJoystickUpReleased::evJoystickUpReleased()	16	static
+../GeneratedModel/JoystickUpIRQ.h:31:7:evJoystickUpReleased::~evJoystickUpReleased()	16	static
+../GeneratedModel/JoystickUpIRQ.h:31:7:virtual evJoystickUpReleased::~evJoystickUpReleased()	16	static
+../GeneratedModel/JoystickUpIRQ.h:21:7:evJoystickUpPressed::~evJoystickUpPressed()	16	static
+../GeneratedModel/JoystickUpIRQ.h:21:7:virtual evJoystickUpPressed::~evJoystickUpPressed()	16	static

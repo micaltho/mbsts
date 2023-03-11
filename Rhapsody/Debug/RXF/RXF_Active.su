@@ -1,0 +1,16 @@
+../RXF/RXF_Event.h:87:26:RXF::Reactive* RXF::Event::getDestination() const	16	static
+../RXF/RXF_CriticalSection.h:24:21:void RXF::CriticalSection::lock()	24	static
+../RXF/RXF_CriticalSection.h:32:21:void RXF::CriticalSection::unlock() const	24	static
+../RXF/RXF_Active.h:115:21:bool RXF::Active::isDispatching() const	16	static
+../RXF/RXF_Active.cpp:16:5:RXF::Active::Active(const char_t*, RXF::Priority::Type, RXF::Task::StackSize, uint32_t, RXF::Event**)	24	static
+../RXF/RXF_Active.cpp:20:5:RXF::Active::~Active()	16	static
+../RXF/RXF_Active.cpp:20:5:virtual RXF::Active::~Active()	16	static
+../RXF/RXF_Active.cpp:25:10:void RXF::Active::queueEvent(RXF::Event*)	24	static
+../RXF/RXF_Active.cpp:51:12:RXF::Event* RXF::Active::getQueuedEvent()	24	static
+../RXF/RXF_Active.cpp:74:10:virtual void RXF::Active::execute()	16	static
+../RXF/RXF_Active.cpp:82:10:void RXF::Active::executeOnce()	16	static
+../RXF/RXF_Active.cpp:102:10:void RXF::Active::cancelEvents(const RXF::Reactive*)	24	static
+../RXF/RXF_Active.cpp:111:10:void RXF::Active::cancelTimeoutEvent(const RXF::TimeoutEvent*)	24	static
+../RXF/RXF_Active.cpp:120:10:void RXF::Active::cancelEvents()	24	static
+../RXF/RXF_Active.cpp:134:10:void RXF::Active::startDispatching()	16	static
+../RXF/RXF_Active.cpp:139:10:virtual void RXF::Active::endDispatching()	16	static

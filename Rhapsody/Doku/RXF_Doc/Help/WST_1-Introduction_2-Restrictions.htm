@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Product Restriction - RXF Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+<div id="Content">
+<h1><a name="Rectrictions" id="Rectrictions"></a>Product Restrictions</h1>The
+Embedded UML RXF is adapted to seamlessly integrate into the
+development environment toolchain. This requires several interfaces
+which may result in restrictions which are not caused by the RXF
+itself, but also the RXF has some restrictions.<br><br>
+<h2><a name="RXF Framework Restrictions" id="Framework_Restrictions"></a>RXF Framework Restrictions</h2>
+<p>
+<ul>
+<li/>Destruction of Active and Active-Reactive Classes is not yet supported
+<li/>Unordered relations using OMCollection, OMStaticArray are not supported, as they can not be allocated from static fixed size Pools and therefore are not useful in embedded systems. Use ordered Relations (OMList) instead.
+<li/>In statecharts, default Transitions and every other states, that are connected to the initial state via a null transition are executed from the context that calls Start Behavior. In earlier Versions, default transitions from the initial state were executed not before startDispatching(). It is bad practice to use outgoing null transitions. Be careful with that!
+<li/>Only Statechart Implementation Flat is supported. Code generation for Statechart Implementation Reusable is not supported.
+<li/>Activity diagram code generation is not supported.
+</ul>
+</p>
+
+<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

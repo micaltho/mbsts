@@ -1,0 +1,7 @@
+../platform/osSupport/src/TimerBase.cpp:18:13:void timerFnc(void*)	24	static
+../platform/osSupport/src/TimerBase.cpp:33:1:RTOS::TimerBase::TimerBase(const char*, uint32_t, os_timer_type)	32	static
+../platform/osSupport/src/TimerBase.cpp:49:1:RTOS::TimerBase::~TimerBase()	16	static
+../platform/osSupport/src/TimerBase.cpp:49:1:virtual RTOS::TimerBase::~TimerBase()	16	static
+../platform/osSupport/src/TimerBase.cpp:58:6:bool RTOS::TimerBase::startTimer() const	24	static
+../platform/osSupport/src/TimerBase.cpp:70:6:bool RTOS::TimerBase::stopTimer() const	24	static
+../platform/osSupport/src/TimerBase.cpp:81:6:void RTOS::TimerBase::setPeriod(uint32_t)	16	static

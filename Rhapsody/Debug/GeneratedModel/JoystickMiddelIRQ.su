@@ -1,0 +1,10 @@
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:46:25:RXF::Event::Event(RXF::Event::Id_t, bool)	24	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:62:21:void RXF::Event::setId(RXF::Event::Id_t)	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:128:24:RXF::Event::~Event()	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:128:24:virtual RXF::Event::~Event()	16	static
+../GeneratedModel/JoystickMiddelIRQ.cpp:17:1:evJoystickMiddlePressed::evJoystickMiddlePressed()	16	static
+../GeneratedModel/JoystickMiddelIRQ.cpp:23:1:evJoystickMiddleReleased::evJoystickMiddleReleased()	16	static
+../GeneratedModel/JoystickMiddelIRQ.h:31:7:evJoystickMiddleReleased::~evJoystickMiddleReleased()	16	static
+../GeneratedModel/JoystickMiddelIRQ.h:31:7:virtual evJoystickMiddleReleased::~evJoystickMiddleReleased()	16	static
+../GeneratedModel/JoystickMiddelIRQ.h:21:7:evJoystickMiddlePressed::~evJoystickMiddlePressed()	16	static
+../GeneratedModel/JoystickMiddelIRQ.h:21:7:virtual evJoystickMiddlePressed::~evJoystickMiddlePressed()	16	static

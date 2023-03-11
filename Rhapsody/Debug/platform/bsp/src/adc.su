@@ -1,0 +1,8 @@
+../platform/bsp/src/adc.cpp:43:1:Platform::BSP::Adc::Adc(Platform::BSP::Adc::Input_e)	40	static
+../platform/bsp/src/adc.cpp:78:10:uint16_t Platform::BSP::Adc::getValue() const	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:virtual Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/adc.h:43:13:Platform::BSP::Adc::~Adc()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/adc.h:43:13:virtual Platform::BSP::Adc::~Adc()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:Platform::BSP::DigitalInOut::~DigitalInOut()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:virtual Platform::BSP::DigitalInOut::~DigitalInOut()	16	static

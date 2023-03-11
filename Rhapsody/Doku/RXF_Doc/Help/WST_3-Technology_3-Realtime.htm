@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Realtime Behavior - RXF Documentation</title>
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+
+<h1><a name="Deterministic_Realtime_Reaction" id="Deterministic_Realtime_Reaction"></a>
+  Deterministic Realtime Behavior
+</h1>
+
+Deterministic here does not imply fixed-sequence polling.
+Although this is possible too, the RXF uses a different method to achieve a deterministic behavior.
+The RXF serves your generated application.
+It will provide services like sending and receiving events, setting and handling timers and more.
+<br>
+
+<h2><a name="Managing Events"></a>
+  How Events are processed.
+</h2>
+
+When an event is sent, the framework will store it in a queue where
+it will be handled as soon as possible. The handling of events is also
+done by the framework. Handling events also means handling expired
+timers that are converted to events when they expire.
+<br><br>
+An event for a specific object will be given to the generated event
+handle function of the Objects Class. This function carries out all the
+associated actions (On Entry, On Exit, in State, in Transitions) and
+will return the control to the framework when finished.
+<br><br>
+This will guarantee a flawless handling of events in a deterministic
+way. Actions can be delayed by other actions but only for a time that
+can easily be calculated. Actions that require hard real-Time can be
+safely moved to the interrupt level without loss of performance or
+design capabilities.
+<br><br>
+Actions are not pre-emptive and cannot be interrupted by other tasks.
+Interrupts are not disabled or disabled for a maximum of 4 instruction
+cycles (depending on the CPU). The RTOS based RXF (offering a full OSAL
+implementation) is of course designed to preserve all RTOS capabilities.
+<br>
+
+<h2><a name="Triggerd Operations"></a>
+  Triggerd Operations.
+</h2>
+
+Be very carefull using triggered operations. Triggered operation calls
+can be ignored by the framework when the depending statechart already 
+handles an event. In this case the behavior of the RXF is different as
+the behavior of the OXF from IBM. The OXF blocks the calling triggerd 
+operation with an mutex if an event is already handled. We highly recommend
+to not use triggered operations.<br>
+
+<h2><a name="Managing Timouts"></a>
+  How Time-outs (tm(xx) ) are handled.
+</h2>
+When the tm(xx) statement is used in a state-machine,
+the user wants a certain delay in the processing of states.
+tm(xx) in a transition means: Wait at least xx milliseconds
+and then take this transition (and execute all attached actions)
+<br><br>
+The timer ticks are derived from a system tick that is either implemented
+in the framework (By using a hardware timer)
+or by using the timer ticks from an operating system.
+Both ways have a limit to the minimal time that can be used.
+If the timer tick is 10ms then no timeout can be under 10ms.
+Also no timeout should be other then a multiple of 10.
+<br><br>
+When this happens to be the case, the framework calculates the correct
+timout value.
+Due to the fact that the timer is derived from an external tick source,
+it is possible that a timeout request occurs
+just before a tick would happen or just after a tick has happened.
+The granularity of the ticks is the minimum tick value.
+This means that using a tm(10) on a 10 millisecond tick system can
+give you a tick time between 10ms and 20ms.
+<br><br>
+[tm(0)] will always expire when the next tick is there. (so maximum of 10mS)<br>
+[tm(1)] will always expire at the second next tick (so 10ms-20ms later)<br>
+[tm(2) - tm(10)] will give the same result as a tm(1)<br>
+tm(11) - expires after 20ms-30ms<br>
+and so on.<br>
+So the parameter in tm(xx) indicates the MINIMUM time to pass before
+the transition is taken!<br>
+<b>Note:</b> Please read the decription of the tag <a href="WST_3-Technology_1-RXF-Configuration.htm">"WST_TIMEOUT_GUARANTEE_TIME"</a>
+<br>
+<h2><a name="NULL_Transitions"></a>
+  NULL-Transitions in a State Machine.
+</h2>
+In a statechart it is possible to model state transitions which are
+directly to be taken, without waiting for an event as a trigger. These
+are so called NULL-transitions. The RXF includes a mechanism to detect
+endless loops of NULL-transitions (e.g. because of a design failure in
+Modeling a state machine) during runtime. An endless loop is detected,
+if more than a defined number of NULL-transitions occur in a row. This
+maximum number of directly following NULL-transitions can be configured
+in WST_FSM.h via define WST_DEFAULT_MAX_NULL_STEPS.
+<br><br>
+
+</div>
+  <p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

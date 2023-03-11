@@ -1,0 +1,94 @@
+I-Logix-RPY-Archive version 8.5.2 C++ 1159120
+{ IProfile 
+	- _id = GUID 5bc6cd73-d83c-4d02-b530-2cc953376a5f;
+	- _name = "CodeCentricCpp";
+	- Stereotypes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IHandle 
+			- _m2Class = "IStereotype";
+			- _filename = "PredefinedTypes.sbs";
+			- _subsystem = "PredefinedTypes";
+			- _class = "";
+			- _name = "Settings";
+			- _id = GUID c4916b7f-5ca2-41a3-b8a9-6ac22b145b51;
+		}
+	}
+	- _description = { IDescription 
+		- _textRTF = "{\\rtf1\\fbidis\\ansi\\ansicpg1255\\deff0\\deflang1033{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset0 Helv;}{\\f1\\froman\\fprq2\\fcharset0 Times New Roman;}{\\f2\\fswiss\\fcharset0 Helv;}}
+{\\colortbl ;\\red0\\green0\\blue0;}
+\\viewkind4\\uc1\\pard\\ltrpar\\qj\\f0\\fs20 If you use Rhapsody's code-centric settings, Rhapsody works on the assumption that the code serves as the blueprint for the software, and that Rhapsody's visual modeling capabilities are being used primarily to visualize the code. \\par
+\\par
+Roundtripping with CodeCentric Settings applied:\\par
+In code-centric mode, Rational Rhapsody will roundtrip into your model changes you make to your code including removal of any elements or the addition of new files and folders. At the same time, Rational Rhapsody allows you to add non-code-related elements to your model, for example, requirements, and keeps this information in your model permanently. The roundtripping of the changes to your code does not affect in any way the non-code-related elements you have included in your model.\\par
+\\par
+Code generation with CodeCentric Settings applied:\\par
+In code-centric mode, the code-generation behavior of Rational Rhapsody is based on the premise that if you add any code-related elements to your model, you would prefer that Rational Rhapsody make as few changes as possible to your code. It generates only the code segments that represent the new elements that were added and inserts them in the appropriate location in your code. The rest of your code remains exactly as it was.\\par
+\\pard\\ltrpar\\f1\\fs24\\par
+\\cf1\\f2\\fs20\\par
+}
+";
+	}
+	- _lastID = 1;
+	- Declaratives = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IStereotype 
+			- _id = GUID 00b2f94f-077b-450a-8fa9-83e253a25f82;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "File";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Regenerate";
+										- _Value = "Always";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Always,UntilRoundTrip,WhileAnimated,Never";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Regenerate";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 3;
+				- value = "Class"; "Module"; "File"; 
+			}
+		}
+	}
+	- weakCGTime = 4.26.2010::13:5:18;
+	- strongCGTime = 4.26.2010::13:5:18;
+	- _defaultComposite = GUID 1596224b-1779-4718-a2ff-dfc09c87e157;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 1596224b-1779-4718-a2ff-dfc09c87e157;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 4.26.2010::13:3:14;
+			- strongCGTime = 4.26.2010::13:3:14;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

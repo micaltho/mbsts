@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html template="true"><head>
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>RXF Documentation - Pagetitle</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1 editable="true" repeatable="true" id="PageTopic">Page Topic</h1>
+<h2 editable="true" movable="true" repeatable="true" optional="true" id="ChapterName">Chapter 1</h2>fÖmvsdsvdfvdf<br>
+dgbfdgb<br>
+bbb<br>
+<h1>dfgdfg</h1>
+<br>
+<pre>dgbfgbggb<br>fgbfgb<br>fgbfg<br></pre>
+<br>
+
+<p editable="true" movable="true" repeatable="true" id="ContentParagraph">
+Contents...
+</p>
+</div>
+<p id="Footer"> This documentation belongs to the Product
+@WST_RELEASE_NAME@, released on @WST_INSTALLDATE@.
+@WST_TAG_HTMLCopyrightNotice@
+</p>
+</div>
+
+</body></html>

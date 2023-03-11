@@ -1,0 +1,73 @@
+Subject Activity_diagram
+
+    Metaclass Requirement
+        Property RequirementNotation                      Enum "Note_Style,Box_Style" "Box_Style"
+    end
+
+end
+
+Subject General
+
+    Metaclass Graphics
+        Property ShowDiagramFrame                         Bool "True"
+    end
+
+end
+
+Subject Model
+
+    Metaclass Stereotype
+        Property RequirementNotation                      Enum "Note_Style,Box_Style" "Box_Style"
+    end
+
+end
+
+Subject ObjectModelGe
+
+    Metaclass Association
+        Property ShowStereotype                           Enum "Label,Bitmap,None" "Label"
+        Property ShowTargetRole                           Bool "True"
+    end
+
+    Metaclass Class
+        Property ShowName                                 Enum "Full_path,Relative,Name_only,Label" "Name_only"
+    end
+
+    Metaclass Depends
+        Property line_style                               Enum "straight_arrows,rectilinear_arrows,spline_arrows" "straight_arrows"
+    end
+
+    Metaclass Interface
+        Property ShowName                                 Enum "Full_path,Relative,Name_only,Label" "Name_only"
+    end
+
+    Metaclass Requirement
+        Property RequirementNotation                      Enum "Note_Style,Box_Style" "Box_Style"
+    end
+
+end
+
+Subject StatechartDiagram
+
+    Metaclass DefaultTransition
+        Property line_style                               Enum "straight_arrows,rectilinear_arrows,spline_arrows" "rectilinear_arrows"
+    end
+
+    Metaclass Requirement
+        Property RequirementNotation                      Enum "Note_Style,Box_Style" "Box_Style"
+    end
+
+    Metaclass Transition
+        Property line_style                               Enum "straight_arrows,rectilinear_arrows,spline_arrows" "rectilinear_arrows"
+    end
+
+end
+
+Subject UseCaseGe
+
+    Metaclass Requirement
+        Property RequirementNotation                      Enum "Note_Style,Box_Style" "Box_Style"
+    end
+
+end
+

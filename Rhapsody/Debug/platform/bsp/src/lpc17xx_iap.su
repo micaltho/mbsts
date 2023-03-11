@@ -1,0 +1,9 @@
+../platform/bsp/src/lpc17xx_iap.c:113:13:iapInit	8	static
+../platform/bsp/src/lpc17xx_iap.c:127:17:getSectorFromAddress	32	static
+../platform/bsp/src/lpc17xx_iap.c:145:21:checkParams	40	static
+../platform/bsp/src/lpc17xx_iap.c:170:28:prepareWrite	24	static
+../platform/bsp/src/lpc17xx_iap.c:184:28:copyRAMtoFlash	24	static
+../platform/bsp/src/lpc17xx_iap.c:196:14:iap_write2Flash	296	static
+../platform/bsp/src/lpc17xx_iap.c:290:14:iap_eraseFlash	32	static
+../platform/bsp/src/lpc17xx_iap.c:319:10:iap_getSegmentStartAddress	24	static
+../platform/bsp/src/lpc17xx_iap.c:329:10:iap_getSegmentSize	24	static

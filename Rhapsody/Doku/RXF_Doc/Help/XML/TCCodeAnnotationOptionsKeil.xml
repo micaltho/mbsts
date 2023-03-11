@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGeneration xmlns:cg="http://www.btc-es.de/CodeGeneration/1.0">
+	<Environment>
+		<Compiler name="ARM" ccompiler="armcc.exe"/>
+		<TargetConfigFile absolute_path="<PathToFil>\targetconfigCm3.xml"/>
+		<ARM compiler_install_dir="C:\Program Files\Keil\ARM\ARMCC\"/>
+	</Environment>
+</CodeGeneration>

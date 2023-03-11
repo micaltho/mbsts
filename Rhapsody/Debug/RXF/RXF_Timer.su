@@ -1,0 +1,11 @@
+../RXF/RXF_CriticalSection.h:24:21:void RXF::CriticalSection::lock()	24	static
+../RXF/RXF_CriticalSection.h:32:21:void RXF::CriticalSection::unlock() const	24	static
+../RXF/RXF_Timer.cpp:18:5:RXF::Timer::Timer(RXF::TimerCallback*)	16	static
+../RXF/RXF_Timer.cpp:22:5:RXF::Timer::~Timer()	16	static
+../RXF/RXF_Timer.cpp:32:10:void RXF::Timer::start(RXF::Timer::Time_t)	16	static
+../RXF/RXF_Timer.cpp:56:10:bool RXF::Timer::cancel()	16	static
+../RXF/RXF_Timer.cpp:61:12:static RXF::Timer* RXF::Timer::getExpiredTimeout()	16	static
+../RXF/RXF_Timer.cpp:87:10:void RXF::Timer::addToBusyList()	24	static
+../RXF/RXF_Timer.cpp:165:10:bool RXF::Timer::removeFromBusyList()	24	static
+../RXF/RXF_Timer.cpp:199:10:static void RXF::Timer::processTimeouts()	16	static
+../RXF/RXF_Timer.cpp:218:20:static RXF::Timer::Ticks_t RXF::Timer::timeToTicks(RXF::Timer::Time_t)	16	static

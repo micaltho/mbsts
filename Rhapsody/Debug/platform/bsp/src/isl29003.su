@@ -1,0 +1,9 @@
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:virtual Platform::BSP::I2CDevice::~I2CDevice()	16	static
+../platform/bsp/src/isl29003.cpp:14:1:Platform::BSP::ISL29003::ISL29003(Platform::BSP::I2CDevice::Interface, uint8_t)	24	static
+../platform/bsp/src/isl29003.cpp:16:6:bool Platform::BSP::ISL29003::enable()	24	static
+../platform/bsp/src/isl29003.cpp:27:6:bool Platform::BSP::ISL29003::disable()	16	static
+../platform/bsp/src/isl29003.cpp:32:6:bool Platform::BSP::ISL29003::raw(uint16_t&) const	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:156:28:bool Platform::BSP::I2CDevice::cmd(T, uint8_t) const [with T = Platform::BSP::ISL29003::Register]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/isl29003.h:20:7:Platform::BSP::ISL29003::~ISL29003()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/isl29003.h:20:7:virtual Platform::BSP::ISL29003::~ISL29003()	16	static

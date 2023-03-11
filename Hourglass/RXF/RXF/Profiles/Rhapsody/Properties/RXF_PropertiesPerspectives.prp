@@ -1,0 +1,101 @@
+Subject Dialog
+	Metaclass All
+		Property RXFPropertiesPerspectives MultiLine "?<IsConditionalProperty>
+		<Perspective>RXF
+			<Pages>
+				<Page>Deployer
+					<Properties>
+						<Property>RXF::Deployer::CopyModelCodeFiles</Property>
+						<Property>RXF::Deployer::CopyLibraryFiles</Property>
+
+						<Property>RXF::Deployer::BackupIDEProject</Property>
+						<Property>RXF::Deployer::DebugEnabled</Property>
+						<Property>RXF::Deployer::DeployRXFAndConfig</Property>
+						<Property>RXF::Deployer::Enabled</Property>
+						<Property>RXF::Deployer::EnableDeploySingleLibrary</Property>
+
+						<Property>RXF::Deployer::GroupsForSubfolders</Property>
+						<Property>RXF::Deployer::IDEProject</Property>
+						<Property>RXF::Deployer::IDEWorkspace</Property>
+						<Property>RXF::Deployer::ModelCodeFolder</Property>
+						<Property>RXF::Deployer::OpenIDEProject</Property>
+
+						<Property>RXF::Deployer::UseTemplateProject</Property>
+						<Property>RXF::Deployer::TemplateProject</Property>
+						<Property>RXF::Deployer::TemplateDestinationFolder</Property>
+
+						<Property>RXF::DeployerFolders::Main</Property>
+						<Property>RXF::DeployerFolders::RTOS</Property>
+						<Property>RXF::DeployerFolders::Target</Property>
+						<Property>RXF::DeployerFolders::String</Property>
+
+						<Property>CPP_CG::Configuration::ContainerSet</Property>
+					</Properties>
+				</Page>
+				<Page>Configuration
+					<Properties>
+
+						<Property>RXF::Class::TimeoutGuaranteeTime</Property>
+
+						<Property>RXF::Configuration::MAIN_TASK_QUEUE_SIZE</Property>
+						?<begin>$<RXF::Configuration::TASK_PARAMETERS_IsVisible>?<==>True?<?><Property>RXF::Configuration::MAIN_TASK_PRIORITY</Property>?<:>?<end>
+						?<begin>$<RXF::Configuration::TASK_PARAMETERS_IsVisible>?<==>True?<?><Property>RXF::Configuration::MAIN_TASK_STACK_SIZE</Property>?<:>?<end>
+
+						<Property>RXF::Configuration::MS_PER_TICK</Property>
+						<Property>RXF::Configuration::REACTIVE_MAX_NULL_STEPS</Property>
+
+						?<begin>$<RXF::Configuration::TIMER_TASK_IsVisible>?<==>True?<?><Property>RXF::Configuration::TIMER_TASK_PRIORITY </Property>?<:>?<end>
+						?<begin>$<RXF::Configuration::TIMER_TASK_IsVisible>?<==>True?<?><Property>RXF::Configuration::TIMER_TASK_STACK_SIZE </Property>?<:>?<end>
+						
+					</Properties>
+				</Page>
+				<Page>Memory Pools
+					<Properties>
+						<Property>RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT</Property>
+						<Property>RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT</Property>
+						<Property>RXF::Configuration::EVENT_SMALL_PARAMETER_SIZE</Property>
+						<Property>RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT</Property> 
+						<Property>RXF::Configuration::EVENT_MEDIUM_PARAMETER_SIZE</Property>
+						<Property>RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT</Property> 
+						<Property>RXF::Configuration::EVENT_LARGE_PARAMETER_SIZE</Property>
+						<Property>RXF::Configuration::EVENT_USE_HEAP</Property>
+					</Properties>
+				</Page>
+				<Page>Model Checks
+					<Properties>
+						<Property>ModelChecks::General::ActiveClassCheck</Property>
+						<Property>ModelChecks::General::EnvironmentCheck</Property>
+						<Property>ModelChecks::General::EventLowerCaseCheck</Property> 
+						<Property>ModelChecks::General::ModelGuidelineCheck</Property>
+						<Property>ModelChecks::General::NameClashCheck</Property>
+						<Property>ModelChecks::General::ParallelStateTransitionCheck</Property> 
+						<Property>ModelChecks::General::SettingsCheck</Property>
+						<Property>ModelChecks::General::SourceArtefactsCheck</Property>
+						<Property>ModelChecks::General::UseOfStaticEventsCheck</Property>
+						<Property>ModelChecks::General::TriggeredOperationsCheck</Property>
+						<Property>ModelChecks::General::GEN_ISRCheck</Property>
+					</Properties>
+				</Page>
+				<Page>User Hooks
+					<Properties>
+						<Property>RXF::Hooks::PreDeployHook</Property>
+						<Property>RXF::Hooks::PostDeployHook</Property>
+						<Property>RXF::Hooks::PostMakeHook</Property>
+					</Properties>
+				</Page>
+				
+				<Page>Container Classes
+					<Properties>
+						<Property>CPP_CG::Configuration::ContainerSet</Property>
+						<Property>CPP_CG::Relation::ImplementWithStaticArray</Property>
+						?<begin>$<CPP_CG::Configuration::ContainerSet>?<==>RXFContainers?<?><Property>RXFContainers::Qualified::MapType</Property>?<:>?<end>
+						?<begin>$<CPP_CG::Configuration::ContainerSet>?<==>RXFContainersStatic?<?><Property>RXFContainersStatic::UnboundedOrdered::DefaultUnboundedContainerSize</Property>?<:>?<end>
+						?<begin>$<CPP_CG::Configuration::ContainerSet>?<==>RXFContainersStatic?<?><Property>RXFContainersStatic::UnboundedUnordered::DefaultUnboundedContainerSize</Property>?<:>?<end>
+					</Properties>
+				</Page>
+			</Pages>
+		</Perspective>"
+	end
+end
+
+end

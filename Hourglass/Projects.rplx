@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IWorkspace type="e">
+			<m_SavedActiveProjectsName type="a">Hourglass</m_SavedActiveProjectsName>
+			<_id type="a">GUID 11ad423f-e86c-40de-b4b5-d5d7a8a13c3b</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Projects</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">8.17.2022::13:6:28</_modifiedTime>
+			<AggregatesList type="e">
+				<value>GUID 234f4f0d-ac4e-444d-ace9-99a4e73e04b8</value>
+				<value>GUID 3d2490b9-9f1e-4147-b599-8958f1e021df</value>
+			</AggregatesList>
+		</IWorkspace>
+		<IProject type="e">
+			<fileName type="a">Hourglass</fileName>
+			<_id type="a">GUID 234f4f0d-ac4e-444d-ace9-99a4e73e04b8</_id>
+		</IProject>
+		<IProject type="e">
+			<fileName type="a">LPC1769_Peripherals</fileName>
+			<_persistAs type="a">..\LPC1769_Peripherals</_persistAs>
+			<_id type="a">GUID 3d2490b9-9f1e-4147-b599-8958f1e021df</_id>
+		</IProject>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

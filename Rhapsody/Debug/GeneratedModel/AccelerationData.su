@@ -1,0 +1,3 @@
+../GeneratedModel/AccelerationData.cpp:15:1:AccelerationData::AccelerationData()	16	static
+../GeneratedModel/AccelerationData.cpp:18:1:AccelerationData::~AccelerationData()	16	static
+../GeneratedModel/AccelerationData.cpp:18:1:virtual AccelerationData::~AccelerationData()	16	static

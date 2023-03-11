@@ -1,0 +1,44 @@
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:240:5:std::_Function_base::_Function_base()	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:242:5:std::_Function_base::~_Function_base()	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:248:10:bool std::_Function_base::_M_empty() const	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/core_cm3.h:1323:22:void NVIC_EnableIRQ(IRQn_Type)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/core_cm3.h:1405:22:void NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:793:24:uint32_t Chip_CAN_GetGlobalStatus(LPC_CAN_T*)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:803:24:uint32_t Chip_CAN_GetStatus(LPC_CAN_T*)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:814:20:void Chip_CAN_EnableInt(LPC_CAN_T*, uint32_t)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:825:20:void Chip_CAN_DisableInt(LPC_CAN_T*, uint32_t)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:835:24:uint32_t Chip_CAN_GetIntStatus(LPC_CAN_T*)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:870:26:CAN_MODE_T Chip_CAN_GetMode(LPC_CAN_T*)	16	static
+C:\Users\joklappe\Rhapsody\platform\chip\inc/can_17xx_40xx.h:881:20:void Chip_CAN_SetAFMode(LPC_CANAF_T*, CAN_AF_MODE_T)	16	static
+../platform/bsp/src/canif.cpp:18:17:void Platform::BSP::CAN_IRQHandler()	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:303:11:std::function<void(long unsigned int)>::~function()	16	static
+../platform/bsp/src/canif.cpp:29:1:Platform::BSP::CAN::CAN(Platform::BSP::CAN::Interface, uint32_t)	40	static
+../platform/bsp/src/canif.cpp:39:6:bool Platform::BSP::CAN::enableInterrupt()	32	static
+../platform/bsp/src/canif.cpp:58:6:bool Platform::BSP::CAN::isBusOff() const	16	static
+../platform/bsp/src/canif.cpp:62:6:bool Platform::BSP::CAN::isError() const	16	static
+../platform/bsp/src/canif.cpp:66:10:uint32_t Platform::BSP::CAN::status() const	16	static
+../platform/bsp/src/canif.cpp:70:10:uint32_t Platform::BSP::CAN::globalstatus() const	16	static
+../platform/bsp/src/canif.cpp:74:10:uint32_t Platform::BSP::CAN::istatus() const	16	static
+../platform/bsp/src/canif.cpp:78:11:Platform::BSP::CAN::Mode Platform::BSP::CAN::mode() const	16	static
+../platform/bsp/src/canif.cpp:82:6:void Platform::BSP::CAN::mode(Platform::BSP::CAN::Mode, bool) const	24	static
+../platform/bsp/src/canif.cpp:89:6:void Platform::BSP::CAN::reset() const	16	static
+../platform/bsp/src/canif.cpp:110:6:void Platform::BSP::CAN::set(uint32_t, Platform::BSP::CAN::InterruptHandler)	32	static
+../platform/bsp/src/canif.cpp:117:6:void Platform::BSP::CAN::unset(uint32_t)	24	static
+../platform/bsp/src/canif.cpp:126:6:void Platform::BSP::CAN::handleInterrupt(uint32_t)	24	static
+../platform/bsp/src/canif.cpp:135:1:Platform::BSP::CAN::~CAN()	24	static
+../platform/bsp/src/canif.cpp:137:6:bool Platform::BSP::CAN::send(Platform::BSP::CAN::Message&, Platform::BSP::CAN::TransmitBuffer)	32	static
+../platform/bsp/src/canif.cpp:170:6:bool Platform::BSP::CAN::receive(Platform::BSP::CAN::Message&)	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:330:7:)>::function() [with _Res = void; _ArgTypes = {long unsigned int}]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:428:7:)>::operator=(std::nullptr_t) [with _Res = void; _ArgTypes = {long unsigned int}]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:498:16:)>::operator bool() const [with _Res = void; _ArgTypes = {long unsigned int}]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:396:7:)>&) [with _Res = void; _ArgTypes = {long unsigned int}]	32	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:617:5:) const [with _Res = void; _ArgTypes = {long unsigned int}]	24	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:587:5:)>&) [with _Res = void; _ArgTypes = {long unsigned int}]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:481:12:)>&) [with _Res = void; _ArgTypes = {long unsigned int}]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:76:5:constexpr _Tp&& std::forward(typename std::remove_reference<_Tp>::type&) [with _Tp = long unsigned int]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:101:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = std::_Any_data&]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:189:5:std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = std::_Any_data]	24	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:101:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = bool (*&)(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:189:5:std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = bool (*)(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)]	24	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:101:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = void (*&)(const std::_Any_data&, long unsigned int&&)]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\move.h:189:5:std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = void (*)(const std::_Any_data&, long unsigned int&&)]	24	static

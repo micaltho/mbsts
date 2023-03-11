@@ -1,0 +1,17 @@
+Subject CPP_CG
+    Metaclass RXF
+        Property BuildCommandSet                          Enum "External" "External"
+        Property EntryPoint                               String "RXF::MainTask::execute"
+        Property ExeExtension                             String ""
+        Property InvokeExecutable                         String ""
+        Property InvokeMake                               String "?<IsConditionalProperty>\"$OMROOT/etc/Executer.exe\" $<RXF::Hooks::PreDeployHook>;\"deploy.bat $maketarget\";$<RXF::Hooks::PostDeployHook>;\"$makefile $maketarget $BuildCommandSet\";$<RXF::Hooks::PostMakeHook>"
+        Property LibExtension                             String ""
+        Property MakeExtension                            String ".bat"
+        Property MakeFileContent                          MultiLine "@echo off
+        echo."
+        Property MakeFileName                             String ""
+        Property NullValue                                String "nullptr"
+		Property UseTemplateTypename					  Bool "True"
+    end
+
+end

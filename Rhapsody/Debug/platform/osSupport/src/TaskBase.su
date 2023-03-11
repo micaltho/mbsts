@@ -1,0 +1,15 @@
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PostOffice.h:172:20:static uint32_t RTOS::PostOffice::getMaxSystemMailNumber()	4	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/TaskBase.h:61:16:void* RTOS::Task::getTaskHandle() const	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/TaskBase.h:67:18:const char* RTOS::Task::getTaskName() const	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/TaskBase.h:97:10:bool RTOS::Task::isSchedulable() const	16	static
+../platform/osSupport/src/TaskBase.cpp:26:13:void taskFnc(void*)	40	static
+../platform/osSupport/src/TaskBase.cpp:58:1:RTOS::Task::Task(const char*, uint16_t, osPriority, bool)	24	static
+../platform/osSupport/src/TaskBase.cpp:92:1:RTOS::Task::~Task()	16	static
+../platform/osSupport/src/TaskBase.cpp:92:1:virtual RTOS::Task::~Task()	16	static
+../platform/osSupport/src/TaskBase.cpp:100:6:bool RTOS::Task::finalizeInit()	24	static
+../platform/osSupport/src/TaskBase.cpp:116:12:void* RTOS::Task::createTask()	40	static
+../platform/osSupport/src/TaskBase.cpp:150:12:void* RTOS::Task::deleteTask()	24	static
+../platform/osSupport/src/TaskBase.cpp:173:14:os_messageQ_cb* RTOS::Task::createMessageBox(const osMessageQDef_t*) const	24	static
+../platform/osSupport/src/TaskBase.cpp:182:7:bool RTOS::Task::sendMessage(osThreadId, void*) const	24	static
+../platform/osSupport/src/TaskBase.cpp:189:11:os_mailQ_cb* RTOS::Task::createMailBox(const osMailQDef_t*) const	32	static
+../platform/osSupport/src/TaskBase.cpp:210:6:bool RTOS::Task::sendMail(osThreadId, void*, RTOS::mailNumber_e, RTOS::PostOffice::mailType_e) const	40	static

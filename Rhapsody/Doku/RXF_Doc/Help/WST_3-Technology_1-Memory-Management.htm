@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Deterministic Realtime Memory Usage - RXF Documentation</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head>
+<body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="Realtime_compliant_Dynamic_Memory_Management" id="Realtime_compliant_Dynamic_Memory_Management"></a>Realtime
+Compliant Dynamic Memory Management</h1>
+<br>
+In many realtime embedded systems, the use of dynamic
+memory management via the standard C library functions <span style="font-style: italic;">malloc()</span> and
+<span style="font-style: italic;">free()</span> or in C++ the operators <span style="font-style: italic;">new</span> and <span style="font-style: italic;">delete</span> is not wanted or even not allowed. The main reason for not using heap functions is
+fragmentation: after allocating and freeing chunks of memory, the heap
+gets cluttered with areas which are in use, and areas which are free
+and it becomes more and more difficult to find a suitable area for some
+object or structure which must be allocated at runtime. Another
+reason is that the standard functions are not real-time compliant,
+calling them at the same time from different threads will cause errors.<br>
+<br>
+Instead of using the heap, the RXF offers static pools for various
+purposes and overrides the operators new and delete in selected classes
+to map allocation of these classes to fixted static pools at compile
+time. There are static pools available<br>
+<ul>
+  <li>for events (Default, Small, Medium, Large)</li>
+  <li>for timeouts. Each tm() you are specifying in your
+UML model results in a timer object which is kept in this
+pool.</li><li>for List and Map Items</li>
+  <li>for user classes that need to be allocated dynamically<br>
+</li>
+</ul>
+The size of the blocks and the number of blocks of each pool can be configured via tags in the RXF component<span style="font-style: italic;"></span>.<br>
+<h2>Events</h2>Events are normally generated dynamically, using the
+operator new. The size
+of an event will vary, depending on the number of arguments. That's why
+it might not be the most efficient option to allocate all of them from
+one pool and the framework provides 4 Pools where all events are automatically allocated from:<br>
+<br>
+<span style="font-weight: bold;">Automatic Pool Selection</span><br>To
+keep memory allocation for events as simple as possible an event
+automatically will find a pool with the right size, as long as there is
+one, that is big enough. The event will start to look for a right pool
+with the Default Pool. If the size does not fit, it will look in the
+Small, Medium and Large Event Pool. The Sizes are definded in the RXF
+Component Tags:<br>
+<ul><li>WST_EVT_DEFAULT_BLOCK_COUNT (default Value  = 64)</li><li>WST_EVT_DEFAULT_BLOCK_SIZE (default Value  = sizeof(WST_EVT) )</li><li>WST_EVT_SMALL_BLOCK_COUNT (default Value  = 32)</li><li>WST_EVT_SMALL_BLOCK_SIZE (default Value  = sizeof(WST_EVT) + 4 )</li><li>WST_EVT_MEDIUM_BLOCK_COUNT (default Value  = 32)</li><li>WST_EVT_MEDIUM_BLOCK_SIZE (default Value  = sizeof(WST_EVT) + 8 )</li><li>WST_EVT_LARGE_BLOCK_COUNT (default Value  = 16)</li><li>WST_EVT_LARGE_BLOCK_SIZE (default Value  = sizeof(WST_EVT) + 16 )</li></ul>
+In Debug Mode you can monitor the pool usage with high watermarks and
+adjust the cound and size of pool blocks if the default values do not
+fit anymore. If all pools are to small and no memory can be allocated
+at runtime, the
+error handler will be called with error code MPL_ALLOC_FAILED. If a
+pool is full, the error code will be MPL_ALLOC_FAILED_POOL_FULL.<br><br>The
+Event Table can be used to have a better overview over all project
+events and their number and type of arguments. In combination with <a href="WST_3-Technology_2-High-Water-Marks.htm">High Water Marks</a> it can be used to optimize the pool sizes.
+
+<h2>Timeouts</h2>As all timer / timeout objects are the same size, they
+are all allocated from the timer pool. A timer object holds all
+information to controll a timer (mostly an RTOS timer) and in case of
+timeout it is actually translated into an event. The timeout object
+itself remains in the timeout pool, and its address is inserted in the
+event queue of the destination task.<br>
+The number of available timeouts can be configured via the tag WST_MAX_TIMEOUTS.<br>
+Setting WST_MAX_TIMEOUTS to 0 will cause the framework to remove all timer
+code and thus be much smaller.<br>
+<h2>List and Map Items</h2>In Rhapsody List and Map Items have to be
+allocated dynamically. If the List and Map Pools are deactivated, the
+heap will be used. To prevent heap usage, pools can be activated by
+setting the Tags<br><ul><li>WST_LIST_BLOCK_COUNT (default Value  = 0)</li><li>WST_LIST_BLOCK_SIZE (default Value  = sizeof(OMList&lt;void *&gt;::Item) )</li><li>WST_MAP_BLOCK_COUNT (default Value  = 0)</li><li>WST_MAP_BLOCK_SIZE (default Value  = sizeof(OMMap&lt;int, void *&gt;::Item)</li></ul>If you ask yourself why the sizes are specified like this: sizeof(OMMap^&lt;int, void *^&gt;::Item):<br>You have to escape &lt; and &gt; with ^<h2>Objects of user Classes<br>
+</h2>
+<a name="Mixed_Mode_Static_and_Dynamic_Memory" id="Mixed_Mode_Static_and_Dynamic_Memory"></a>If
+you wan't to allocate objects of a user class dynamically by default
+new and delete will allocate memory from the heap. If you wan't to use
+pools for user classes to, you can use the common way in rhapsody by
+setting the property BaseNumberOfInstances to the required maximum
+amount of instances. A specific pool for this class will be created and
+operators new and delete will be mapped to this pool. By setting
+BaseNumberOfInstances the content of the Properties
+StaticMemoryIncludeFile, StaticMemoryPoolDeclaration and
+StaticMemoryPoolImplementation will be included in the generated code.
+If you wan't to implement an own memory management for user classes,
+you can override these properties to fit your needs.<br>
+<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

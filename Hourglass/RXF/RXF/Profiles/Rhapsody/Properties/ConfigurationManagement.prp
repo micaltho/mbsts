@@ -1,0 +1,54 @@
+Subject CG
+  Metaclass General
+	Property IncrementalCodeGenAcrossSession Bool "False"
+  end
+end
+
+Subject General
+  Metaclass Model
+	Property AutoSynchronize            	Bool "False"
+	Property PathInProjectList          	Enum "Absolute, Relative" "Relative"
+	Property ReferenceUnitPath          	Enum "Absolute, Relative" "Relative"
+	Property SupportIncrementalModelSynchronization Bool "False"
+  end
+end
+
+Subject ConfigurationManagement
+  Metaclass General
+	Property CMTool                     	Enum "None,EngineeringWorkflowManagement,Subversion,TortoiseSVN" "None"
+	Property UseSCCtool                 	Enum "Yes,No" "No"
+	Property EncloseCommentsInQuotes    	Enum "Yes,No" "No"
+	Property GUI                        	Enum "Flat,Tree" "Tree"
+	Property RunCMToolCommand           	File ""
+	Property ToolCommandTimeOut         	Int "180000"
+
+	Property DefaultLockReserveOnCheckOut	Bool "False"
+	Property UseUnitTimeStamps          	Bool "True"
+
+
+	Property UserDefCommand_1_Title     	String "Update Project"
+	Property UserDefCommand_1           	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:update /path:\."
+	Property UserDefCommand_2_Title     	String "Repo Browser"
+	Property UserDefCommand_2           	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:repobrowser /path:\."
+	Property UserDefCommand_3_Title     	String "Repo Status"
+	Property UserDefCommand_3           	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:repostatus /path:\."
+  end
+  
+  Metaclass Subversion
+	Property AddMember                  	String "\"$OMROOT/etc/Executer.exe\" \"svn add \\\"$UnitPath\\\"; svn propset svn:needs-lock x \\\"$UnitPath\\\""
+	Property CheckIn                    	String "\"$OMROOT/etc/Executer.exe\" \"svn commit \\\"$UnitPath\\\" -m \\\"$log\\\""
+	Property CheckOut                   	String "\"$OMROOT/etc/Executer.exe\" \"svn update \\\"$UnitPath\\\"; svn lock \\\"$UnitPath\\\"\""
+	Property LockItem                   	String "\"$OMROOT/etc/Executer.exe\" \"svn lock \\\"$UnitPath\\\"\""
+	Property UnLockItem                 	String "\"$OMROOT/etc/Executer.exe\" \"svn unlock \\\"$UnitPath\\\"\""
+  end
+
+  Metaclass TortoiseSVN
+	Property AddMember                  	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:add /path:\\\"$UnitPath\\\"\""
+	Property CheckIn                    	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:commit /logmsg:\\\"$log\\\" /path:\\\"$UnitPath\\\"\""
+	Property CheckOut                   	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:update /path:\\\"$UnitPath\\\"\";\"TortoiseProc /command:lock /path:\\\"$UnitPath\\\"\""
+	Property LockItem                   	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:lock /path:\\\"$UnitPath\\\"\""
+	Property UnLockItem                 	String "\"$OMROOT/etc/Executer.exe\" \"TortoiseProc /command:unlock /path:\\\"$UnitPath\\\"\""
+
+  end
+end
+end

@@ -1,0 +1,14 @@
+../GeneratedModel/LPCEeprom.cpp:15:1:LPCEeprom::LPCEeprom()	16	static
+../GeneratedModel/LPCEeprom.cpp:21:1:LPCEeprom::~LPCEeprom()	16	static
+../GeneratedModel/LPCEeprom.cpp:21:1:virtual LPCEeprom::~LPCEeprom()	16	static
+../GeneratedModel/LPCEeprom.cpp:24:15:virtual uint32_t LPCEeprom::getConfigdata(uint32_t)	16	static
+../GeneratedModel/LPCEeprom.cpp:31:6:virtual bool LPCEeprom::setConfigdata(uint32_t)	16	static
+../GeneratedModel/LPCEeprom.cpp:37:26:Platform::BSP::MC24LC08* LPCEeprom::getItsMC24LC08() const	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:55:10:bool Platform::BSP::EepromDriver<T, U>::read(uint16_t, uint16_t, uint8_t*) [with T = Platform::BSP::MC24LC08; U = Platform::BSP::I2CDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:68:10:bool Platform::BSP::EepromDriver<T, U>::store(uint16_t, uint16_t, const uint8_t*) [with T = Platform::BSP::MC24LC08; U = Platform::BSP::I2CDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:virtual Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:46:7:Platform::BSP::EepromDriver<Platform::BSP::MC24LC08, Platform::BSP::I2CDevice>::~EepromDriver()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:46:7:virtual Platform::BSP::EepromDriver<Platform::BSP::MC24LC08, Platform::BSP::I2CDevice>::~EepromDriver()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mc24lc08.h:28:7:Platform::BSP::MC24LC08::~MC24LC08()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mc24lc08.h:28:7:virtual Platform::BSP::MC24LC08::~MC24LC08()	16	static

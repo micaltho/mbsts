@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Getting Started - RXF Documentation</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print">
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"></head>
+<body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="Example_Project" id="Example_Project"></a><a name="Deployment_Example" id="Deployment_Example"></a><a name="Blinky_Sample_Model" id="Blinky_for_KeilRV"></a>Getting Started
+Example - Part 1<br>
+</h1>
+This
+page will guide you through the first steps of using your product
+RXF_Rpy_CPP_V7.05_edu. The goal is to generate source code from an
+included sample UML project with Rhapsody
+<h2>Generating Code from the Rhapsody Model<br>
+</h2>
+<br>
+<br>
+Open the Rhapsody project Blinky from the directory<br>C:\DevTools\Willert\RXF_Rpy_CPP_V7.05_edu\Samples\Model\Blinky:<br>
+<br>
+Open the Components and select the RTOS you want to use.<br>
+<img alt="" src="Images/GettingStarted/SelectComponent.png"><br>
+Therefore perform a right click on your configuration you want to use and selct "Set as Active Configuration".<br>
+<br>
+<a name="Profiles"></a>The configuration
+is using the stereotype <span style="font-style: italic;">RXF</span> which
+is defined in the profile <span style="font-style: italic;">WST_Rpy_CPP_Profile</span>.
+Each RXF by Willert Software Tools comes with its own profile with the
+stereotype <span style="font-style: italic;">RXF.</span> <span style="font-style: italic;">RXF</span> sets the proper
+environment, some properties for the RXF and defines some Tags. The
+referenced setting, <span style="font-style: italic;">WSTStyle</span>,
+is used to set Rhapsody GUI details which makes it easier for you to
+view and maintain your models. It does not influence the code generation.<br>
+<br>
+How the RXF can be configured in detail can be found in the section <a href="WST_2-Usage_7-RXF-Configuration.htm">"RXF Configuration"</a><br>
+<br>
+<span style="font-style: italic;"></span><br>
+You can now press the button "Generate/Make/Run" in Rhapsody (or use <span style="font-style: italic;">Generate/Make/Run</span> entry from <span style="font-style: italic;">Code</span> menu) to perform these steps:<br>
+<ul>
+  <li><span style="font-weight: bold;">Generate</span> source files.</li>
+  <ul>
+    <li>Rhapsody will show several generated .cpp and .h files along with
+a .bat file in the <span style="font-style: italic;">Log</span> tab.</li>
+    <li>A successful code generation will end with the log entries "<span style="font-style: italic;">Code Generation Done</span>" and "<span style="font-style: italic;">0&nbsp; Error(s), 0&nbsp; Warning(s),
+0&nbsp; Message(s)</span>".<br>
+    </li>
+  </ul>
+  <li>The <span style="font-weight: bold;">Make</span> step
+executes the generated batch file from the previous step. The batch
+file generates a RXF configuration
+file and than launch the deployer to embed the generated source files
+into your IDE project. The building of the executable will be performed
+inside
+your IDE and must be executed by the user. The generated configuration
+file is:<br>
+  </li>
+  <ul>
+    <li><a id="WST_CFG.h" name="WST_CFG.h"></a>WST_CFG.h
+which is an include file which contains constants and defines to configure the RXF which are derived
+from properties and tags set in the model like buffer sizes etc.<br>
+The RXF can be configured completely by the model. No defines must be set on code level.
+Therefore different models can use the same RXF wit different RXF configurations.</li>
+  </ul><li>The&nbsp;<span style="font-weight: bold;">Run</span>
+step opens the cofigured IDE Project and in addition can be used by the
+user to execute user defined applications / scripts. The Batch
+File&nbsp;C:\Dev Tools\Willert\RXF_Rpy_CPP_V7.05_edu\Tools\RhapsodyRun.bat is executed in this step.
+  </li>
+</ul>
+
+<h2><a name="Deployer" id="Deployer"></a>WSTDeployer</h2>
+<span style="font-style: italic;"></span>The WSTDeployer will deploy
+Rhapsody generated source files the RXF configuration file WST_CFG.h into your IDE. 
+Until now the generated source is independent from compiler and IDE.<br>
+<br>
+The first time you press the "Generate/Make/Run" button the Deployer window will automatically pop up.<br>
+<br>
+<b>First</b> select your IDE which you want to deploy to:<br>
+<img alt="" src="Images/GettingStarted/DeployerSelectIDE.png"><br>
+<br>
+<b>Second</b> select your project file which you want to deploy to:<br>
+<img alt="" src="Images/GettingStarted/DeployerSelectProject.png"><br>
+<br>
+An empty example project file you find under:<br>
+&lt;RXF installation folder&gt;/Samples/Model/Blinky/IDEProjects/&lt;RTOS&gt;/&lt;Board&gt;/&lt;IDE&gt;<br>
+
+<br>
+The IDE Project Folders are sorted by RTOS and in each RTOS Folder there are different Bord Projects for different IDEs.<br>
+<span style="font-weight: bold;"><br>
+Be sure the RTOS selection made before in the Tags of RXF Configuration
+matches the RTOS in your IDE Project. Otherwise the Framework Sources
+will not work with the RTOS sources.</span><br>
+<br>
+<b>Third</b> Configure deployer options<br>
+<img alt="" src="Images/GettingStarted/DeployerConfig.png"><br>
+You can chose between two options: Copy source files into the IDE project or reference them into the IDE project.<br>
+When you chose to copy them you can define here the name of the folders where they are copied to.<br>
+<br>
+After pressing OK the files are deployed into your IDE project and you
+get information of the deployment into your Rhapsody console.<br>
+<br>
+<b>Info:</b>If you want to change the Deployer settings, open "Tools" -&gt; "RXF_Rpy_CPP_V7.05_edu Deployer Configuration"<br>
+<img alt="" src="Images/OpenDeployerConfig.png">
+<br>
+<br><a href="WST_2-Usage_3-Getting-Started-2.htm"><img style="border: 0px solid ; width: 90px; height: 90px;" alt="Continue reading Part 2 of this Getting Started Tutorial" src="Images/Clipart-continue_button.png" align="middle"></a><a href="WST_2-Usage_3-Getting-Started-2.htm"><big>Continue Reading Part 2 of this Getting Started Tutorial</big></a>&nbsp;<br>
+<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

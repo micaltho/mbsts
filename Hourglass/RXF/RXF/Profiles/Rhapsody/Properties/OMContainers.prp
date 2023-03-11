@@ -1,0 +1,60 @@
+Subject OMContainers
+
+    Metaclass BoundedOrdered
+        Property IterCreate                               String "OMIterator<$RelationTargetType> $iterator($cname)"
+        Property IterReturnType                           String "OMIterator<$RelationTargetType>"
+        Property IterType                                 String "const OMIterator<$RelationTargetType>"
+    end
+
+    Metaclass BoundedUnordered
+        Property IterCreate                               String "OMIterator<$RelationTargetType> $iterator($cname)"
+        Property IterReturnType                           String "OMIterator<$RelationTargetType>"
+        Property IterType                                 String "const OMIterator<$RelationTargetType>"
+    end
+
+    Metaclass EmbeddedFixed
+        Property IterCreate                               String "int32_t $iterator = 0;"
+        Property IterReturnType                           String "int32_t"
+        Property IterType                                 String "int32_t"
+    end
+
+    Metaclass Fixed
+        Property IterCreate                               String "OMIterator<$RelationTargetType> $iterator($cname)"
+        Property IterReturnType                           String "OMIterator<$RelationTargetType>"
+        Property IterType                                 String "const OMIterator<$RelationTargetType>"
+    end
+
+    Metaclass Qualified
+        Property Create                                   String "const $cname = new $CType"
+        Property IterCreate                               String "OMIterator<$RelationTargetType> $iterator($cname)"
+        Property IterReturnType                           String "OMIterator<$RelationTargetType>"
+        Property IterType                                 String "const OMIterator<$RelationTargetType>"
+    end
+
+    Metaclass StaticArray
+        Property Add                                      MultiLine "$Loop {
+	if (NULL == $cname[pos]) {
+		$cname[pos] = $item;
+		break;
+	}
+}"
+        Property IterCreate                               String "int32_t $iterator = 0;"
+        Property IterReturnType                           String "int32_t"
+        Property IterType                                 String "int32_t"
+        Property Loop                                     String "for ($IterType pos = 0; pos < $multiplicity; ++pos)"
+    end
+
+    Metaclass UnboundedOrdered
+        Property IterCreate                               String "OMIterator<$RelationTargetType> $iterator($cname)"
+        Property IterReturnType                           String "OMIterator<$RelationTargetType>"
+        Property IterType                                 String "const OMIterator<$RelationTargetType>"
+    end
+
+    Metaclass UnboundedUnordered
+        Property Create                                   String "const $cname = new $CType"
+        Property IterCreate                               String "OMIterator<$RelationTargetType> $iterator($cname)"
+        Property IterReturnType                           String "OMIterator<$RelationTargetType>"
+        Property IterType                                 String "const OMIterator<$RelationTargetType>"
+    end
+
+end

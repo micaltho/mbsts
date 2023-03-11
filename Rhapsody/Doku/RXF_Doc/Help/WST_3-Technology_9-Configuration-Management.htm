@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Software Configuration Management - RXF Documentation</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head>
+<body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="Software_Configuration_Management"></a><a name="SCV"></a>Software
+Configuration Management (SCM)</h1>If
+you work on one model with a team, its absolutly neccessary to put your
+model into a config management solution. If you do this, a question
+will be, where to put the RXF and from which location to include the
+RXF_Rpy_CPP_Profile. The next steps will lead you throug our best
+prectice aproach. Precondition is that your config management tool
+supports externals - we use SVN and it works fine:<br><br>1. Install RXF to a folder that is available on every Developers PC (for Example C:\Willert or C:\DevToolsWillert)<br>2. Check in the Willert folder - This Folder has to be checked out to the same directory on each Dev PC<br>3. Check in your user model<br>4. Add the Config folder from your Willert RXF folder as external relative to your user model<br>5. Add the Framework Profile (RXF_Rpy_CPP_Profile) to your user Model from this external location.<br><br>Thats's it.<br><br>This
+approach has the advantage that the installed RXF is under config
+management to and you can easily switch versions by changing the RXF
+version number in your external. Only the Willert folder has to be
+checked out to the same directory on every Dev PC, the user model can
+be checked out to any directory (if only relative paths are used) -
+Nevertheless we would recomment to use same&nbsp;checkout directories
+(and also same Tool Paths) on every Dev PC.
+<h2><a name="Subversion_Support"></a><a name="svn_Support"></a>Subversion
+Support (svn)<br>
+</h2>
+<br>For Subversion support the setting WSTSubversion can be included
+from Share\Settings\WST_RXF_V7\WSTSubversion. Feel free to use it and
+please provide feedback to support@willert.de if anything is missing.
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

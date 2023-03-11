@@ -1,0 +1,34 @@
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7-m\nofp\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/sspdevice.h:75:13:Platform::BSP::SSPDevice::~SSPDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/sspdevice.h:75:13:virtual Platform::BSP::SSPDevice::~SSPDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:61:7:Platform::BSP::MonoChromeDisplay<Platform::BSP::SSPDevice>::~MonoChromeDisplay()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:61:7:virtual Platform::BSP::MonoChromeDisplay<Platform::BSP::SSPDevice>::~MonoChromeDisplay()	16	static
+../platform/bsp/src/ssd1305.cpp:265:1:Platform::BSP::SSD1305::SSD1305(Platform::BSP::SSPDevice::Interface, uint8_t, uint8_t)	24	static
+../platform/bsp/src/ssd1305.cpp:270:1:Platform::BSP::SSD1305::~SSD1305()	16	static
+../platform/bsp/src/ssd1305.cpp:270:1:virtual Platform::BSP::SSD1305::~SSD1305()	16	static
+../platform/bsp/src/ssd1305.cpp:278:6:virtual bool Platform::BSP::SSD1305::initialize(uint32_t, uint32_t, uint8_t, uint8_t*)	32	static
+../platform/bsp/src/ssd1305.cpp:314:6:void Platform::BSP::SSD1305::init() const	16	static
+../platform/bsp/src/ssd1305.cpp:363:6:virtual void Platform::BSP::SSD1305::on() const	16	static
+../platform/bsp/src/ssd1305.cpp:367:6:virtual void Platform::BSP::SSD1305::off() const	16	static
+../platform/bsp/src/ssd1305.cpp:371:6:virtual bool Platform::BSP::SSD1305::cmd(uint8_t*, uint32_t&) const	24	static
+../platform/bsp/src/ssd1305.cpp:377:6:virtual bool Platform::BSP::SSD1305::data(uint8_t*, uint32_t&) const	24	static
+../platform/bsp/src/ssd1305.cpp:383:6:virtual bool Platform::BSP::SSD1305::cmd(uint8_t) const	24	static
+../platform/bsp/src/ssd1305.cpp:388:6:virtual bool Platform::BSP::SSD1305::data(uint8_t) const	24	static
+../platform/bsp/src/ssd1305.cpp:394:6:void Platform::BSP::SSD1305::commandMode() const	16	static
+../platform/bsp/src/ssd1305.cpp:398:6:void Platform::BSP::SSD1305::dataMode() const	16	static
+../platform/bsp/src/ssd1305.cpp:403:6:virtual bool Platform::BSP::SSD1305::flush() const	32	static
+../platform/bsp/src/ssd1305.cpp:422:6:void Platform::BSP::SSD1305::showDemoPicture()	32	static
+../platform/bsp/src/ssd1305.cpp:436:6:void Platform::BSP::SSD1305::showDemoText()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:135:5:Platform::BSP::MonoChromeDisplay<U>::MonoChromeDisplay(typename U::Interface, uint8_t, uint8_t) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:383:6:void Platform::BSP::MonoChromeDisplay<U>::clrscr(uint8_t) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:586:6:void Platform::BSP::MonoChromeDisplay<U>::bitmap(const uint8_t*, uint32_t, uint32_t, Platform::BSP::MonoChromeDisplay<U>::PixelStorage, uint8_t, uint8_t) [with U = Platform::BSP::SSPDevice]	96	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:545:6:void Platform::BSP::MonoChromeDisplay<U>::print(const char*, bool) [with U = Platform::BSP::SSPDevice]	40	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:575:6:void Platform::BSP::MonoChromeDisplay<U>::println(const char*, bool) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:567:6:void Platform::BSP::MonoChromeDisplay<U>::newline(uint8_t) [with U = Platform::BSP::SSPDevice]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\stl_algobase.h:230:5:const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long unsigned int]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:394:6:void Platform::BSP::MonoChromeDisplay<U>::pixel(uint32_t, uint32_t, bool) const [with U = Platform::BSP::SSPDevice]	40	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:487:6:void Platform::BSP::MonoChromeDisplay<U>::ascii(uint8_t, uint8_t, uint8_t, bool) [with U = Platform::BSP::SSPDevice]	32	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:virtual Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:Platform::BSP::DigitalInOut::~DigitalInOut()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:virtual Platform::BSP::DigitalInOut::~DigitalInOut()	16	static

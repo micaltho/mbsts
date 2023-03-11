@@ -1,0 +1,85 @@
+Subject RXF
+    Metaclass Deployer
+        Property CopyModelCodeFiles             	Bool "True"
+        Property CopyLibraryFiles               	Bool "True"
+        Property DebugEnabled                   	Bool "False"
+        Property DeployRXFAndConfig             	Enum "ExecutableOnly,Always,Never" "ExecutableOnly"
+        Property Enabled                        	Bool "True"
+        Property EnableDeploySingleLibrary      	Bool "False"
+
+        Property GroupsForSubfolders            	Bool "False"
+        Property BackupIDEProject               	Bool "False"
+        Property IDEProject                     	String ""
+        Property IDEWorkspace                   	String ""
+        Property ModelCodeFolder                	String "GeneratedModel"
+        Property OpenIDEProject                 	Bool "True"
+
+        Property UseTemplateProject             	Bool "False"
+        Property TemplateProject                	String ""
+        Property TemplateDestinationFolder      	String ""
+
+        Property DeployFileContent              	MultiLine "?<IsConditionalProperty>
+@echo off
+
+if \"%1\"==\"clean\" (
+  echo.
+  echo Delete generated sources.
+  del /s /q *.h
+  del /s /q *.c
+  del /s /q *.cpp
+  for /f \"usebackq delims=\" %%d in (`\"dir /ad/b/s | sort /R\"`) do rd \"%%d\"
+)
+
+if not defined WST_CI_BUILD (
+  set OpenIDEProjectOption=-option \"Exporter.IDEProject.openProject\"=\"%OpenIDEProject%\"
+) else (
+  echo.
+  echo Environment variable WST_CI_BUILD set. OpenIDEProject helper deactivated.
+)
+
+call \"%JavaPath%\\java\" -jar \"%RXFPath%\\Tools\\Deployer\\Deployer.jar\" ^
+  -logger \"de.wst.modelxchanger.core.logger.consoleLogger\" ^
+  -option \"de.wst.wstxchanger.core.exporterImporter.option.stacktrace\"=\"$<RXF::Deployer::DebugEnabled>\" ^
+  %OpenIDEProjectOption% ^
+  %RXFDeployerAdditionalOptions% ^
+  -noSplash ^
+  -doImportExport
+"
+
+        Property DeployConfigFileContent        	MultiLine "?<IsConditionalProperty>
+Importer.LibraryCode.Directory=%Libraries%
+Importer.ModelCode.Directory=%ComponentPath%
+Importer.RXF.Directory=%RXFSourcePath%
+Importer.RXF.RTOS=%RTOS%
+Importer.RXF.Target=%Target%
+Importer.RXF.Main=$<RXF::DeployerFolders::Main>
+Importer.RXF.MemoryPools=$<RXF::DeployerFolders::MemoryPools>
+Importer.RXF.Timeouts=?<begin>$<RXF::Configuration::RXF_MAX_TIMEOUTS>?<==>?<||>$<RXF::Configuration::RXF_MAX_TIMEOUTS>?<==>0u?<||>$<RXF::Configuration::RXF_MAX_TIMEOUTS>?<==>0U?<||>$<RXF::Configuration::RXF_MAX_TIMEOUTS>?<==>0?<?>False?<:>?<end>
+Importer.RXF.Monitor=$<RXFMonitor::DeployerFolders::Monitor>
+Importer.RXF.MonitorIO=$<RXFMonitor::DeployerFolders::MonitorIO>
+Importer.RXF.String=$<RXF::DeployerFolders::String>
+Importer.RXF.ContainerSet=$<RXF::DeployerFolders::ContainerSet>
+Importer.RXF.Legacy=$<RXF::DeployerFolders::LegacyPack>
+Exporter.CopyOptions.RXFFolder=RXF
+Exporter.CopyOptions.ModelCodeFolder=$<RXF::Deployer::ModelCodeFolder>
+Exporter.CopyOptions.LibraryFolder=Libraries
+Exporter.CopyOptions.copyRXFFiles=true
+Exporter.CopyOptions.copyModelCodeFiles=$<RXF::Deployer::CopyModelCodeFiles>
+Exporter.CopyOptions.copyLibraryFiles=$<RXF::Deployer::CopyLibraryFiles>
+Exporter.IDEProject.useTemplateProject=$<RXF::Deployer::UseTemplateProject>
+Exporter.IDEProject.TemplateProject=%TemplateProjectPath%
+Exporter.IDEProject.TemplateDestinationFolder=%TemplateDestinationFolderPath%
+Exporter.IDEProject.TargetProject=%IDEProjectPath%
+Exporter.IDEProject.Workspace=%IDEWorkspacePath%
+Exporter.IDEGroups.GroupsForSubfolders=$<RXF::Deployer::GroupsForSubfolders>
+Exporter.IDEBackup.create=$<RXF::Deployer::BackupIDEProject>
+Exporter.IDEBackup.deleteOld=true
+Exporter.IDEBackup.Frequency=1h
+Exporter.IDEBackup.maximumNumber=2
+"
+    end
+end
+
+Include "Deployer_Folders.prp"
+
+end

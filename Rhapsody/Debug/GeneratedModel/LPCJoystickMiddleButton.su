@@ -1,0 +1,8 @@
+../GeneratedModel/LPCJoystickMiddleButton.cpp:16:1:LPCJoystickMiddleButton::LPCJoystickMiddleButton()	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:19:1:LPCJoystickMiddleButton::~LPCJoystickMiddleButton()	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:19:1:virtual LPCJoystickMiddleButton::~LPCJoystickMiddleButton()	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:23:6:virtual void LPCJoystickMiddleButton::onClick()	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:29:6:virtual void LPCJoystickMiddleButton::onReleased()	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:34:13:Controller* LPCJoystickMiddleButton::getItsController() const	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:38:6:void LPCJoystickMiddleButton::setItsController(Controller*)	16	static
+../GeneratedModel/LPCJoystickMiddleButton.cpp:42:6:void LPCJoystickMiddleButton::cleanUpRelations()	16	static

@@ -1,0 +1,26 @@
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7-m\nofp\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+../GeneratedModel/LPCBuilder.cpp:16:1:LPCBuilder::LPCBuilder(RXF::Active*)	24	static
+../GeneratedModel/LPCBuilder.cpp:22:1:LPCBuilder::~LPCBuilder()	16	static
+../GeneratedModel/LPCBuilder.cpp:22:1:virtual LPCBuilder::~LPCBuilder()	16	static
+../GeneratedModel/LPCBuilder.cpp:25:10:LPCInit* LPCBuilder::getItsLPCInit() const	16	static
+../GeneratedModel/LPCBuilder.cpp:29:24:LPCAccelerationSensor* LPCBuilder::getItsLPCAccelerationSensor() const	16	static
+../GeneratedModel/LPCBuilder.cpp:33:26:LPCJoystickMiddleButton* LPCBuilder::getItsLPCJoystickMiddleButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:37:25:LPCJoystickRightButton* LPCBuilder::getItsLPCJoystickRightButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:41:24:LPCJoystickLeftButton* LPCBuilder::getItsLPCJoystickLeftButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:45:22:LPCJoystickUpButton* LPCBuilder::getItsLPCJoystickUpButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:49:24:LPCJoystickDownButton* LPCBuilder::getItsLPCJoystickDownButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:53:17:LPCOledDisplay* LPCBuilder::getItsLPCOledDisplay() const	16	static
+../GeneratedModel/LPCBuilder.cpp:57:21:JoystickDownButton* LPCBuilder::getItsJoystickDownButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:61:19:JoystickUpButton* LPCBuilder::getItsJoystickUpButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:65:21:JoystickLeftButton* LPCBuilder::getItsJoystickLeftButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:69:22:JoystickRightButton* LPCBuilder::getItsJoystickRightButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:73:23:JoystickMiddleButton* LPCBuilder::getItsJoystickMiddleButton() const	16	static
+../GeneratedModel/LPCBuilder.cpp:77:14:DisplayTask* LPCBuilder::getItsDisplayTask() const	16	static
+../GeneratedModel/LPCBuilder.cpp:81:14:TimeCounter* LPCBuilder::getItsTimeCounter() const	16	static
+../GeneratedModel/LPCBuilder.cpp:85:13:Controller* LPCBuilder::getItsController() const	16	static
+../GeneratedModel/LPCBuilder.cpp:89:24:AccelerationMeasuring* LPCBuilder::getItsAccelerationMeasuring() const	16	static
+../GeneratedModel/LPCBuilder.cpp:93:12:LPCEeprom* LPCBuilder::getItsLPCEeprom() const	16	static
+../GeneratedModel/LPCBuilder.cpp:97:16:ConfigStorage* LPCBuilder::getItsConfigStorage() const	16	static
+../GeneratedModel/LPCBuilder.cpp:101:6:virtual bool LPCBuilder::startBehavior()	24	static
+../GeneratedModel/LPCBuilder.cpp:116:6:void LPCBuilder::initRelations()	16	static
+../GeneratedModel/LPCBuilder.cpp:136:6:void LPCBuilder::setActiveContext(RXF::Active*, bool)	24	static

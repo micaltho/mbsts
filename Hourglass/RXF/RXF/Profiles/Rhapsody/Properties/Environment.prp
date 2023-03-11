@@ -1,0 +1,5 @@
+Subject CPP_CG
+    Metaclass Configuration
+        Property Environment                    	Enum "Cygwin,MSVC,Linux,RXF" "Cygwin"
+    end
+end

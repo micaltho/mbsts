@@ -1,0 +1,24 @@
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:53:21:RXF::Event::Id_t RXF::Event::getId() const	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Reactive.h:179:29:const RXF::Event* RXF::Reactive::getCurrentEvent() const	16	static
+../GeneratedModel/TimeCounter.cpp:15:1:TimeCounter::TimeCounter(uint32_t)	32	static
+../GeneratedModel/TimeCounter.cpp:23:1:TimeCounter::TimeCounter()	32	static
+../GeneratedModel/TimeCounter.cpp:28:1:TimeCounter::~TimeCounter()	16	static
+../GeneratedModel/TimeCounter.cpp:28:1:virtual TimeCounter::~TimeCounter()	16	static
+../GeneratedModel/TimeCounter.cpp:31:15:uint32_t TimeCounter::getCurrentTime_ms()	16	static
+../GeneratedModel/TimeCounter.cpp:37:6:void TimeCounter::setCurrentTime(uint32_t)	16	static
+../GeneratedModel/TimeCounter.cpp:43:6:void TimeCounter::setStartTime_ms(uint32_t)	16	static
+../GeneratedModel/TimeCounter.cpp:49:6:void TimeCounter::tickBackward()	16	static
+../GeneratedModel/TimeCounter.cpp:67:6:void TimeCounter::tickForward()	16	static
+../GeneratedModel/TimeCounter.cpp:85:6:void TimeCounter::setCurrentTime_ms(uint32_t)	16	static
+../GeneratedModel/TimeCounter.cpp:89:15:uint32_t TimeCounter::getStartTime_ms() const	16	static
+../GeneratedModel/TimeCounter.cpp:93:15:uint32_t TimeCounter::getTickTimeHourglass() const	16	static
+../GeneratedModel/TimeCounter.cpp:97:6:void TimeCounter::setTickTimeHourglass(uint32_t)	16	static
+../GeneratedModel/TimeCounter.cpp:101:6:virtual bool TimeCounter::startBehavior()	24	static
+../GeneratedModel/TimeCounter.cpp:111:6:virtual void TimeCounter::send_evRunBackward()	32	static
+../GeneratedModel/TimeCounter.cpp:115:6:virtual void TimeCounter::send_evRunForward()	32	static
+../GeneratedModel/TimeCounter.cpp:119:6:virtual void TimeCounter::send_evStop()	32	static
+../GeneratedModel/TimeCounter.cpp:123:6:virtual void TimeCounter::send_evResetTime()	32	static
+../GeneratedModel/TimeCounter.cpp:127:6:virtual void TimeCounter::send_evStart()	32	static
+../GeneratedModel/TimeCounter.cpp:131:14:RXF::Event** TimeCounter::getQueueMemory()	16	static
+../GeneratedModel/TimeCounter.cpp:135:6:virtual void TimeCounter::rootState_entDef()	16	static
+../GeneratedModel/TimeCounter.cpp:142:32:virtual RXF::Reactive::TakeEventStatus TimeCounter::rootState_processEvent()	32	static

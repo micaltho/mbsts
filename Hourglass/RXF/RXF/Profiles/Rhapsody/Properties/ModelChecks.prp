@@ -1,0 +1,76 @@
+Subject ModelChecks
+	Metaclass General
+		Property ActiveClassCheck					Bool	"True"
+		Property EnvironmentCheck					Bool	"False"
+		Property EventLowerCaseCheck				Bool	"True"
+		Property ModelGuidelineCheck				Bool	"True"
+		Property NameClashCheck						Bool	"True"
+		Property ParallelStateTransitionCheck		Bool	"True"
+		Property SettingsCheck						Bool	"True"
+		Property SourceArtefactsCheck				Bool	"True"
+		Property UseOfStaticEventsCheck				Bool	"True"
+		Property TriggeredOperationsCheck			Bool	"True"
+		Property GEN_ISRCheck						Bool	"True"
+	end
+	
+	Metaclass Argument
+        Property NameCheck                        	String "[a-z]\\w*"
+	end
+	
+    Metaclass Attribute
+        Property NameCheck                        	String "[a-z]\\w*"
+        Property NameCheckConstant                 	String "[A-Z][A-Z0-9_]*"
+	end
+
+	Metaclass Class
+        Property NameCheck                        	String "[A-Z]\\w*"
+	end
+	
+	Metaclass Cleanup
+        Property NameCheck                        	String "\\w+"
+	end    
+	
+	Metaclass Component
+        Property NameCheck                        	String "[A-Z]\\w*"
+	end 
+	
+	Metaclass Configuration
+        Property NameCheck                        	String "[A-Z]\\w*"
+	end 
+	
+	Metaclass Constructor
+        Property NameCheck                        	String "\\w+"
+	end 
+	
+	Metaclass Destructor
+        Property NameCheck                        	String "~\\w+"
+	end 
+	
+	Metaclass Event
+        Property NameCheck                        	String "[a-z]\\w*"
+	end 
+	
+	Metaclass Initializer
+        Property NameCheck                        	String "\\w+"
+	end 
+	
+	Metaclass Object
+        Property NameCheck                        	String "[a-z]\\w*"
+	end 
+	
+	Metaclass Package
+        Property NameCheck                        	String "\\w+"
+	end 
+	
+	Metaclass Port
+        Property NameCheck                        	String "[a-z][a-z0-9]*"
+	end 
+	
+	Metaclass PrimitiveOperation
+        Property NameCheck                        	String "[a-z]\\w*"
+	end 
+	
+	Metaclass State
+        Property NameCheck                        	String "^(?=sendaction|terminationstate)\\w+|^[A-Z]\\w*"
+    end	
+end

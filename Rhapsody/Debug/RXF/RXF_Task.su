@@ -1,0 +1,13 @@
+../RXF/RXF_Task.cpp:16:10:static void RXF::Task::entryPoint(void*)	16	static
+../RXF/RXF_Task.cpp:23:10:void RXF::Task::createTask()	32	static
+../RXF/RXF_Task.cpp:35:10:void RXF::Task::deleteTask()	16	static
+../RXF/RXF_Task.cpp:40:10:static void RXF::Task::sleep(uint32_t)	16	static
+../RXF/RXF_Task.cpp:47:10:void RXF::Task::waitForSignal()	16	static
+../RXF/RXF_Task.cpp:54:10:void RXF::Task::setSignal()	24	static
+../RXF/RXF_Task.cpp:78:5:RXF::Task::Task(const char_t*, RXF::Priority::Type, RXF::Task::StackSize)	24	static
+../RXF/RXF_Task.cpp:82:5:RXF::Task::~Task()	16	static
+../RXF/RXF_Task.cpp:82:5:virtual RXF::Task::~Task()	16	static
+../RXF/RXF_Task.cpp:90:10:void RXF::Task::startExecute()	16	static
+../RXF/RXF_Task.cpp:101:10:void RXF::Task::startTask()	16	static
+../RXF/RXF_Task.cpp:112:10:void RXF::Task::endTask()	16	static
+../RXF/RXF_Task.cpp:123:10:bool RXF::Task::isRunning() const	16	static

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Animation FAQ - RXF Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head>
+<body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+  <h1><a name="FAQ_Animation" id="FAQ_Animation"></a>Animation FAQ</h1>This page is supposed to answer questions related to the Embedded UML Target Debugger and animation generally.<br>
+
+  <ul>
+    <li><a href="#Animation_does_not_work">Why do I not see any animation</a> - there is no error shown.</li>
+
+    <li>The application on the PC shows "<a href="#COM1_not_found">Can not find COMx</a>" on the error tab.</li>
+  <li>The communication between the <a href="#Keil_uVision_Target_Debugger_Interface">Target Debugger and Keil µVision</a> does not work. <br>
+  </li>
+
+  </ul><br>
+  <br>
+
+  <h4><a name="Animation_does_not_work" id="Animation_does_not_work"></a>Why do I not see any animation - there is no error shown.</h4>There are two obvious reasons for this:<br>
+
+  <ul>
+    <li>Did you use the stereotype RXFAnimation from your product's <a href="WST_2-Usage_3-Getting-Started-2.htm#Profiles">profile</a> in your Component in Rhapsody and perform a regenerate code to optain the newest XML file?<br></li>
+
+    <li>Did you <a href="WST_2-Usage_6-Target-Debugger.htm#XML_file_for_animation">open the XML file</a> in the animation program on the PC and is there no error message?<br></li>
+
+    <li>Did the generate / make / run in Rhapsody show any problems? Usually you should see something like this at the end:<br></li>
+
+    <li>Also in your IDE you usually see some kind of message about the creation of the XML file. There should not be error messages.<br>
+
+  </li>
+  </ul><h4><a name="COM1_not_found" id="COM1_not_found"></a>Can not find COMx</h4><img style="width: 199px; height: 65px;" alt="" src="Images/WindowsCOM0B.jpg"><br>
+  <br>
+You can use the communication setup dialog to configure&nbsp; the COM
+port which should be used. You can also check your Windows system
+settings and configure the number to be used for your serial port.<br>
+  <br>
+  Go to your Hardware system settings:<br>
+  <br>
+
+  <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td><img style="width: 419px; height: 479px;" alt="" src="Images/WindowsCOM1.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 419px; height: 479px;" alt="" src="Images/WindowsCOM2.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 283px; height: 399px;" alt="" src="Images/WindowsCOM3.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 411px; height: 257px;" alt="" src="Images/WindowsCOM4.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 412px; height: 448px;" alt="" src="Images/WindowsCOM5.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 634px; height: 284px;" alt="" src="Images/WindowsCOM6.jpg"><br>
+        <br>
+(depending on your other hardware configuration you might even ignore
+the message that a desired COM port is already being used)</td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="text-align: center;"></div>
+        <br>
+</td>
+
+        <td style="vertical-align: top;"><br></td>
+      </tr>
+    </tbody>
+  </table><br>
+Exit and re-launch the Embedded UML Target Debugger on your PC and
+reopen the XML file, so it will re-initialize the serial interface:<br>
+  <br>
+  <img style="width: 183px; height: 149px;" alt="" src="Images/WindowsCOM7.jpg"><br>
+  <br>
+<h4><a name="Keil_uVision_Target_Debugger_Interface"></a>Communication between the Target Debugger and Keil µVision</h4>
+The Embedder UML Target Debugger can communicated with Keil µVision via the
+"UVSOCK" TCP/IP interface. Please activate it and configure the same
+port number in Keil µVision and the Embedded UML Target Debugger
+communication interface settings:<br>
+<br>
+<img style="width: 487px; height: 244px;" alt="UVSOCK configuration in Keil uVision" src="Images/TargetDebugger_Keil_uVision_Port_Config.png"><br>
+<br>
+  </div>
+
+<p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+
+</div>
+</body></html>

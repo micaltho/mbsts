@@ -1,0 +1,3 @@
+../GeneratedModel/JoystickUpHandler.cpp:15:1:JoystickUpHandler::JoystickUpHandler()	16	static
+../GeneratedModel/JoystickUpHandler.cpp:18:1:JoystickUpHandler::~JoystickUpHandler()	16	static
+../GeneratedModel/JoystickUpHandler.cpp:18:1:virtual JoystickUpHandler::~JoystickUpHandler()	16	static

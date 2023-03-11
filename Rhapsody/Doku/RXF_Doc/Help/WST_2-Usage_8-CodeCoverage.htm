@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+	
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Embedded UML Target Debugger TestConductor Integration - RXF Documentation</title>
+
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+  <h1><a name="Rhapsopdy_Test_Conductor" id="Rhapsopdy_Test_Conductor"></a>Rhapsody Test Conductor Code Coverage</h1>
+
+  <p>Before you start with this chapter please get familar with the chaptar <a href="WST_2-Usage_6-TestConductor.htm">Test Conductor</a>.</p>
+
+
+  <ul>
+    <br>
+	<li>
+	<b>Using the TestConductor Code Coverage for small targets Step by Step:</b><br>
+	<br>
+	<ul>
+		<li><b>1.</b>First we recomand to make a copy of your current test configuration and rename it as <YourTestConfigName>_Coverage.<br>
+			After setup this configuration you can easy switch between normal test execution and test execution with code Coverage.<br>
+			<br>			
+		</li>
+		<li><b>2.</b>Generate the target configuration XML file. (Only need to be done once!)<br>
+			<br>
+			For capuring the code coverage the generated source code needs to be instrumented.<br>
+			This is done by an extern tool. This tool needs aditional information about the target like typesizes, endianes etc. <br>
+			These information neededs to be stored in a target configuration XML file which is linked in the TCCodeAnnotationOptions.xml described in step 2:<br>
+			<font face="courier new" color="blue">&lt;TargetConfigFile </font><font face="courier new" color="black">absolute_path</font><font face="courier new" color="red">=</font><font face="courier new" color="black">&quot;&lt;PATH&gt;\targetconfig.xml&quot;</font><font face="courier new" color="blue">/&gt;</font><br>
+			<br>
+			
+			To create this file you have two options:<br>
+			<ul>
+				<li>
+					<b>A.</b> Execute following Rhapsody model on your target platform:<br>
+					&lt;Rhapsody Instalation Path&gt;/TestConductor/CodeCoverage/TargetConfiguration<br>
+				</li>
+				<li>
+					<b>B.</b> Add following C file into your IDE:<br>
+					&lt;Rhapsody Instalation Path&gt;/TestConductor/CodeCoverage/TargetConfiguration/src/targetconf.c<br>
+					Add following defines to the top of the file or into your IDE project settings:<br>
+					TC_MAIN_WITH_VOID_ARGS //Your main needs no parameter<br>
+					TC_MAIN=main //name of your main operation<br>
+					TC_XML_OUTPUT_KIND=1 // Output will be printf<br>
+					TC_ERR_OUTPUT_KIND=1 // Error output will be printf<br>
+					<br>
+					If your devive don't support a printf output you can modify the operation <b>&quot;gen_out()&quot;</b>.<br> 
+					In this operation you can implement your own communication chanel to the host computer like UART or ethernet.
+				</li>
+			</ul>
+			Here you can find an example configuration XML file for a Cortex-M3<br>
+			<a href="XML/targetconfigCm3.xml">Target Configuration File for Cm3</a><br>
+			<br>			
+		</li>
+		<li>
+			<b>3.</b> Create your own TCCodeAnnotationOptions.xml<br>
+			<br>
+			You can find this File in the Rhapsody installation folder /TestConductor (Not your share folder in your user directory).<br>
+			How to configure this file is decribed inside the file.<br>
+			<br>
+			Here you find two example files for:
+			<ul>
+				<li><a href="XML/TCCodeAnnotationOptionsVS.xml">Visual Studio</a></li>
+				<li><a href="XML/TCCodeAnnotationOptionsKeil.xml">Keil µVision</a></li>
+			</ul>
+			<br>
+		</li>
+		<li>
+			<b>4.</b> Setup the Tags in your test configuration<br>
+			<br>
+			You need to modify following tags:<br>
+			<ul>
+				<li>CodeCoverageOptionsFile: Absolute or relative to your code generation path to your TCCodeAnnotationOptions.xml file of step 2.</li>
+				<li>ComputeCodeCoverage: Checked</li>
+				<li>TargetProxyIDEProject: <AbsolutePathIDEProject>/<ProjectFile></li>
+				<li style="color: #888;">(Check if correct) TargetProxyCodeModelSubFolder: Relative path to your IDE Project where your generated sources are stored. Default for all RXF products is &quot;GeneratedModel&quot;</li>
+			</ul>
+			<br>
+			<img alt="Code Coverage Tag Setup" src="Images/TestConductorConfigCodeCovTags.png"><br>
+			<br>
+		</li>
+		<li>
+			<b>5.</b> Configure the WSTCodeAnotation.bat<br>
+			To calculate the code coverage the generated code of your system under test, the code must be anotated.<br>
+			This is done by an application from BTC. This anotation is done automaticly while running make inside Rhapsody.<br>
+			To make sure the anotation tool of BTC works correct it needs the following additional information of your building environment: 
+			<ul>
+				<li>Path to the BTC annotation tool in the Rhapsody installation folder</li>
+				<li>Path to your IDE project</li>
+				<li>Includes</li>
+				<li>Defines</li>
+			</ul>
+			<br>
+			These defines and includes must be added into the file WSTCodeAnotation.bat which you can find here: &quot;&lt;RXF installation Path&gt;\Tools\&quot;<br>
+			Please make sure, that you also add hidden includes of your IDE.<br>
+			<br>
+		</li>
+		<li>
+			<b>6.</b> Regenerate Your Code by update your test package<br>
+			Now you are ready to run your test cases.
+		</li>
+
+<br>
+<br>
+  </div>
+
+  <p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

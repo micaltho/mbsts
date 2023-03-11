@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE tc:TargetConfiguration SYSTEM "TargetConfiguration.dtd">
+<tc:TargetConfiguration xmlns:tc="http://www.btc-es.de">
+  <tc:ExtendedInfo little_endian="true" char_bit="8" host_string_char_bit="8" has_signed_chars="false" char_constant_first_char_most_significant="true" wchar_t_int_kind="unsigned_short" sizeof_wchar_t="2" sizeof_short="2" alignof_short="2" sizeof_int="4" alignof_int="4" sizeof_long="4" alignof_long="4" is_64bit_target="false" plain_int_bit_field_is_unsigned="true" force_one_bit_bit_field_to_be_unsigned="true" sizeof_pointer="4" alignof_pointer="4" ptrdiff_t_int_kind="int" size_t_int_kind="unsigned_int" sizeof_float="4" alignof_float="4" sizeof_double="8" alignof_double="8" sizeof_long_double="8" alignof_long_double="8" enum_types_can_be_smaller_than_int="true" right_shift_is_arithmetic="true" minimum_struct_alignment="1" flt_mant_dig="24" flt_min_exp="-125" flt_max_exp="128" dbl_mant_dig="53" dbl_min_exp="-1021" dbl_max_exp="1024" ldbl_mant_dig="53" ldbl_min_exp="-1021" ldbl_max_exp="1024" gcc_is_generated_code_target="false" msvc_is_generated_code_target="false" ghs_is_generated_code_target="false" diab_is_generated_code_target="false" arm_is_generated_code_target="true" string_literals_shared="true"/>
+</tc:TargetConfiguration>
+

@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber>_YBefwg7mEeu4nOTLAZoA8g</MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0.1</version>
+	<RMMIndexVersion>109.1</RMMIndexVersion>
+	<lang>C++</lang>
+	<BuildNo>202006101734</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IProfile type="e">
+			<_id type="a">GUID f1e5d50c-11b9-4a2d-812e-d195b234f28b</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">GenerateDirectory</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Model</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">CommonTypes</_Name>
+													<_Value type="a">RXFTypesCpp,PredefinedTypesCpp</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">DefaultType</_Name>
+													<_Value type="a">RXFTypesCpp::std::cstdint::uint32_t</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">PredefinedTypesInComboBox</_Name>
+													<_Value type="a">bool, char, char*, double, int, float, void, void*</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007874_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">RXFTypesCpp</_name>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">This Profile provides stdint and c++ language Types and can be used as preset. This profile should not be used as it is but always be reviewed and modified to fit customer needs.</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">10.15.2020::13:5:20</_modifiedTime>
+			<_lastID type="a">5</_lastID>
+			<_defaultComposite type="s">GUID f4f8a50c-cf40-449f-9f12-ffd43fa9dec8</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<AggregatesList type="e">
+				<value>GUID 604e66d2-27ed-4a15-8ae1-fb3e8846eb4e</value>
+				<value>GUID 555aef37-c756-4501-82d7-4ee852b15be6</value>
+				<value>GUID 35b02bd6-65d4-420b-a6fb-962ea1df2e3f</value>
+				<value>GUID f4f8a50c-cf40-449f-9f12-ffd43fa9dec8</value>
+			</AggregatesList>
+		</IProfile>
+		<ISubsystem type="e">
+			<_id type="a">GUID 604e66d2-27ed-4a15-8ae1-fb3e8846eb4e</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Dependency</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">IncludeStyle</_Name>
+													<_Value type="a">AngleBrackets</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Default,Quotes,AngleBrackets</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefineNameSpace</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007878_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">std</_name>
+			<_modifiedTime type="a">5.11.2020::12:1:23</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<_defaultComposite type="s">GUID 11d81f91-2c33-47c0-a7c2-e8cf91945fe7</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<AggregatesList type="e">
+				<value>GUID b46d04be-5ebe-4d73-bc59-cd307e69fbfd</value>
+				<value>GUID cf1c7928-6a52-4d39-891c-a92fb5ac3ed6</value>
+				<value>GUID 11d81f91-2c33-47c0-a7c2-e8cf91945fe7</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<_id type="a">GUID b46d04be-5ebe-4d73-bc59-cd307e69fbfd</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">File</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">SpecExtension</_Name>
+													<_Value type="a"> </_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefineNameSpace</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefaultValue</_Name>
+													<_Value type="a">0</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">In</_Name>
+													<_Value type="a">const $type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">InOut</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Out</_Name>
+													<_Value type="a">$type* const</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ReturnType</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007856_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">cstdint</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_defaultComposite type="s">GUID 4229507c-03da-479f-9d02-7a95c5b4e380</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<AggregatesList type="e">
+				<value>GUID 4229507c-03da-479f-9d02-7a95c5b4e380</value>
+				<value>GUID 50eb722e-aaa2-471e-9852-1da5b6d2382d</value>
+				<value>GUID be12272d-c377-4c3a-bfa5-acaebfc378e9</value>
+				<value>GUID 4ae0c33b-7b7d-4f51-b421-36650889e46e</value>
+				<value>GUID c72c8ecc-7976-4001-9fa8-501a0f676e60</value>
+				<value>GUID da677ae1-61b2-4977-8e06-d87d42dbf77d</value>
+				<value>GUID fccf900b-fa85-41aa-a7d9-d5b064598e5c</value>
+				<value>GUID 932ac70c-23f1-406d-bdf7-60e8def8d0b6</value>
+				<value>GUID 05d9bab2-1643-45ef-b084-0565acca0eb6</value>
+				<value>GUID 8259823e-cbe6-4034-bd50-9d1b175cba0b</value>
+				<value>GUID 3875d7d9-b50c-4998-953f-fd399d26f0b6</value>
+				<value>GUID 26df0c55-1e54-4796-8a59-b2fb93b06f07</value>
+				<value>GUID c597613c-1973-41c5-89e4-fcc042caa647</value>
+				<value>GUID 33ea75d5-f390-4aad-b5b9-8829c815d04f</value>
+				<value>GUID 81184ed9-a904-4829-966a-4551edf3a00e</value>
+				<value>GUID f1331deb-0f94-4b50-aad5-0a67f15e66d8</value>
+				<value>GUID 81131dcd-a303-4c4c-be1a-0f695aa50ffe</value>
+				<value>GUID 09766d4e-6795-46d2-819c-f1a2e5ec3d57</value>
+				<value>GUID 143c4dc3-2513-403f-932d-2736074cedb4</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 4229507c-03da-479f-9d02-7a95c5b4e380</_id>
+			<_myState type="a">40960</_myState>
+			<_rmmServerID type="a">1007865_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTime type="a">10.15.2020::13:2:44</_modifiedTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IType type="e">
+			<_id type="a">GUID 50eb722e-aaa2-471e-9852-1da5b6d2382d</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007848_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int_fast16_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID be12272d-c377-4c3a-bfa5-acaebfc378e9</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007873_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int_fast32_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 4ae0c33b-7b7d-4f51-b421-36650889e46e</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007862_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int_fast8_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID c72c8ecc-7976-4001-9fa8-501a0f676e60</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007854_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int_least16_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID da677ae1-61b2-4977-8e06-d87d42dbf77d</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007855_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int_least32_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID fccf900b-fa85-41aa-a7d9-d5b064598e5c</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007861_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int_least8_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 932ac70c-23f1-406d-bdf7-60e8def8d0b6</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007876_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int16_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 05d9bab2-1643-45ef-b084-0565acca0eb6</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007866_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int32_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 8259823e-cbe6-4034-bd50-9d1b175cba0b</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007859_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">int8_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 3875d7d9-b50c-4998-953f-fd399d26f0b6</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007875_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint_fast16_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 26df0c55-1e54-4796-8a59-b2fb93b06f07</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007871_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint_fast32_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID c597613c-1973-41c5-89e4-fcc042caa647</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007869_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint_fast8_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 33ea75d5-f390-4aad-b5b9-8829c815d04f</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007851_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint_least16_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 81184ed9-a904-4829-966a-4551edf3a00e</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007879_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint_least32_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID f1331deb-0f94-4b50-aad5-0a67f15e66d8</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007858_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint_least8_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 81131dcd-a303-4c4c-be1a-0f695aa50ffe</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007849_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint16_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 09766d4e-6795-46d2-819c-f1a2e5ec3d57</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007868_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint32_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 143c4dc3-2513-403f-932d-2736074cedb4</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">1007857_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">uint8_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:17</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">int</_hname>
+					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefMultiplicity type="a">1</_typedefMultiplicity>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<ISubsystem type="e">
+			<_id type="a">GUID cf1c7928-6a52-4d39-891c-a92fb5ac3ed6</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">File</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">SpecExtension</_Name>
+													<_Value type="a"> </_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefineNameSpace</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefaultValue</_Name>
+													<_Value type="a">0</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">In</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">InOut</_Name>
+													<_Value type="a">$type* const</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Out</_Name>
+													<_Value type="a">$type* const</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ReturnType</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007860_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">cstddef</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:40</_modifiedTime>
+			<_defaultComposite type="s">GUID f9132137-93fa-43a0-aa95-274bde6831ac</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<AggregatesList type="e">
+				<value>GUID f9132137-93fa-43a0-aa95-274bde6831ac</value>
+				<value>GUID a3a70845-a52a-4a47-a223-a2278e92074a</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID f9132137-93fa-43a0-aa95-274bde6831ac</_id>
+			<_myState type="a">40960</_myState>
+			<_rmmServerID type="a">1007880_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTime type="a">10.15.2020::13:2:44</_modifiedTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IType type="e">
+			<_id type="a">GUID a3a70845-a52a-4a47-a223-a2278e92074a</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">In</_Name>
+													<_Value type="a">const $type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">InOut</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Out</_Name>
+													<_Value type="a">$type*</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007863_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">size_t</_name>
+			<_modifiedTime type="a">4.6.2020::14:46:40</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">int</_hname>
+					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IClass type="e">
+			<_id type="a">GUID 11d81f91-2c33-47c0-a7c2-e8cf91945fe7</_id>
+			<_myState type="a">40960</_myState>
+			<_rmmServerID type="a">1007853_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTime type="a">11.7.2019::15:56:1</_modifiedTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<ISubsystem type="e">
+			<_id type="a">GUID 555aef37-c756-4501-82d7-4ee852b15be6</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefineNameSpace</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">NameSpaceName</_Name>
+													<_Value type="a">RXF</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007870_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">RXF_Types</_name>
+			<_modifiedTime type="a">6.17.2020::9:3:0</_modifiedTime>
+			<_defaultComposite type="s">GUID 325b24f8-bd5b-4982-8669-61e8cac72b4e</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<AggregatesList type="e">
+				<value>GUID 325b24f8-bd5b-4982-8669-61e8cac72b4e</value>
+				<value>GUID 7d054342-e801-4b01-b16d-72e3a76ad1dc</value>
+				<value>GUID 72e01d21-00bd-4555-a83a-3b5a3146dd6d</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 325b24f8-bd5b-4982-8669-61e8cac72b4e</_id>
+			<_myState type="a">40960</_myState>
+			<_rmmServerID type="a">1007864_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTime type="a">10.15.2020::13:2:44</_modifiedTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IType type="e">
+			<_id type="a">GUID 7d054342-e801-4b01-b16d-72e3a76ad1dc</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefaultValue</_Name>
+													<_Value type="a">'\0'</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">In</_Name>
+													<_Value type="a">const $type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">InOut</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ReturnType</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">XSD</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ImpXSDType</_Name>
+													<_Value type="a">XSD_unsignedByte</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007867_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">char_t</_name>
+			<_description type="p"><IDescription type="e">
+				<_textRTF type="a">{\rtf1\fbidis\ansi\ansicpg1255\deff0\deflang1037{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset177{\*\fname Arial;}Arial (Hebrew);}}%0D
+\viewkind4\uc1\pard\ltrpar\fs20 Predefined char\f1\rtlch\par%0D
+}%0D
+</_textRTF>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.17.2020::9:2:42</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">char</_hname>
+					<_hid type="a">GUID 717461b3-278b-47c8-9526-c62c7be55b14</_hid>
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IType type="e">
+			<_id type="a">GUID 72e01d21-00bd-4555-a83a-3b5a3146dd6d</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">DefaultValue</_Name>
+													<_Value type="a">nullptr</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ReturnType</_Name>
+													<_Value type="a">$type</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">XSD</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Type</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ImpXSDType</_Name>
+													<_Value type="a">XSD_string</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007850_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">char_t*</_name>
+			<_description type="p"><IDescription type="e">
+				<_textRTF type="a">{\rtf1\fbidis\ansi\ansicpg1255\deff0\deflang1037{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset177{\*\fname Arial;}Arial (Hebrew);}}%0D
+\viewkind4\uc1\pard\ltrpar\fs20 Predefined char\f1\rtlch\par%0D
+}%0D
+</_textRTF>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.17.2020::9:3:0</_modifiedTime>
+			<_typedefBaseType type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">char*</_hname>
+					<_hid type="a">GUID a1f818e6-c022-42d5-bbc0-075bf073b055</_hid>
+				</IClassifierHandle>
+			</_typedefBaseType>
+			<_typedefIsOrdered type="a">0</_typedefIsOrdered>
+			<_typedefIsReference type="a">0</_typedefIsReference>
+			<_typedefIsConstant type="a">0</_typedefIsConstant>
+			<_kind type="a">Typedef</_kind>
+		</IType>
+		<IStereotype type="e">
+			<_id type="a">GUID 35b02bd6-65d4-420b-a6fb-962ea1df2e3f</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Dependency</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">UsageType</_Name>
+													<_Value type="a">Specification</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Specification,Implementation,Existence</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Dependency</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">IncludeStyle</_Name>
+													<_Value type="a">AngleBrackets</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Default,Quotes,AngleBrackets</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_rmmServerID type="a">1007852_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">UsageCStd</_name>
+			<_modifiedTime type="a">5.11.2020::12:22:56</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<value>Dependency</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<AggregatesList type="e">
+				<value>GUID 570eefdc-b8bf-4d42-8bf6-6b21c7aefdd2</value>
+			</AggregatesList>
+		</IStereotype>
+		<IGeneralization type="e">
+			<_id type="a">GUID 570eefdc-b8bf-4d42-8bf6-6b21c7aefdd2</_id>
+			<_rmmServerID type="a">1007872_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">Realization</_hname>
+							<_hid type="a">GUID 122837c0-ef70-11d4-a08b-00d0b780aafd</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTime type="a">5.11.2020::12:22:56</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IStereotype</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">Usage</_hname>
+					<_hid type="a">GUID 42aa4325-6112-4e88-87ce-66008878f1db</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+		</IGeneralization>
+		<IClass type="e">
+			<_id type="a">GUID f4f8a50c-cf40-449f-9f12-ffd43fa9dec8</_id>
+			<_myState type="a">40960</_myState>
+			<_rmmServerID type="a">1007877_ZTQskQMFEeu_tv4D7pVTew</_rmmServerID>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTime type="a">4.26.2020::13:16:55</_modifiedTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+<RHAPSODY-INDEX>
+		<ELEMENT>
+			<ID>1007874_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID f1e5d50c-11b9-4a2d-812e-d195b234f28b</RHP-ID>
+			<NAME>RXFTypesCpp</NAME>
+			<TYPE>Profile</TYPE>
+			<DISPLAY-TYPE>Profile</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Profiles</DISPLAY-GROUP>
+			<BROWSER-ICON>Profile~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Profile~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/10/15 13:5:20</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:1007878_ZTQskQMFEeu_tv4D7pVTew | I:1007870_ZTQskQMFEeu_tv4D7pVTew | I:1007852_ZTQskQMFEeu_tv4D7pVTew</AGGREGATES>
+			<REFERENCES></REFERENCES>
+			<DESCRIPTION>
+				<PLAIN-TEXT>This Profile provides stdint and c++ language Types and can be used as preset. This profile should not be used as it is but always be reviewed and modified to fit customer needs.</PLAIN-TEXT>
+			</DESCRIPTION></ELEMENT>
+		<ELEMENT>
+			<ID>1007878_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 604e66d2-27ed-4a15-8ae1-fb3e8846eb4e</RHP-ID>
+			<NAME>std</NAME>
+			<TYPE>Package</TYPE>
+			<DISPLAY-TYPE>Package</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Packages</DISPLAY-GROUP>
+			<BROWSER-ICON>Package~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Package~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/5/11 12:1:23</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:1007856_ZTQskQMFEeu_tv4D7pVTew | I:1007860_ZTQskQMFEeu_tv4D7pVTew</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007856_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID b46d04be-5ebe-4d73-bc59-cd307e69fbfd</RHP-ID>
+			<NAME>cstdint</NAME>
+			<TYPE>Package</TYPE>
+			<DISPLAY-TYPE>Package</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Packages</DISPLAY-GROUP>
+			<BROWSER-ICON>Package~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Package~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:1007848_ZTQskQMFEeu_tv4D7pVTew | I:1007873_ZTQskQMFEeu_tv4D7pVTew | I:1007862_ZTQskQMFEeu_tv4D7pVTew | I:1007854_ZTQskQMFEeu_tv4D7pVTew | I:1007855_ZTQskQMFEeu_tv4D7pVTew | I:1007861_ZTQskQMFEeu_tv4D7pVTew | I:1007876_ZTQskQMFEeu_tv4D7pVTew | I:1007866_ZTQskQMFEeu_tv4D7pVTew | I:1007859_ZTQskQMFEeu_tv4D7pVTew | I:1007875_ZTQskQMFEeu_tv4D7pVTew | I:1007871_ZTQskQMFEeu_tv4D7pVTew | I:1007869_ZTQskQMFEeu_tv4D7pVTew | I:1007851_ZTQskQMFEeu_tv4D7pVTew | I:1007879_ZTQskQMFEeu_tv4D7pVTew | I:1007858_ZTQskQMFEeu_tv4D7pVTew | I:1007849_ZTQskQMFEeu_tv4D7pVTew | I:1007868_ZTQskQMFEeu_tv4D7pVTew | I:1007857_ZTQskQMFEeu_tv4D7pVTew</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007848_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 50eb722e-aaa2-471e-9852-1da5b6d2382d</RHP-ID>
+			<NAME>int_fast16_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007873_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID be12272d-c377-4c3a-bfa5-acaebfc378e9</RHP-ID>
+			<NAME>int_fast32_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007862_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 4ae0c33b-7b7d-4f51-b421-36650889e46e</RHP-ID>
+			<NAME>int_fast8_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007854_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID c72c8ecc-7976-4001-9fa8-501a0f676e60</RHP-ID>
+			<NAME>int_least16_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007855_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID da677ae1-61b2-4977-8e06-d87d42dbf77d</RHP-ID>
+			<NAME>int_least32_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007861_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID fccf900b-fa85-41aa-a7d9-d5b064598e5c</RHP-ID>
+			<NAME>int_least8_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007876_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 932ac70c-23f1-406d-bdf7-60e8def8d0b6</RHP-ID>
+			<NAME>int16_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007866_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 05d9bab2-1643-45ef-b084-0565acca0eb6</RHP-ID>
+			<NAME>int32_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007859_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 8259823e-cbe6-4034-bd50-9d1b175cba0b</RHP-ID>
+			<NAME>int8_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007875_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 3875d7d9-b50c-4998-953f-fd399d26f0b6</RHP-ID>
+			<NAME>uint_fast16_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007871_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 26df0c55-1e54-4796-8a59-b2fb93b06f07</RHP-ID>
+			<NAME>uint_fast32_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007869_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID c597613c-1973-41c5-89e4-fcc042caa647</RHP-ID>
+			<NAME>uint_fast8_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007851_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 33ea75d5-f390-4aad-b5b9-8829c815d04f</RHP-ID>
+			<NAME>uint_least16_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007879_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 81184ed9-a904-4829-966a-4551edf3a00e</RHP-ID>
+			<NAME>uint_least32_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007858_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID f1331deb-0f94-4b50-aad5-0a67f15e66d8</RHP-ID>
+			<NAME>uint_least8_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007849_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 81131dcd-a303-4c4c-be1a-0f695aa50ffe</RHP-ID>
+			<NAME>uint16_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007868_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 09766d4e-6795-46d2-819c-f1a2e5ec3d57</RHP-ID>
+			<NAME>uint32_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007857_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 143c4dc3-2513-403f-932d-2736074cedb4</RHP-ID>
+			<NAME>uint8_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:17</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007860_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID cf1c7928-6a52-4d39-891c-a92fb5ac3ed6</RHP-ID>
+			<NAME>cstddef</NAME>
+			<TYPE>Package</TYPE>
+			<DISPLAY-TYPE>Package</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Packages</DISPLAY-GROUP>
+			<BROWSER-ICON>Package~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Package~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:40</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:1007863_ZTQskQMFEeu_tv4D7pVTew</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007863_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID a3a70845-a52a-4a47-a223-a2278e92074a</RHP-ID>
+			<NAME>size_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/4/6 14:46:40</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007870_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 555aef37-c756-4501-82d7-4ee852b15be6</RHP-ID>
+			<NAME>RXF_Types</NAME>
+			<TYPE>Package</TYPE>
+			<DISPLAY-TYPE>Package</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Packages</DISPLAY-GROUP>
+			<BROWSER-ICON>Package~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Package~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/6/17 9:3:0</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:1007867_ZTQskQMFEeu_tv4D7pVTew | I:1007850_ZTQskQMFEeu_tv4D7pVTew</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007867_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 7d054342-e801-4b01-b16d-72e3a76ad1dc</RHP-ID>
+			<NAME>char_t</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/6/17 9:2:42</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES>
+			<DESCRIPTION>
+				<PLAIN-TEXT>Predefined char</PLAIN-TEXT>
+			</DESCRIPTION></ELEMENT>
+		<ELEMENT>
+			<ID>1007850_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 72e01d21-00bd-4555-a83a-3b5a3146dd6d</RHP-ID>
+			<NAME>char_t*</NAME>
+			<TYPE>Type</TYPE>
+			<DISPLAY-TYPE>Type</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Types</DISPLAY-GROUP>
+			<BROWSER-ICON>Type~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Type~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/6/17 9:3:0</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES>
+			<DESCRIPTION>
+				<PLAIN-TEXT>Predefined char</PLAIN-TEXT>
+			</DESCRIPTION></ELEMENT>
+		<ELEMENT>
+			<ID>1007852_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 35b02bd6-65d4-420b-a6fb-962ea1df2e3f</RHP-ID>
+			<NAME>UsageCStd</NAME>
+			<TYPE>Stereotype</TYPE>
+			<DISPLAY-TYPE>Stereotype</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Stereotypes</DISPLAY-GROUP>
+			<BROWSER-ICON>Stereotype~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Stereotype~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/5/11 12:22:56</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:1007872_ZTQskQMFEeu_tv4D7pVTew</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>1007872_ZTQskQMFEeu_tv4D7pVTew</ID>
+			<RHP-ID>GUID 570eefdc-b8bf-4d42-8bf6-6b21c7aefdd2</RHP-ID>
+			<NAME>Usage</NAME>
+			<TYPE>Generalization</TYPE>
+			<DISPLAY-TYPE>Realization</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Realizations</DISPLAY-GROUP>
+			<BROWSER-ICON>GUID 122837c0-ef70-11d4-a08b-00d0b780aafd~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>GUID 122837c0-ef70-11d4-a08b-00d0b780aafd~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2020/5/11 12:22:56</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES>
+				<APPLIED-STEREOTYPES>
+					<FIRST-IS-NEW-TERM>TRUE</FIRST-IS-NEW-TERM>
+					<VALUE-REFERENCES>
+						<VALUE-ELEMENT>
+							<NAME>Realization</NAME>
+						</VALUE-ELEMENT>
+					</VALUE-REFERENCES>
+				</APPLIED-STEREOTYPES>
+			
+				<RELATION-SOURCE>
+					<VALUE-ID>1007852_ZTQskQMFEeu_tv4D7pVTew</VALUE-ID>
+				</RELATION-SOURCE>
+				<RELATION-TARGET>
+					<VALUE-ELEMENT>
+						<NAME>Usage</NAME>
+						<TYPE>Stereotype</TYPE>
+					</VALUE-ELEMENT>
+				</RELATION-TARGET>
+			</REFERENCES></ELEMENT>
+	</RHAPSODY-INDEX>
+
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<RHAPSODY-INDEX-START>41588</RHAPSODY-INDEX-START>
+<RHAPSODY-INDEX-END>59749</RHAPSODY-INDEX-END>
+<OSLC-LINKS-START>59750</OSLC-LINKS-START>
+<OSLC-LINKS-END>59839</OSLC-LINKS-END>
+<INCLUDES-RHAPSODY-INDEX>true</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

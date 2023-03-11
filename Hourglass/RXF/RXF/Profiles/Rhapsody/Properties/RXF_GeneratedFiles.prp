@@ -1,0 +1,204 @@
+Subject RXF
+	Metaclass GeneratedFiles
+		Property StandardFiles                  	String ""
+		Property StandardFilesRXF               	String "Config,Defines,EventPoolsHeader,EventPools,GenMacros"
+
+		Property ConfigFileName                 	String "RXF_Config.h"
+		Property ConfigContent                  	MultiLine "?<IsConditionalProperty>
+/* This file is auto generated from Rhapsody do not edit! */
+
+#ifndef RXF_CONFIG_H
+#define RXF_CONFIG_H
+
+#include <cstdint>
+
+#include \"RXF_Defines.h\"
+
+?<begin>$<RXF::Configuration::TASK_PARAMETERS_IsVisible>?<==>True?<?>
+#include \"RXF_Priority.h\"?<:>?<end>
+
+/* @MISRA_3-4-1=OFF ID-0010: Configuration values must be declared globally, because they are generated and the framework code itself needs to stay untouched */
+
+namespace RXF {
+
+constexpr std::uint32_t REACTIVE_MAX_NULL_STEPS = $<RXF::Configuration::REACTIVE_MAX_NULL_STEPS>;
+
+constexpr std::uint32_t MS_PER_TICK = ?<begin>$<RXF::DeployerFolders::RTOS>?<==>Windows?<&&>$<RXF::Configuration::MS_PER_TICK>?<==>10U?<?>100U?<:>$<RXF::Configuration::MS_PER_TICK>?<end>;
+
+constexpr std::uint32_t MAIN_TASK_QUEUE_SIZE =  $<RXF::Configuration::MAIN_TASK_QUEUE_SIZE>;
+
+?<begin>$<RXF::Configuration::TASK_PARAMETERS_IsVisible>?<==>True?<?>
+constexpr Priority::Type MAIN_TASK_PRIORITY = $<RXF::Configuration::MAIN_TASK_PRIORITY>;
+constexpr std::uint32_t MAIN_TASK_STACK_SIZE = $<RXF::Configuration::MAIN_TASK_STACK_SIZE>;?<:>?<end>
+
+?<begin>$<RXF::Configuration::TIMER_TASK_IsVisible>?<==>True?<?>
+constexpr Priority::Type TIMER_TASK_PRIORITY = $<RXF::Configuration::TIMER_TASK_PRIORITY>;
+constexpr std::uint32_t TIMER_TASK_STACK_SIZE = $<RXF::Configuration::TIMER_TASK_STACK_SIZE>;?<:>?<end>
+
+?<begin>$<RXFMonitor::Configuration::AdditionalDefinesTD>?<!=>?<?>$<RXFMonitor::Configuration::AdditionalDefinesTD>?<:>?<end>
+?<begin>$<RXFMonitor::Configuration::AdditionalDefinesTD_MIO>?<!=>?<?>$<RXFMonitor::Configuration::AdditionalDefinesTD_MIO>?<:>?<end>
+
+/* @MISRA_3-4-1=ON (end of ID-0010) */
+
+}
+
+#endif /* RXF_CONFIG_H */ 
+"
+
+		Property DefinesFileName                 	String "RXF_Defines.h"
+		Property DefinesContent                  	MultiLine "?<IsConditionalProperty>
+/* This file is auto generated from Rhapsody do not edit! */
+
+#ifndef RXF_DEFINES_H
+#define RXF_DEFINES_H
+
+#define RXF_V8
+#define RXF_RTOS_$<RXF::DeployerFolders::RTOS>
+
+%RXF_CI_BUILD_DEFINE%
+
+#endif /* RXF_DEFINES_H */ 
+"
+
+		Property GenMacrosFileName                 	String "RXF_Macros.h"
+		Property GenMacrosContent                  	MultiLine "?<IsConditionalProperty>
+/* This file is auto generated from Rhapsody do not edit! */
+
+#ifndef RXF_MACROS_H
+#define RXF_MACROS_H
+
+/* @MISRA_16-0-2,16-0-4,16-0-6,16-2-1,16-2-2,16-3-2=OFF ID-0007: Function-like Macros must be used for Rhapsody code generation compatibility. */
+
+?<begin>$<RXF::Configuration::ReceptionsAsOperations>?<==>True?<?>
+?<begin>$<RXF::Configuration::ReceptionPrefix>?<==>?<?>
+#define GEN(EVENT) EVENT?<:>
+#define GEN(EVENT) $<RXF::Configuration::ReceptionPrefix>##EVENT?<end>?<:>
+#define GEN(EVENT) send( new EVENT )?<end>
+
+#define OUT_PORT(PORT) (&PORT)
+#define OUT_PORT_AT(PORT,INDEX) (&PORT[INDEX])
+
+/* @MISRA_16-0-2,16-0-4,16-0-6,16-2-1,16-2-2,16-3-2=ON (end of ID-0007) */
+
+#endif /* RXF_MACROS_H */ 
+"
+
+		Property EventPoolsHeaderFileName                 	String "RXF_Event_Pools.h"
+		Property EventPoolsHeaderContent                  	MultiLine "?<IsConditionalProperty>
+/* This file is auto generated from Rhapsody do not edit! */
+
+#ifndef RXF_EVENT_POOLS_H
+#define RXF_EVENT_POOLS_H
+
+#include \"RXF_Event.h\"
+#include \"RXF_MemoryPool.h\"
+
+namespace RXF {
+
+	?<begin>$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>?<!=>0?<?>
+	extern RXF::MemoryPool<$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>,sizeof(RXF::Event)> memoryPool_Event_default;?<:>?<end>
+	
+	?<begin>$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+	extern RXF::MemoryPool<$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>,sizeof(RXF::Event) + $<RXF::Configuration::EVENT_SMALL_PARAMETER_SIZE>> memoryPool_Event_small;?<:>?<end>
+	
+	?<begin>$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+	extern RXF::MemoryPool<$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>,sizeof(RXF::Event) + $<RXF::Configuration::EVENT_MEDIUM_PARAMETER_SIZE>> memoryPool_Event_medium;?<:>?<end>
+	 
+	?<begin>$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+	extern RXF::MemoryPool<$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>,sizeof(RXF::Event) + $<RXF::Configuration::EVENT_LARGE_PARAMETER_SIZE>> memoryPool_Event_large;?<:>?<end>
+
+}
+
+#endif /* RXF_EVENT_POOLS_H */ 
+"
+
+		Property EventPoolsFileName                 	String "RXF_Event_Pools.cpp"
+		Property EventPoolsContent                  	MultiLine "?<IsConditionalProperty>
+/* This file is auto generated from Rhapsody do not edit! */
+
+#include \"RXF_Event_Pools.h\"
+#include \"RXF_ErrorHandler.h\"
+
+namespace RXF {
+
+	?<begin>$<RXF::Configuration::EVENT_USE_HEAP>?<==>True?<?>
+	#include <cstdlib>?<:>?<end>
+
+	?<begin>$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>?<!=>0?<?>
+	RXF::MemoryPool<$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>,sizeof(RXF::Event)> memoryPool_Event_default;?<:>?<end>
+
+	?<begin>$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+	RXF::MemoryPool<$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>,sizeof(RXF::Event) + $<RXF::Configuration::EVENT_SMALL_PARAMETER_SIZE>> memoryPool_Event_small;?<:>?<end>
+
+	?<begin>$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+	RXF::MemoryPool<$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>,sizeof(RXF::Event) + $<RXF::Configuration::EVENT_MEDIUM_PARAMETER_SIZE>> memoryPool_Event_medium;?<:>?<end>
+	 
+	?<begin>$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+	RXF::MemoryPool<$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>,sizeof(RXF::Event) + $<RXF::Configuration::EVENT_LARGE_PARAMETER_SIZE>> memoryPool_Event_large;?<:>?<end>
+
+	void * RXF::Event::operator new(const std::size_t objectSize)
+	{
+		?<begin>$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>?<!=>0
+		?<?>void* memory = memoryPool_Event_default.alloc( objectSize );
+		if( NULL == memory )
+		{?<:>void* memory = NULL;?<end>?<begin>
+			$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+			memory = memoryPool_Event_small.alloc( objectSize );
+			if( NULL == memory )
+			{?<:>?<end>?<begin>
+				$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+				memory = memoryPool_Event_medium.alloc( objectSize );
+				if( NULL == memory )
+				{?<:>?<end>?<begin>$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+					memory = memoryPool_Event_large.alloc( objectSize );
+					if( NULL == memory )
+					{?<:>?<end>?<begin>
+						$<RXF::Configuration::EVENT_USE_HEAP>?<==>True?<?>
+						memory = std::malloc( objectSize );
+						if( NULL == memory )
+						{?<:>?<end>
+							RXF::ErrorHandler::error( RXF::ERROR_MEMORY_POOL_ALLOC_FAILED, 0, false );?<begin>
+						$<RXF::Configuration::EVENT_USE_HEAP>?<==>True?<?>
+						}?<:>?<end>?<begin>
+					$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+					}?<:>?<end>?<begin>
+				$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+				}?<:>?<end>?<begin>
+			$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>?<!=>0?<?>
+			}?<:>?<end>?<begin>
+		$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>?<!=>0?<?>
+		}?<:>?<end>
+		
+		return memory; 
+	}
+
+	void RXF::Event::operator delete(void * const memory)
+	{
+		?<begin>$<RXF::Configuration::EVENT_DEFAULT_BLOCK_COUNT>?<!=>0
+		?<?>if( memoryPool_Event_default.freeMemory( memory ) ) { }
+		else ?<:>?<end>?<begin>
+		
+		$<RXF::Configuration::EVENT_SMALL_PARAMETER_BLOCK_COUNT>?<!=>0
+		?<?>if( memoryPool_Event_small.freeMemory( memory ) ) { }
+		else ?<:>?<end>?<begin>
+		
+		$<RXF::Configuration::EVENT_MEDIUM_PARAMETER_BLOCK_COUNT>?<!=>0
+		?<?>if( memoryPool_Event_medium.freeMemory( memory ) ) { }
+		else ?<:>?<end>?<begin>
+		
+		$<RXF::Configuration::EVENT_LARGE_PARAMETER_BLOCK_COUNT>?<!=>0
+		?<?>if( memoryPool_Event_large.freeMemory( memory ) ) { }
+		else ?<:>?<end>
+		{
+			?<begin>$<RXF::Configuration::EVENT_USE_HEAP>?<==>True
+			?<?>std::free( memory );?<:>RXF::ErrorHandler::error( RXF::ERROR_MEMORY_POOL_FREE_FAILED, 0, false );?<end> 
+		}
+	}
+
+}
+"
+
+	end
+end
+
+end

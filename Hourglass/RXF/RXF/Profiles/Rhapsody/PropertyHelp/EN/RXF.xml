@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: RXF.xml 73641 2021-12-06 22:42:42Z jtrageser $ $URL: https://svn.willert.de/V8/trunk/Framework/Product/RXF_CPP/RXF/Profiles/Rhapsody/PropertyHelp/EN/RXF.xml $ -->
+<Head xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xml_schemas/property_help.xsd">
+<ChapterBook>
+    <ChapterBookName>RXF</ChapterBookName>
+    <Section>
+        <Para>The RXF subject contains metaclasses for the Realtime eXecution Framework RXF.</Para>
+    </Section>
+    <HeadingRunIn>
+        <HeadingRunInName>Class</HeadingRunInName>
+        <Term>
+            <TermName>ActiveInitializer</TermName>
+            <Section>
+                <Para>Signature for the base class constructor call in initializer list of active classes.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TimeoutGuaranteeTime</TermName>
+            <Section>
+                <Para>If a MINIMUM time for tm(xx) to pass before the transition is taken needs to be guaranteed, the time of one tick ( value of MS_PER_TICK ) needs to be added to the desired time.
+                This is done automatically by the simplifier for all timeout-transitions of a reactive class, if this property is set to true on this class.
+                If this property should be applied to the whole model, it can also be overridden on project or component level.</Para>
+                <Para>Please refer to the documentation, section Technology | Realtime.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Configuration</HeadingRunInName>
+        <Section>
+            <Para>Values and settings configuring the RXF for the application specific needs.</Para>
+        </Section>
+        <Term>
+            <TermName>EVENT_DEFAULT_BLOCK_COUNT</TermName>
+            <Section>
+                <Para>Configure number of event memory blocks in the default pool (for events without arguments).</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_LARGE_PARAMETER_BLOCK_COUNT</TermName>
+            <Section>
+                <Para>Configure number of event memory blocks in the large pool (shared pool for events with "large" size arguments).</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_LARGE_PARAMETER_SIZE</TermName>
+            <Section>
+                <Para>Configure size of event arguments in bytes for events in the large pool (shared pool for events with "large" size arguments).</Para>
+                <Para>Use the Event Table in RXF Profile to get an overview over all Events in this project and their argument sizes</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_MEDIUM_PARAMETER_BLOCK_COUNT</TermName>
+            <Section>
+                <Para>Configure number of event memory blocks in the medium pool (shared pool for events with "medium" size arguments).</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_MEDIUM_PARAMETER_SIZE</TermName>
+            <Section>
+                <Para>Configure size of event arguments in bytes for events in the medium pool (shared pool for events with "medium" size arguments).</Para>
+                <Para>Use the Event Table in RXF Profile to get an overview over all Events in this project and their argument sizes</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_SMALL_PARAMETER_BLOCK_COUNT</TermName>
+            <Section>
+                <Para>Configure number of event memory blocks in the small pool (shared pool for events with "small" size arguments).</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_SMALL_PARAMETER_SIZE</TermName>
+            <Section>
+                <Para>Configure size of event arguments in bytes for events in the small pool (shared pool for events with "small" size arguments).</Para>
+                <Para>Use the Event Table in RXF Profile to get an overview over all Events in this project and their argument sizes</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EVENT_USE_HEAP</TermName>
+            <Section>
+                <Para>If set to true, memory for events is allocated from the heap if no static memory pool fits the requested size or if the pools are empty. If set to false, that case would call the error handler.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>MAIN_TASK_PRIORITY</TermName>
+            <Section>
+                <Para>Task priority for the main task.</Para>
+                <Para>Please refer to the documentation, section Technology | Concurrency.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>MAIN_TASK_QUEUE_SIZE</TermName>
+            <Section>
+                <Para>Queue size for the main task.</Para>
+                <Para>Please refer to the documentation, section Technology | Concurrency.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>MAIN_TASK_STACK_SIZE</TermName>
+            <Section>
+                <Para>Stack size for the main task.</Para>
+                <Para>Please refer to the documentation, section Technology | Concurrency.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>MS_PER_TICK</TermName>
+            <Section>
+                <Para>Set how many milliseconds representing one system tick / RTOS tick.
+This information is needed to convert a UML timer into an RTOS timer.</Para>
+                <Para>Windows does not support 10ms granularity. If selected RTOS is Windows, 10ms are automatically corrected to 100ms.</Para>
+                <Para>Because timeouts are synchronized to a tick, the tick is responsible for the granularity. Timeouts are round up to the next possible multiple of a tick period.
+If the system is used to capacity, a timeout could be scheduled at the end of a tick period.
+If this happens, the resulting timeout time would be less than expected.
+To ensure a timeout with minimum the desired value, the time of 1 tick has to be added manually.
+Be aware that the timeout is only scheduled at this time and it can take even longer until it is consumed.</Para>
+                <Para>Please refer to the documentation, section Technology | Realtime.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>REACTIVE_MAX_NULL_STEPS</TermName>
+            <Section>
+                <Para>How many null transitions (transition without a trigger) can be performed in a row before the WST error handler is called (infinite loop protection).</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TASK_PARAMETERS_IsVisible</TermName>
+            <Section>
+                <Para>Helper property to enable showing or hiding the MAIN_TASK_... properties in the RXF property perspective.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term><Term>
+            <TermName>TIMER_TASK_IsVisible</TermName>
+            <Section>
+                <Para>Helper property to enable showing or hiding the TIMER_TASK_... properties in the RXF property perspective.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TIMER_TASK_PRIORITY</TermName>
+            <Section>
+                <Para>Priority for the RXF timer task.</Para>
+                <Para>Please refer to the documentation, section Technology | OS Integration.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TIMER_TASK_STACK_SIZE</TermName>
+            <Section>
+                <Para>Stack size for the RXF timer task in bytes.</Para>
+                <Para>Please refer to the documentation, section Technology | OS Integration.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Deployer</HeadingRunInName>
+        <Section>
+            <Para>Deployer related properties.</Para>
+        </Section>
+        <Term>
+            <TermName>BackupIDEProject</TermName>
+            <Section>
+                <Para>When set to true, the Deployer will create backups of the IDEProject before modifying it.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>CopyLibraryFiles</TermName>
+            <Section>
+                <Para>When set to true, the Deployer will create a copy of library files in the IDE project folder, otherwise it will create references to it's source directory in the IDE project.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>CopyModelCodeFiles</TermName>
+            <Section>
+                <Para>When set to true, the Deployer will create a copy of generated model code files in the IDE project folder, otherwise it will create references to it's source directory in the IDE project.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>DebugEnabled</TermName>
+            <Section>
+                <Para>Can be set to true, if the Deployer shows unexpected behavior or unclear errors. It will dump Java exception traces to the Log output tab. This advanced error log can be forwarded to the Willert support for further assistence.</Para>
+            </Section>
+        <Term>
+        </Term>
+            <TermName>DeployConfigFileContent</TermName>
+            <Section>
+                <Para>This property specifies the content for the file deploy.config, that is generated to the active config directory by the file generation helper.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>DeployFileContent</TermName>
+            <Section>
+                <Para>This property specifies the content for the file deploy.bat, that is generated to the active config directory by the file generation helper.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term><Term>
+            <TermName>DeployRXFAndConfig</TermName>
+            <Section>
+                <Para>Controls if the configuration files should be generated and if RXF and configuration files should be deployed.</Para>
+                <Para>ExecutableOnly: Only for executable components, not for library components.</Para>
+                <Para>Always: Needs to be set if you want to generate and deploy configuration and RXF also with a library component.</Para>
+                <Para>Never: Needs to be set if an executable component should be deployed without the RXF.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>Enabled</TermName>
+            <Section>
+                <Para>When set to true the Deployer is used to copy and integrate generated and RXF files into the IDE project.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EnableDeploySingleLibrary</TermName>
+            <Section>
+                <Para>Configuration files (RXF_Config.h and RXF_VirtualTable.h) are only created, if the active component type is executable or this property is set to true.</Para>
+                <Para>With this property set to false, for library components no configuration files will be generated. </Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>GroupsForSubfolders</TermName>
+            <Section>
+                <Para>If this roperty is set to true, in the IDE Project groups are generated for subfolders in generated code.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>IDEProject</TermName>
+            <Section>
+                <Para>Path to IDE project file, relative to Rhapsody project.</Para>
+                <Para>Please refer to the documentation, section Usage | Deployment.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>IDEWorkspace</TermName>
+            <Section>
+                <Para>Path to IDE workspace file that will be opend after deployment. Only use this property when the workspace differs from the IDE Project file set in RXF::Deployer::IDEProject.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>ModelCodeFolder</TermName>
+            <Section>
+                <Para>Name of the folder next to the target IDE project where generated sources files are copied to.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>OpenIDEProject</TermName>
+            <Section>
+                <Para>After deployment of files to IDE project, try to open the IDE project.</Para>
+                <Para>This is done by using the system's default application to launch the IDE specific workspace or project file. Before launching it is checked that the IDE process is not running already. This makes sure the IDE is not starting an additional instance every time you deploy, but also means it does not open the associated IDE project, if the IDE is already running with another, non-related, IDE project open.</Para>
+                <Para>Automatically launching Eclipse is currently not supported.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TemplateDestinationFolder</TermName>
+            <Section>
+                <Para>Folder path (without specifying the IDE project file) where the Deployer should create a template based IDE project.</Para>
+                <Para>Only used, when UseTemplateProject property it set to true.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TemplateProject</TermName>
+            <Section>
+                <Para>Path to an IDE template project file which the Deployer will use to create a template based IDE project.</Para>
+                <Para>Only used, when UseTemplateProject property it set to true.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>UseTemplateProject</TermName>
+            <Section>
+                <Para>If this property is set to true, the deployer will create a template based IDE project. The IDE Project specified in property TemplateProject will be copied to the folder specified in the property TemplateDestinationFolder. This only happens if the project does not exist in the destination folder. If the project already exists, it will be modified.</Para>
+                <Para>If this property is set to false, the deployer will modify the IDE project specified in the property IDEProject.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>DeployerFolders</HeadingRunInName>
+        <Section>
+            <Para>Deployer subfolder selection properties.</Para>
+        </Section>
+        <Term>
+            <TermName>Main</TermName>
+            <Section>
+                <Para>If this property is set to true the RXF will provide the main() operation (Default).</Para>
+                <Para>If this property is set to false, no main() will be provided and the RXF has to be started manually by calling the operation RXF_MainTask_start(). This Operation can be called from a C or C++ context and will not return.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>RTOS</TermName>
+            <Section>
+                <Para>Select the RTOS Adapter you want to use. Be aware that this property only tells the Deployer, which RXF sources to deploy.</Para>
+                <Para>No RTOS files are added to the IDE automatically. Your IDE Project has to contain all needed RTOS sources or libraries.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>String</TermName>
+            <Section>
+                <Para>If set to Disabled, no dynamic string handling class will be deployed.</Para>
+                <Para>OMString can be selected to provide a string handler class.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>GeneratedFiles</HeadingRunInName>
+        <Section>
+            <Para>The RXF comes with a file generation helper, that is used to generate config files for the framework, but can also be used to generate user specific files</Para>
+        </Section>
+        <Term>
+            <TermName>ConfigContent</TermName>
+            <Section>
+                <Para>The content of this file is generated to the file specified in the property ConfigFileName.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>ConfigFileName</TermName>
+            <Section>
+                <Para>Name of the generated config file. The Content of the property ConfigContent is generated to this file.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EventContent</TermName>
+            <Section>
+                <Para>The content of this file is generated to the file specified in the property EventFileName.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EventFileName</TermName>
+            <Section>
+                <Para>Name of the generated event pool file. The Content of the property EventContent is generated to this file.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>GenMacrosContent</TermName>
+            <Section>
+                <Para>The content of this file is generated to the file specified in the property GenMacrosFileName.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>GenMacrosFileName</TermName>
+            <Section>
+                <Para>Name of the generated event pool file. The Content of the property GenMacrosContent is generated to this file.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>StandardFiles</TermName>
+            <Section>
+                <Para>The StandardFiles property specifies Files to be generated from RXF file generation helper.</Para> 
+                <Para>Every standard file is associated with a logical name. You define the logical name of a standard file by overriding the StandardFiles property with a comma-separated list of the names of the standard files you want to generate.</Para>
+                <Para>For every standard file defined, you also need to specify a file name and the file content.</Para>
+                <Para>This is done by adding the following two properties</Para> 
+                <Para Type="list">
+                    <Item>LogicalName>Content - Specifies the content for the generated file.</Item>
+                    <Item>LogicalName>FileName - Specifies the file name for the generated file.</Item></Para>
+                <Para>For example, for a logical name of UserConfig, you would define the following properties, e.g. in a property file associated with a custom profile (see property Model::Profile::PropertyFile):</Para>
+                <Para>Subject RXF
+    Metaclass GeneratedFiles
+        Property UserConfigContent MultiLine &quot;&quot;
+        Property UserConfigFileName MultiLine &quot;&quot;
+    end
+end
+                </Para>
+                <Para>All of those properties should have a type of MultiLine.</Para>
+            </Section>
+        </Term>
+
+        <Term>
+            <TermName>StandardFilesRXF</TermName>
+            <Section>
+                <Para>See detailed description in propterty RXF::GeneratedFiles::StandardFiles</Para>
+                <Para>This property contains the standard files generated for used by the RXF internally.</Para>
+                <Para>Needed internally for the RXF. Do not modify this Property!</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Hooks</HeadingRunInName>
+        <Section>
+            <Para>Hooks allow the user to add user defined commands before or after deployment and build.</Para>
+        </Section>
+        <Term>
+            <TermName>PostDeployHook</TermName>
+            <Section>
+                <Para>Command to be executed after the deployer is called, but before makefile is called. Needs to be quoted, even if empty ("").</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>PostMakeHook</TermName>
+            <Section>
+                <Para>Command to be executed after the makefile is called. Needs to be quoted, even if empty ("").</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>PreDeployHook</TermName>
+            <Section>
+                <Para>Command to be executed before the deployer is called. Needs to be quoted, even if empty ("").</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Simplifier</HeadingRunInName>
+        <Section>
+            <Para>Configure features of the RXF code generation simplifier plugin.</Para>
+        </Section>
+        <Term>
+            <TermName>DebugEnabled</TermName>
+            <Section>
+                <Para>Turn on debug output for RXF specific simplifier.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>GenerateOverrideKeyword</TermName>
+            <Section>
+                <Para>Add "override" keyword to overridden reactive operations, for C++11 compatibility.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+</ChapterBook>
+</Head>

@@ -1,0 +1,6 @@
+../RXF/RXF_CriticalSection.h:24:21:void RXF::CriticalSection::lock()	24	static
+../RXF/RXF_CriticalSection.h:32:21:void RXF::CriticalSection::unlock() const	24	static
+../RXF/RXF_MemoryPoolBase.h:104:17:bool RXF::MemoryPoolBase::isMemoryInPool(const void*) const	16	static
+../RXF/RXF_MemoryPoolBase.cpp:15:5:RXF::MemoryPoolBase::MemoryPoolBase(std::size_t, void*, const void*)	24	static
+../RXF/RXF_MemoryPoolBase.cpp:19:12:void* RXF::MemoryPoolBase::alloc(std::size_t)	24	static
+../RXF/RXF_MemoryPoolBase.cpp:49:10:bool RXF::MemoryPoolBase::freeMemory(void*)	24	static

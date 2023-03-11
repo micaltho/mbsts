@@ -1,0 +1,149 @@
+body {
+    color: #333333;
+    background-color: #f2f2f2;
+	font-family: "Trebuchet MS",Helvetica,Arial,sans-serif;
+    font-size: 100.01%;
+    margin: 0; padding: 1em 0;
+    text-align: center;  /* Zentrierung im Internet Explorer */
+  }
+
+  div#View {
+    text-align: left;    /* Seiteninhalt links ausrichten */
+    margin: 0 auto;      /* standardkonforme horizontale Zentrierung */
+    min-width: 400px;
+    max-width: 1000px;
+    padding: 0;
+    background: white url(Images/Willert-Logo-Grey.png) no-repeat right top;
+    border: 2px ridge silver;
+  }
+
+  h1,h2,h3,h4 {
+    margin-top: 3.0em;
+	line-height: normal;
+	font-weight: bold;
+  }
+
+  h1 {
+	font-size: x-large;
+	color: #666666;
+    /* margin-top:80px; */
+  }
+  
+  h2 {
+	font-size: large;
+  }
+  
+  h3 {
+	font-size: large;
+	font-weight: normal;
+  }
+  
+  h4 {
+	font-size: small;
+	color: #333333;
+	text-transform: uppercase;
+  }
+  
+pre {
+  font-family: "Courier New",Courier,monospace;
+  font-weight: bold;
+  color: #4b4a63;
+  font-size: small;
+}
+  ul#Navigation {
+    font-size: 0.83em;
+    float: left; width: 130px;
+    margin: 0 0 1.2em; padding: 0;
+  }
+  ul#Navigation li {
+    list-style: none;
+    margin: 0; padding: 0.5em;
+  }
+  ul#Navigation a {
+    display: block;
+    padding: 0.2em;
+    font-weight: bold;
+  }
+  ul#Navigation a:link {
+    background-color: #eeeeee;
+    color: black;
+  }
+  ul#Navigation a:visited {
+    background-color: #eeeeee;
+  	color: #9e1e1b;
+  }
+  ul#Navigation a:hover {
+    background-color: #dddddd;
+  	color: black;
+  }
+  ul#Navigation a:active {
+    background-color: #cccccc;
+  	color: #9e1e1b;
+  }
+
+
+  ul#Navigation2 {
+    display: block;
+    font-size: 0.8em;
+    float: left; width: 130px;
+    background-color: white;
+    margin: 0 0 1.2em; padding: 0;
+  }
+  ul#Navigation2 li {
+    list-style: none;
+    margin: 0; padding: 0.01em;
+  }
+  ul#Navigation2 a {
+    display: block;
+    padding: 0.2em;
+    font-weight: normal;
+    margin: 0 1.5em 0.5em; padding: 0;
+  }
+  ul#Navigation2 a:link {
+    background-color: white;
+    color: black;
+  }
+  ul#Navigation2 a:visited {
+    background-color: white;
+  	color: #9e1e1b;
+  }
+  ul#Navigation2 a:hover {
+    background-color: #dddddd;
+  	color: black;
+  }
+  ul#Navigation2 a:active {
+    background-color: #cccccc;
+  	color: #9e1e1b;
+  }
+
+
+
+  div#Content {
+    margin: 0 0 1em 150px;
+    padding: 0 1em;
+  }
+  * html div#Content {
+    height: 1em;  /* Workaround gegen den 3-Pixel-Bug des Internet Explorer bis Version 6 */
+    margin-bottom: 0;
+  }
+  div#Content p {
+    font-size: 1em;
+    margin: 1em 0;
+  }
+
+  p#HighlightFooter {
+    clear: both;
+    font-size: 0.83em;
+    margin: 0; padding: 0.1em;
+    text-align: center;
+    background-color: #fed;
+    border-top: 1px solid silver;
+  }
+  p#Footer {
+    clear: both;
+    font-size: 0.6em;
+    margin: 0; padding: 0.1em;
+    text-align: center;
+    background-color: #eee;
+    border-top: 1px solid silver;
+  }  

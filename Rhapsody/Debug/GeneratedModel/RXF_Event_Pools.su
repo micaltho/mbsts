@@ -1,0 +1,8 @@
+../GeneratedModel/RXF_Event_Pools.cpp:22:9:static void* RXF::Event::operator new(std::size_t)	24	static
+../GeneratedModel/RXF_Event_Pools.cpp:45:7:static void RXF::Event::operator delete(void*)	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_MemoryPool.h:24:16:RXF::MemoryPool<COUNT, SIZE>::MemoryPool() [with long unsigned int COUNT = 64; unsigned int SIZE = 16]	24	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_MemoryPool.h:24:16:RXF::MemoryPool<COUNT, SIZE>::MemoryPool() [with long unsigned int COUNT = 32; unsigned int SIZE = 20]	24	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_MemoryPool.h:24:16:RXF::MemoryPool<COUNT, SIZE>::MemoryPool() [with long unsigned int COUNT = 32; unsigned int SIZE = 24]	24	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_MemoryPool.h:24:16:RXF::MemoryPool<COUNT, SIZE>::MemoryPool() [with long unsigned int COUNT = 16; unsigned int SIZE = 32]	24	static
+../GeneratedModel/RXF_Event_Pools.cpp:57:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../GeneratedModel/RXF_Event_Pools.cpp:57:1:cpp)	8	static

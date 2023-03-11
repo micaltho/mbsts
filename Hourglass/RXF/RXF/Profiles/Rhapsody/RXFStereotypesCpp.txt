@@ -1,0 +1,1 @@
+This Profile is supplied by Willert Software Tools and offers a useful set of stereotypes you may use in your application model.

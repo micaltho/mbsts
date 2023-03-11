@@ -1,0 +1,9 @@
+../platform/bsp/src/dac.cpp:19:6:static void Platform::BSP::Dac::initialize()	24	static
+../platform/bsp/src/dac.cpp:29:6:static void Platform::BSP::Dac::deinitialize()	8	static
+../platform/bsp/src/dac.cpp:34:6:static void Platform::BSP::Dac::setAnalog(uint16_t)	16	static
+../platform/bsp/src/dac.cpp:40:6:static void Platform::BSP::Dac::setUpdateRate(Platform::BSP::Dac::UpDateTimes_e)	16	static
+../platform/bsp/src/dac.cpp:46:36:static Platform::BSP::Dac::UpDateTimes_e Platform::BSP::Dac::getUpdateRate()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:virtual Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:Platform::BSP::DigitalInOut::~DigitalInOut()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:virtual Platform::BSP::DigitalInOut::~DigitalInOut()	16	static

@@ -1,0 +1,6 @@
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/TaskBase.h:61:16:void* RTOS::Task::getTaskHandle() const	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PeriodicTaskBase.h:81:11:RTOS::PeriodicTaskBase::MyTimer::MyTimer(RTOS::Task*, const char*, uint32_t)	24	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PeriodicTaskBase.h:86:16:virtual void RTOS::PeriodicTaskBase::MyTimer::m_timer()	16	static
+../platform/osSupport/src/PeriodicTaskBase.cpp:16:1:RTOS::PeriodicTaskBase::PeriodicTaskBase(const char*, uint16_t, osPriority, uint32_t, bool)	32	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PeriodicTaskBase.h:78:11:RTOS::PeriodicTaskBase::MyTimer::~MyTimer()	16	static
+C:\Users\joklappe\Rhapsody\platform\osSupport\inc/PeriodicTaskBase.h:78:11:virtual RTOS::PeriodicTaskBase::MyTimer::~MyTimer()	16	static

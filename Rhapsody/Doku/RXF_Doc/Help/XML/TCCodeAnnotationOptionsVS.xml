@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGeneration xmlns:cg="http://www.btc-es.de/CodeGeneration/1.0">
+	<Environment>
+		<Compiler name="MSVC" ccompiler="cl.exe"/>
+		<TargetConfigFile absolute_path="<PathToFil>/targetconfig.xml"/>
+	</Environment>
+</CodeGeneration>

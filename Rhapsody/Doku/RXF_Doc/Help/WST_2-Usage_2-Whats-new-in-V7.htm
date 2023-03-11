@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Migration from a V6 Product to V7 - RXF Documentation</title>
+
+<link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+<link rel="stylesheet" href="wst_print.css" type="text/css" media="print">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="RXF_Migration"></a><a name="V6_to_V7_Migration"></a><a name="V7_-_Whats_New"></a>What's New in V7 (Willert
+RXF Version 7)<br>
+</h1>
+The
+RXF is currently available in major version 7 and has been completely
+redesigned as it is generated from a rhapsody model now. It allows
+Willert
+Software Tools to create more generic product releases. The
+customer benefits from reduced dependencys to special components like
+board, compiler, IDE and RTOS, which helps the customer to be more
+flexible in the tool selection.<br>
+<h2>Memory Management<br>
+</h2>
+RXF V7 has an improved Memory Management, which uses static Memory
+Pools for internaly used dynamic memory allocation. This is faster and
+more transparent than the old V6 Memory Management.<br>
+<h2><a name="Tags_for_WSTDeployer"></a>WSTDeployer<br>
+</h2>
+The WSTDeployer is now independent of the IDE to deploy to what allows
+one Framework to be used with multiple IDEs. Also the Deployer allows
+selective Deployment of RXF Sources, which makes it possible to deliver
+multiple RTOS adaptions with one framework.<br>
+<h2>OXF Container Classes</h2>
+As the deployer needs to deploy all selected Variants from Framework
+Sources flat to one RXF directory, also the oxf container class folder
+is deployed flat now. If include pahts like
+&lt;oxf\omcollec.h&gt;,
+&lt;oxf\omlist.h&gt; or &lt;oxf\ommap.h&gt; are added
+manually to the
+user model the have to be changed to &lt;omcollec.h&gt;,
+&lt;omlist.h&gt; or &lt;ommap.h&gt;. For generated
+code, this is fixed
+automatically through the new Framework Profile.<br>
+<br>
+<h2><a name="Rhapsody_Integration_in_V7"></a>Rhapsody
+Integration<br>
+</h2>
+No WST_RXF_V6.prp or WST_RXF_V7.prp file is required and included
+in SiteC.prp or SiteC++.prp. Properties are now defined in the
+<span style="font-style: italic;">RXF</span>
+stereotype as part of the product specific profile.<br>
+<br>
+<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+</body></html>

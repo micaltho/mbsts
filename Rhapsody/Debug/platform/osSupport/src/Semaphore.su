@@ -1,0 +1,4 @@
+../platform/osSupport/src/Semaphore.cpp:13:1:RTOS::Semaphore::Semaphore(const osSemaphoreDef_t*, uint32_t)	24	static
+../platform/osSupport/src/Semaphore.cpp:23:1:RTOS::Semaphore::~Semaphore()	16	static
+../platform/osSupport/src/Semaphore.cpp:32:6:bool RTOS::Semaphore::up()	24	static
+../platform/osSupport/src/Semaphore.cpp:54:6:bool RTOS::Semaphore::down()	24	static

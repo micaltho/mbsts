@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>High Water Marks - RXF Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head>
+<body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+  <h1><a name="High_water_marks" id="High_water_marks"></a>High Water Marks</h1>
+All memory pools can be configured via properties which you can set
+in your model. We have implemented high water marks for these so you
+can inspect at runtime how much resources of these pools are actually
+used.<br>
+  <br>The high watermarks of the common pools can be found as attribute countMax in each of the following locations:<br>
+
+  <ul>
+  <li>For the timer pool:&nbsp;<span style="font-style: italic;">WST_TMR</span>_<span style="font-style: italic;">timerPool</span>
+  </li><li>For the default event pool:&nbsp;<span style="font-style: italic;">WST_EVT_</span><span style="font-style: italic;">defaultPool</span></li>
+  <li>For the small event pool:&nbsp;<span style="font-style: italic;">WST_EVT</span>_<span style="font-style: italic;">smallPool</span>
+  </li><li>For the medium event pool:&nbsp;<span style="font-style: italic;">WST_EVT</span>_<span style="font-style: italic;">mediumPool</span>
+  </li><li>For the large event pool:&nbsp;<span style="font-style: italic;">WST_EVT_</span><span style="font-style: italic;">largePool</span></li>
+  <li>For the list pool:&nbsp;<span style="font-style: italic;">WST_LIST_pool</span></li>
+  <li>For the map pool:&nbsp;<span style="font-style: italic;">WST_MAP_pool</span></li>
+  </ul>If you use user pools, you can find the high watermarks as attribute <span style="font-style: italic;">maxCount</span> in the specific pool.<br>
+<br>
+The high water marks allow you to fine-tune the number of elements provided in the static pools.<br>
+<br>
+They are enabled if the Tag WST_HWM_ENABLED is set. Then you can add the pools to
+your debugger's watch window to analyze the high water marks after a
+system has performed the desired tasks. In uVision this would look like this:<br>
+  <br>
+  <img style="width: 500px; height: 855px;" alt="High Water Mark Watch Winndow" src="Images/HighWaterMarkWatch.png"><br>
+  <br>
+
+  </div>
+
+  <p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+</body></html>

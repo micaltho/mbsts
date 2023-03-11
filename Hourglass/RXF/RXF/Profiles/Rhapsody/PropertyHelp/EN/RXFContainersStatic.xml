@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: RXFContainersStatic.xml 72434 2021-09-29 10:00:34Z jtrageser $ -->
+<Head xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xml_schemas/property_help.xsd">
+<ChapterBook>
+    <ChapterBookName>RXFContainersStatic</ChapterBookName>
+    <Section>
+        <Para>The RXFContainersStatic subject contains metaclasses for the static container classes delivered with the Realtime eXecution Framework RXF that allow working with static memory only.</Para>
+    </Section>
+    <HeadingRunIn>
+        <HeadingRunInName>UnboundedOrdered</HeadingRunInName>
+		<Section>
+			<Para>Unbounded ordered container class: List</Para>
+		</Section>
+        <Term>
+            <TermName>DefaultUnboundedContainerSize</TermName>
+            <Section>
+                <Para>The number of elements that can be stored in the static memory pool of the list.</Para>
+                <Para>The value of this property will be used as container size for all unbounded containers (with a multiplicity of *).</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>UnboundedUnordered</HeadingRunInName>
+		<Section>
+			<Para>Unbounded unordered container class: List</Para>
+		</Section>
+        <Term>
+            <TermName>DefaultUnboundedContainerSize</TermName>
+            <Section>
+                <Para>The number of elements that can be stored in the static memory pool of the list.</Para>
+                <Para>The value of this property will be used as container size for all unbounded containers (with a multiplicity of *).</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+</ChapterBook>
+</Head>

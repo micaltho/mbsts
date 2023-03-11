@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Asynchronous Messages - RXF Documentation</title>
+  
+
+  
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+
+  
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head><body>
+<div id="View">
+<script src="TOC.js" type="text/javascript"> </script>
+<div id="Content">
+<h1><a name="Event_Handling"></a><a name="CGEN"></a><a name="RiCGEN"></a><a name="FIRE"></a><a name="Messages"></a>Asynchronous Messages<br>
+</h1>
+The Willert RXF supports communication via asynchronous messages, also
+known as events. This is a strong mechanism for decoupling object
+oriented software in run time behavior.<br>
+<br>
+Event receptions in a UML model are usually consumed by classes which
+have their behavior modelled via a statechart. An event can for example
+be perfectly used to trigger a transiton to another state.<br>
+<br>
+Events can be sent from any part of the application, usually within
+user code. The RXF supports different macros to send an event to a
+receiving object:<br>
+<br>
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 50%;">Use Case<br>
+      </td>
+      <td style="vertical-align: top; width: 30%;">Macro<br>
+      </td>
+	  <td style="vertical-align: top; width: 30%;">C-Code alternative<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Sending an <b>static</b> event from an interrupt service routine, where events may
+not be allocated dynamically, but where a me pointer of the sender is
+available.<br></td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN_ISR</span>(&lt;static event&gt;)</td>
+	  <td style="vertical-align: top;"><b>FIRE_ISR</b>(&lt;destination object&gt;, &lt;static event object&gt;)</td>
+    </tr>
+	<tr>
+      <td style="vertical-align: top;">Sending an <b>dynamic</b> event from anywhere to an specific destination object.<br></td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN</span>(&lt;receiver address&gt;, &lt;event name ( &lt;parameters&gt; )&gt;)</td>
+	  <td style="vertical-align: top;"><span style="font-weight: bold;">FIRE</span>(&lt;destination object&gt;, &lt;event name ( &lt;parameters&gt; )&gt;)</td>
+    </tr>
+	<tr>
+      <td style="vertical-align: top;">Sending an <b>static</b> event from anywhere to an specific destination object.<br></td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN_STATIC</span>(&lt;receiver address&gt;, &lt;static event object&gt;)</td>
+	  <td style="vertical-align: top;"> - </td>
+    </tr>
+	<tr>
+      <td style="vertical-align: top;">Sending an <b>dynamic</b> event from an interrupt service routine.<br>
+	  <b>Not recommended</b> because dynamic allocation of events may take to long time for an interrupt service routine.</td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN_ISR_DYNAMIC</span>(&lt;receiver address&gt;, &lt;event name ( &lt;parameters&gt; )&gt;)</td>
+	  <td style="vertical-align: top;"> - </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+</div>
+<p id="Footer">This documentation belongs to the Product
+RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08.
+&copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+
+</body></html>

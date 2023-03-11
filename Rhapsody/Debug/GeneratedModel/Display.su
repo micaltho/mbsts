@@ -1,0 +1,3 @@
+../GeneratedModel/Display.cpp:15:1:Display::Display()	16	static
+../GeneratedModel/Display.cpp:18:1:Display::~Display()	16	static
+../GeneratedModel/Display.cpp:18:1:virtual Display::~Display()	16	static

@@ -1,0 +1,36 @@
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7-m\nofp\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/sspdevice.h:75:13:Platform::BSP::SSPDevice::~SSPDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/sspdevice.h:75:13:virtual Platform::BSP::SSPDevice::~SSPDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:61:7:Platform::BSP::MonoChromeDisplay<Platform::BSP::SSPDevice>::~MonoChromeDisplay()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:61:7:virtual Platform::BSP::MonoChromeDisplay<Platform::BSP::SSPDevice>::~MonoChromeDisplay()	16	static
+../platform/bsp/src/st7565r.cpp:106:1:Platform::BSP::ST7565R::ST7565R(Platform::BSP::SSPDevice::Interface, uint8_t, uint8_t)	24	static
+../platform/bsp/src/st7565r.cpp:113:1:Platform::BSP::ST7565R::~ST7565R()	16	static
+../platform/bsp/src/st7565r.cpp:113:1:virtual Platform::BSP::ST7565R::~ST7565R()	16	static
+../platform/bsp/src/st7565r.cpp:121:6:virtual bool Platform::BSP::ST7565R::initialize(uint32_t, uint32_t, uint8_t, uint8_t*)	32	static
+../platform/bsp/src/st7565r.cpp:157:6:void Platform::BSP::ST7565R::init() const	16	static
+../platform/bsp/src/st7565r.cpp:178:6:virtual void Platform::BSP::ST7565R::on() const	16	static
+../platform/bsp/src/st7565r.cpp:183:6:virtual void Platform::BSP::ST7565R::off() const	16	static
+../platform/bsp/src/st7565r.cpp:188:6:virtual bool Platform::BSP::ST7565R::cmd(uint8_t*, uint32_t&) const	24	static
+../platform/bsp/src/st7565r.cpp:195:6:virtual bool Platform::BSP::ST7565R::data(uint8_t*, uint32_t&) const	24	static
+../platform/bsp/src/st7565r.cpp:202:6:virtual bool Platform::BSP::ST7565R::cmd(uint8_t) const	24	static
+../platform/bsp/src/st7565r.cpp:208:6:virtual bool Platform::BSP::ST7565R::data(uint8_t) const	24	static
+../platform/bsp/src/st7565r.cpp:214:6:void Platform::BSP::ST7565R::commandMode() const	16	static
+../platform/bsp/src/st7565r.cpp:219:6:void Platform::BSP::ST7565R::dataMode() const	16	static
+../platform/bsp/src/st7565r.cpp:224:6:virtual bool Platform::BSP::ST7565R::flush() const	32	static
+../platform/bsp/src/st7565r.cpp:242:6:void Platform::BSP::ST7565R::setPosition(uint8_t, uint8_t)	16	static
+../platform/bsp/src/st7565r.cpp:250:6:void Platform::BSP::ST7565R::showDemoPicture()	32	static
+../platform/bsp/src/st7565r.cpp:261:6:void Platform::BSP::ST7565R::showDemoText()	16	static
+../platform/bsp/src/st7565r.cpp:271:6:void Platform::BSP::ST7565R::printBigNum(uint8_t)	56	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:135:5:Platform::BSP::MonoChromeDisplay<U>::MonoChromeDisplay(typename U::Interface, uint8_t, uint8_t) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:383:6:void Platform::BSP::MonoChromeDisplay<U>::clrscr(uint8_t) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:586:6:void Platform::BSP::MonoChromeDisplay<U>::bitmap(const uint8_t*, uint32_t, uint32_t, Platform::BSP::MonoChromeDisplay<U>::PixelStorage, uint8_t, uint8_t) [with U = Platform::BSP::SSPDevice]	96	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:545:6:void Platform::BSP::MonoChromeDisplay<U>::print(const char*, bool) [with U = Platform::BSP::SSPDevice]	40	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:575:6:void Platform::BSP::MonoChromeDisplay<U>::println(const char*, bool) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:567:6:void Platform::BSP::MonoChromeDisplay<U>::newline(uint8_t) [with U = Platform::BSP::SSPDevice]	16	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\stl_algobase.h:230:5:const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long unsigned int]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:394:6:void Platform::BSP::MonoChromeDisplay<U>::pixel(uint32_t, uint32_t, bool) const [with U = Platform::BSP::SSPDevice]	40	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:487:6:void Platform::BSP::MonoChromeDisplay<U>::ascii(uint8_t, uint8_t, uint8_t, bool) [with U = Platform::BSP::SSPDevice]	32	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/PortPin.h:60:10:virtual Platform::BSP::PortPin::~PortPin()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:Platform::BSP::DigitalInOut::~DigitalInOut()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/digitalinout.h:72:10:virtual Platform::BSP::DigitalInOut::~DigitalInOut()	16	static

@@ -1,0 +1,12 @@
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:virtual Platform::BSP::I2CDevice::~I2CDevice()	16	static
+../platform/bsp/src/mma7455.cpp:7:1:Platform::BSP::MMA7455::MMA7455(Platform::BSP::I2CDevice::Interface, uint8_t)	24	static
+../platform/bsp/src/mma7455.cpp:9:6:bool Platform::BSP::MMA7455::control(Platform::BSP::MMA7455::Mode, Platform::BSP::MMA7455::GRange) const	24	static
+../platform/bsp/src/mma7455.cpp:42:9:uint8_t Platform::BSP::MMA7455::modeControl() const	24	static
+../platform/bsp/src/mma7455.cpp:47:9:uint8_t Platform::BSP::MMA7455::status() const	24	static
+../platform/bsp/src/mma7455.cpp:52:6:bool Platform::BSP::MMA7455::raw(int8_t&, int8_t&, int8_t&) const	32	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:156:28:bool Platform::BSP::I2CDevice::cmd(T, uint8_t) const [with T = Platform::BSP::MMA7455::Register]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:188:28:bool Platform::BSP::I2CDevice::ctrl(T, uint8_t&) const [with T = Platform::BSP::MMA7455::Register]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:208:28:bool Platform::BSP::I2CDevice::ctrl(T, uint32_t&) const [with T = Platform::BSP::MMA7455::Register]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mma7455.h:16:7:Platform::BSP::MMA7455::~MMA7455()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mma7455.h:16:7:virtual Platform::BSP::MMA7455::~MMA7455()	16	static

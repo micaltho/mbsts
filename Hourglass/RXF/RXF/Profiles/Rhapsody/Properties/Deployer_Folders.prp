@@ -1,0 +1,11 @@
+Subject RXF
+    Metaclass DeployerFolders
+        Property Main                           	Bool   "True"
+        Property RTOS                           	Enum   "CMSIS2, FreeRTOS, Linux, Windows, OORTX_ARM, AUTOSAR" "CMSIS2"
+        Property String                         	Enum   "Disabled,OMString" "Disabled"
+        Property ContainerSet                   	String "?<IsConditionalProperty>$<CPP_CG::Configuration::ContainerSet>"
+        Property LegacyPack                     	Bool   "False"
+     end
+end
+
+end

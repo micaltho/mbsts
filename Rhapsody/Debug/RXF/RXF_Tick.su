@@ -1,0 +1,3 @@
+../RXF/RXF_Tick.cpp:20:10:static void RXF::Tick::init()	32	static
+../RXF/RXF_Tick.cpp:43:10:static void RXF::Tick::tickCallback(TimerHandle_t)	16	static
+../RXF/RXF_Tick.cpp:48:10:static void RXF::Tick::tick()	8	static

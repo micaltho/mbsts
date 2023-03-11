@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: ModelChecks.xml 72433 2021-09-29 09:59:44Z jtrageser $ $URL: https://svn.willert.de/V8/trunk/Framework/Product/RXF_CPP/RXF/Profiles/Rhapsody/PropertyHelp/EN/ModelChecks.xml $ -->
+<Head xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xml_schemas/property_help.xsd">
+<ChapterBook>
+    <ChapterBookName>ModelChecks</ChapterBookName>
+    <Section>
+        <Para>The RXF comes with additional model checks. Some of them just enhance the "default" Rhapsody model checks, others have been added to identify model constructs that are not supported by the RXF.</Para>
+    </Section>
+    <HeadingRunIn>
+        <HeadingRunInName>General</HeadingRunInName>
+        <Section>
+            <Para>Here it can be controlled if each simgle RXF model check will automatically be performed at the beginning of to Rhapsody's code generation step.</Para>
+            <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+        </Section>
+        <Term>
+            <TermName>ActiveClassCheck</TermName>
+            <Section>
+                <Para>If True, the Active Class Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>This check is only performed if an RXF component is active and only for the OORTX, the single-task framework. Of course, it makes no sense to create an active task when there is no RTOS to start one. It will give an error if you have a class that is set to active.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EnvironmentCheck</TermName>
+            <Section>
+                <Para>If True, the Environment Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>This check looks if the peroperty "CPP_CG::Configuration::Environment" enumeration is correct to support proper RXF code generation.</Para>
+                <Para>The Environment property should not be overridden inside "SiteC++.prp" or it should include "RXF" as enumeration literal.</Para>
+                <Para>This check is only performed if an RXF component is active.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>EventLowerCaseCheck</TermName>
+            <Section>
+                <Para>If True, the Event Lower Case Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>This check verifies if an Event name starts with a lower-case character.</Para>
+                <Para>This Check could actually be covered by the Name Convention part of the Model Guidelines Check, but it is important that this is not changed by the user. The problem is that in the current RXF the Events are used as function calls, these are generated using a capitalized first character to avoid a name clash.</Para>
+                <Para>This check is only performed if an RXF component is active.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>GEN_ISRCheck</TermName>
+            <Section>
+                <Para>If True, the CGEN_ISR Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>As the GEN_ISR function can no longer be used in the current RXF, this check looks if that is still used in the source code.</Para>
+                <Para>This check is only performed if an RXF component is active.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>ModelGuidelineCheck</TermName>
+            <Section>
+                <Para>If True, the Model Guideline Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>This check is made to check for modeling guidelines. At first, the check only verifies if naming conventions are met. 
+The naming conventions are specieid via Properties, every checkable metaclass has a property that contains a regular expression. Every element of that metaclass is checked against the regular expression. If it fits, it is considered to be OK, otherwise an "Informational Message" will be given.</Para>
+                <Para>The user can easily change the regular expression on any level to match specific guidelines or to switch off a specific naming convention check precisely. The regular expressions can be mmodified in the peroperties "ModelChecks::&lt;Metaclass&gt;::NameCheck", e.g. "ModelChecks::Class::NameCheck".</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>NameClashCheck</TermName>
+            <Section>
+                <Para>If True, the Name Clash Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>A class and a package cannot have the exact same name because the code generation will generate the filenames based on the name of the class and the package, so they would overwrite one another or need to be compined sequentially in one file.</Para>
+                <Para>Note: lower- and upper-case is treated equally, as Windows does not distinguish between them, "Class" and "class" are the same file. But you can select a different "generation name" for class and/or package withhese properties: CG::Class::FileName or CG:Package::FileName. Then you have to be careful yourself that you do not generate another name-clash.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>ParallelStateTransitionCheck</TermName>
+            <Section>
+                <Para>If True, the Parallel State Transition Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>This checks if you have transitions that are crossing state borders between parallel states. This is a non-defined part of the Rhapsody Code Generation, it will cause side-effects and should not be used.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>SettingsCheck</TermName>
+            <Section>
+                <Para>If True, the Settings Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>A problem that sometimes shows up when using the RXF in en Embedded UML Studio Environment (Using the Rhapsody Architect for Software) is that a new project will automatically load the "CodeCentric" and the "SoftwareArchitect" settings files. These cause disturbance in the code generation and they should not be loaded.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>SourceArtefactsCheck</TermName>
+            <Section>
+                <Para>If True, the Source Artefacts Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>When Rhapsody does "Roundtrip" engineering because you change something in the generated source files, it will place all the things it cannot process into UML elements in so-called "Source Artefacts". These are invisible by default and Rhapsody will, by default, try to process all you change in the source files. So if you have "Source-artefacts" set to invisible and you have them in your model, there will be an informational message, as it can easily lead to inintended code fragments and code generation behavior that is different than expected.</Para>
+                <Para>We recommend to either completely avoid the use of source artifacts or at least make them visible in the model browser.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>TriggeredOperationsCheck</TermName>
+            <Section>
+                <Para>If True, the Triggered Operations Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>Triggered operations are, in fact, synchronous events. The Framework cannot process them together with "normal" events or timeouts, they should not be mixed in the same state-machine.</Para>
+                <Para>This check is only performed if an RXF component is active.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>UseOfStaticEventsCheck</TermName>
+            <Section>
+                <Para>If True, the Use of Static Events Check is automatically performed at the beginning of to Rhapsody's code generation step.</Para>
+                <Para>In earlier versions of the RXF (or OXF), it was often useful to work with static Events, which you had to pre-initialize and they would not be created and destroyed dynamically by the Framework. That made them suitable for use in Interrupt Service Routines. This is no longer necessary in the current RXF, since events are now function calls and events use static memory by default. This check looks if the model still contains statically defined events.</Para>
+                <Para>This check is only performed if an RXF component is active.</Para>
+                <Para>Attention: Modified properties in this area only get applied after closing Rhapsody and reopening the model.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Argument</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Attribute</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names. This is only related to Attributes that are NOT Constant.</Para>
+            </Section>
+        </Term>
+        <Term>
+            <TermName>NameCheckConstant</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names. This is only related to Attributes that ARE Constant.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Class</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Cleanup</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Component</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Configuration</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Constructor</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Destructor</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Event</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Initializer</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Object</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Package</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>Port</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>PrimitiveOperation</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+    <HeadingRunIn>
+        <HeadingRunInName>State</HeadingRunInName>
+        <Section>
+            <Para>Metaclass specific configuration of model guideline checks, see ModelChecks::General::ModelGuidelineCheck</Para>
+        </Section>
+        <Term>
+            <TermName>NameCheck</TermName>
+            <Section>
+                <Para>Metaclass specific regular expression that should match for all valid names.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+</ChapterBook>
+</Head>

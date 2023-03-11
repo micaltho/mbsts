@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0.1</version>
+	<lang>C++</lang>
+	<BuildNo>202006101734</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IProfile type="e">
+			<_id type="a">GUID 34e02dab-6433-4a17-b761-688e50db06ef</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ModernCpp</_name>
+			<_modifiedTime type="a">10.29.2021::13:10:16</_modifiedTime>
+			<_defaultComposite type="s">GUID f2ae5258-a7c5-49e5-8cab-68ca2a8e942b</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<AggregatesList type="e">
+				<value>GUID f2ae5258-a7c5-49e5-8cab-68ca2a8e942b</value>
+			</AggregatesList>
+		</IProfile>
+		<IClass type="e">
+			<_id type="a">GUID f2ae5258-a7c5-49e5-8cab-68ca2a8e942b</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

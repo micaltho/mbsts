@@ -1,0 +1,90 @@
+body {
+    color: black; background-color: white;
+	font-family: "Trebuchet MS",Helvetica,Arial,sans-serif;
+    font-size: 10pt;
+    margin: 0; padding: 1em 0;
+    text-align: center;  /* Zentrierung im Internet Explorer */
+  }
+
+  div#View {
+    text-align: left;    /* Seiteninhalt links ausrichten */
+    margin: 0 auto;      /* standardkonforme horizontale Zentrierung */
+    width: 100%;
+    padding: 0;
+    /* background: white url(Images/Willert-Logo-Grey.png) no-repeat right top; */
+  }
+
+  h1 {
+  font-size: x-large;
+    margin: 0; padding: 0.3em;
+    margin-top:80px;
+  font-family: "Trebuchet MS",Helvetica,Arial,sans-serif;
+  line-height: normal;
+  text-align: left;
+  font-weight: bolder;
+  }
+  
+  h2 {
+  font-family: "Trebuchet MS",Helvetica,Arial,sans-serif;
+  font-size: large;
+  line-height: normal;
+  font-weight: bolder;
+    text-align: left;    /* Seiteninhalt links ausrichten */
+}
+h3 {
+  font-size: large;
+  font-weight: normal;
+  text-align: left;
+    text-align: left;    /* Seiteninhalt links ausrichten */
+}
+h4 {
+  font-size: small;
+  font-weight: inherit;
+  text-align: left;
+  font-family: "Trebuchet MS",Helvetica,Arial,sans-serif;
+  line-height: normal;
+  text-transform: uppercase;
+    text-align: left;    /* Seiteninhalt links ausrichten */
+}
+pre {
+  font-family: "Courier New",Courier,monospace;
+  font-weight: bold;
+  font-size: x-small;
+  text-align: left;
+}
+  #Navigation {
+   display: none;
+  }
+  #Navigation2 {
+   display: none;
+  }
+
+  div#Content {
+    /* margin: 0 0 1em 150px; */
+    padding: 0 1em;
+  }
+  * html div#Content {
+    height: 1em;  /* Workaround gegen den 3-Pixel-Bug des Internet Explorer bis Version 6 */
+    margin-bottom: 0;
+  }
+  div#Content p {
+    font-size: 1em;
+    margin: 1em 0;
+  }
+
+  p#HighlightFooter {
+    clear: both;
+    font-size: 0.83em;
+    margin: 0; padding: 0.1em;
+    text-align: center;
+    background-color: #fed;
+    border-top: 1px solid silver;
+  }
+  p#Footer {
+    clear: both;
+    font-size: 0.6em;
+    margin: 0; padding: 0.1em;
+    text-align: center;
+    background-color: #eee;
+    border-top: 1px solid silver;
+  }  

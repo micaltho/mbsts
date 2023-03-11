@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Embedded UML Target Debugger Example - RXF Documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print"></head>
+<body>
+<div id="View">
+  <script src="TOC.js" type="text/javascript"> </script> 	
+
+  <div id="Content">
+  <h1><a name="Animation" id="Animation"></a><a name="Target_Animation" id="Target_Animation"></a><a name="Debugging_on_UML_level" id="Debugging_on_UML_level"></a><a name="UML_Debugger" id="UML_Debugger"></a><a name="Monitor_on_target" id="Monitor_on_target"></a>Embedded UML Target Debugger - Usage Example</h1>
+
+  <p>The
+Embedded UML Target Debugger is a product developed by Willert Software
+Tools GmbH. It allows you to analyse the software behavior on your
+target using UML Diagrams.
+This is similar to a conventional high level language debugger, but on
+UML level. Basically the UML Target Debugger will write Sequence
+Diagrams and Timing Diagrams from the information that the RXF
+Framework on your target provides.<br>Care has been taken to ensure that the influence on the real-time behaviour of the RXF is as minimal as possible.&nbsp;</p><p>To
+create the diagrams, the Target Debugger needs information. This
+information is&nbsp; in the model and also in the generated source
+code.Minimalizing the influence on real-time behaviour means: sending as little information as possible from the target to the host. </p><p>The
+Target debugger will read most of the symbolic information it needs
+from an XML file that was generated during code generation. The user
+does not have to do anything to do this, the RXF code generation will
+do that automatically for you. The symbols used in the generated
+diagrams are coded so that only&nbsp;small pieces of information must
+be sent pysically via teh Target Debugger Communication channel.</p><p>This
+communication channel is something that must be implemented when
+adapting the Target Debugger to the users environment. It can be
+anything that can be used on target and host. Serial, TCP/IP, CAN, JTAG
+or something propriartry.&nbsp; </p><p>This page will guide you through the first steps how to use
+the&nbsp;Embedded UML Target Debugger.</p>To be able to work with the Embedded UML Target Debugger and view the target animation, &nbsp;please first go through the <a href="WST_2-Usage_3-Getting-Started-1.htm">GettingStarted example</a>. We will extend this example to explain the target Debugger.<br>
+  <br>
+<br>
+
+  <h2>Basic Functionality - Getting Started with the Embedded UML Target Debugger</h2>For
+the first steps with our Embedded UML Target Debugger, it is highly
+recommended to use our example model instead of your own model. This
+example will be based on IBM Rational Rhapsody as UML Tool. However the
+steps and Target Debugger functionality when working with another UML
+tool are very similar. We will use <a name="Blinky_UML_Sample_Model_with_Animation" id="OORTXAnimationDemo_Rhapsody_Sample_Model"></a>Blinky.rpy, which is a good starting point.<span style="font-style: italic;"><br></span><br><br>
+  In your Rhapsody Model make sure to have the RXFAnimation stereotype is set for your active component or Configuration.<span style="font-style: italic;"></span> This will trigger the code generator to generate the needed XML file and also the necessary extra code.<br><br>Additional you need to set an WSTMonitorIO_* Stereotype to select the
+communication channel you want to use to transmit Data between the
+Target and the UML Target Debugger. In this case the ITM channel is
+selected by using the Stereotype WSTMonitorIO_CortexITM. If no
+applicable Communication Stereotype is available for which supports
+your device please contact the Willert Support: support@willert.de<br><br style="font-style: italic;">
+  <img style="width: 561px; height: 114px;" alt="" src="Images/TD/example/AnimationStereotypes.jpg"><br><br>After setting these Stereotypes&nbsp;  some additional Tags will be added to your Component / Configuration.<br>This is&nbsp; shown in the picture below.<br><br><img style="width: 482px; height: 273px;" alt="" src="Images/TD/example/AnimationTags.JPG"><br>The
+Subject "RXFAnimation" contains general settings for the Monitor. The
+Subject "WSTMonitorIO_*" contains settings for the choosen
+communication
+between Target and UML Target Debugger and can contain additional
+settings depending on the communication type selected. For example port
+number
+for a TCP/IP connection or message ID for a CAN connection. Here are
+some of teh used tags with a description:<br><ul><li>AnimationType: You can choose between WST_FULL_ANIMATION <span style="font-weight: bold;">(default)</span>&nbsp; and WST_TRACE_ANIMATION.</li><ul><li>FULL:&nbsp; Split the information of an Event into three packages<br>1. Event is put into the message queue<br>2. Event consumtion start<br>3. Event consumption end&nbsp;</li><li>TRACE: Event information is send to UML Target Debugger in one package at event start to avoid overhead.</li></ul><li>MaxParallelStates:
+This numeric value should represent the count of parallelStates of the
+the statechart with the most parallel states. If this number is to
+large unnecessary data is send to the UML Target Debugger. If this
+numer is to small there is the posibility of loosing data. You can find
+out the number of parallel States by checking the count of state
+attributes of the class which has the suffix "_active". <span style="font-weight: bold;">(Default: 4U)</span></li><li>sendParameters: Switch on/off of sending event / operation parameter. <span style="font-weight: bold;">(Default: Yes)</span></li><li>MaxPrintIntObjects:
+Number of filtered instances which can send integer values to the UML
+Target Debugger. (This feature will be described more in detail). If
+you don not need this functionality you can switch it of by setting the
+value to 0. <span style="font-weight: bold;">(Default: 0)</span></li><li>MonitorTaskStackSize:
+The monitor uses a task to send / receive data. This Tag can be used to
+define the stack size of the monitor task. <span style="font-weight: bold;">(Default: 1024U)</span></li><li>MonitorTaskName: Name of the monitor task.&nbsp;<span style="font-weight: bold;">(Default: "MonitorTask")</span></li><li>MonitorReceiveCommandBufferSize:
+Maximum size of a command which can be handled by the monitor when
+receiving a command from the UML Target Debugger. 32U should be
+sufficient as long as you don't want to inject events with a huge
+amount of parameter data.&nbsp;<span style="font-weight: bold;">(Default: 32U)</span></li><li>MonitorSendBufferSize: Buffer to
+collect data while your application is running which are send to the
+UML Target Debugger when the monitor task is active.<span style="font-weight: bold;"> (Default: 1024U)</span></li><li>MonitorReceiveBufferSize:
+Buffer which stores received data from the UML Target Debugger which
+are handled inside the monitor task.&nbsp;<span style="font-weight: bold;">(Default: 32U)</span></li></ul>
+  <br>
+Make sure you have an empty GettingStarted IDE&nbsp;project you can
+deploy to. (If the GettingStarted is not empty, there is a
+GettingStartedBackup that should be empty, just copy it and rename it).<br>
+You can now perform a Generate/Make/Run in Rhapsody. This will generate
+code, generate the RXF files and start the deployer. Select the
+GettingStarted Project (Or the project you just copied) and the
+deployer
+will deploy the Rhapsody generated files to your IDE, and build the <a href="WST_2-Usage_3-Getting-Started-1.htm">GettingStarted example</a>.
+After a successful build in your IDE, flash the executable to the
+target<span style="font-style: italic; font-weight: bold;"> but do not start program execution yet!</span>. The target program must
+be reset and stopped. Otherwise the Embedded UML Target Debugger will
+miss important information about dynamically created objects the target
+sends.<br>
+  <br> Now start the&nbsp;Embedded UML Target Debugger on
+the PC. Launch the batch file
+located under &lt;RXF installation folder&gt;\Tools\TargetDebugger\Embedded_Uml_Target_Debugger.bat.<br><br>
+  The Embedded UML Target Debugger first need to read the <a name="XML_file_for_animation" id="XML_file_for_animation"></a>XML
+file which has been generated&nbsp;using a
+simplifier helper during Rhapsody's code generation. This file is
+called as your active configuration.xml and created in the path model
+file. You can open the XML file using <span style="font-style: italic;">File | Open XML File</span> or via button on the toolbar:&nbsp;
+
+  <p><img style="width: 243px; height: 119px;" alt="" src="Images/TD/example/AnimationOpenXML.jpg"></p><br>
+After the XMLData.xml file was opened, you have to select the target
+communication plugin you want to use from the drop down list by clicking on the IO plugin selection button:<br><img style="width: 243px; height: 119px;" alt="" src="Images/TD/example/AnimationOpenIOCommunication.jpg"><br>In the
+next step you can select the communication parameters depending on the
+communication interface. This example works with the Keil Plugin
+communication. (Communication chain: UML Target Debugger &lt;-&gt; Keil µVision &lt;-&gt; ITM interface of a Cortex-M device)<br>
+  <br>
+  <img style="width: 203px; height: 123px;" alt="" src="Images/TD/example/AnimationSelectCommunication.jpg"><br>
+  <br>
+  After selecting a plugin a configuration window will pop up to config the communication with the target.<br><img style="width: 425px; height: 235px;" alt="" src="Images/TD/example/ITMConfig.JPG"><br><span style="font-weight: bold;">Important
+for this plugin before press Ok:</span> <br><ol><li>Make sure that µVision is already running because this
+plugin will connect directly to µVision.&nbsp;</li><li>Make sure that the
+µVision API is enabled by checking:<br><img style="width: 331px; height: 501px;" alt="" src="Images/TD/example/uVisionConf1.png"><br><img style="width: 451px; height: 182px;" alt="" src="Images/TD/example/uVisionConf2.JPG"></li></ol>After confirming the plugin with "Ok" a console message should appear that te plugin is initilized successful.
+  <br>
+  <img style="width: 316px; height: 76px;" alt="" src="Images/TD/example/pluginConnectedSuccessful.JPG"><br>
+  <br>
+  In retrospect it is always possible to change the communication plugin and settings by using the toolbar buttons.<br>
+  <br>
+Now&nbsp;switch back to your IDE and start program
+execution on target, as the Embedded UML Target Debugger now listens
+for commands sent from target. In the tree view on the left you can now
+also see values of attributes and states.<br>
+  You will see something like this:<br>
+  <br>
+  <img style="width: 1116px; height: 749px;" alt="" src="Images/TD/example/TDWorking.JPG"><br>
+  <br>
+  <br>
+
+  <h2>Explaining the GUI</h2><br><img src="Images/TD/example/TD_GUI.JPG" alt=""><br><br><h2>The Menu</h2>
+  This area contains short cuts to the most common functions of the UML Target Debugger.<br>
+  The same functions can be found in the tools menu.
+  <br><h2>The Browser Area</h2>
+  The browser Area is split into three parts:<br>
+  <h3>Objects:</h3>
+  After the Target Debugger is started, the XML file is loaded and the
+communication channel was setup and started, the target can start
+sending information.
+ <h3>Views:</h3>
+The view tab manage your recorded / loaded sessions.<br>
+<img src="Images/TD/ViewOptions.png" alt=""><br>
+You can generate / edit views on your recorded data.<br>
+<img src="Images/TD/ViewFilter.png" alt=""><br>
+This means you can filter your recorded data by event information (sender / receiver / event type )<br>
+Additional you can save and load such filter views.<br>
+<br>
+Open a selected view in a separate window to compare it with another view.<br> 
+<br>
+You can save a selected view to your computer to share it with colleges.<br> 
+<br>
+You can save a selected view as *.csv file.<br>
+  <h3>Target:</h3>
+This tab give you control about the target filter.<br>
+This means you can select while runtime which events and instances are send from your Target to the UML Target Debugger.<br>
+This can be very important when your model becomes very big and you have to separate which information is send to the 
+UML Target Debugger to avoid a buffer overflow on target side.  
+<h2>The Diagram Area</h2>
+This area shows your selected view as sequence or timing diagram.<br>
+<h2>Console</h2>The Console window shows information on actions you perform to get a feedback of what you did.<br>
+<br><br>This is the "normal" functionality of the Target Debugger.
+There is much more, the following chapters explain (briefly) some of
+the more advanced features.<h2>Advanced Features</h2><br>
+You can also click on an attribute / state:
+at that moment in runtime, the Embedded UML Target Debugger on the PC
+will query the target to send the actual value - such information is
+sent only on request by the PC in order to reduce the I/O traffic as
+much as possible. The information shown on events is actually
+transferred in a compact way and not as the strings you see, again to
+reduce traffic and thus runtime disturbance. The Request for the
+attribute value / state is send to the target when you colapse the item
+in the tree view.<br>
+<br>
+<h3>Timing Diagrams</h3>
+The Embedded UML
+Target Debugger is able to switch from the default sequence diagram
+view to a timing diagram view. It is a useful diagram similar to the
+timing diagrams known from technical data sheets to visualize state
+changes proportional to the time axis.<br>
+
+  <img style="width: 645px; height: 451px;" alt="" src="Images/TD/example/TimingDiagramm.JPG"><br>
+
+  <br>
+Zooming in and out is possible using the mouse wheel, if available. You
+can change the start tick by dragging inside the diagram with mouse or
+by using the Zoom controll below the timing diagram.<br>
+<br>
+
+
+  <h3><a name="Event_Injection_via_Embedded_UML_Target_Debugger" id="Event_Injection_via_Embedded_UML_Target_Debugger"></a>Event Injection</h3>Its
+also possible to inject events by the Embedded UML Target Debugger to stimulate a specific behaviour on the target side.<br><br><img style="width: 553px; height: 87px;" alt="" src="Images/TD/example/eventInjectionToolMenue.png"><br>
+  <br>
+  Clicking this button will activate another Window:<br><img style="width: 713px; height: 491px;" alt="" src="Images/TD/example/eventInjectionWindow.JPG"><br><br>To
+inject an event you just select the event name, an destination object
+an press on Inject Event. Alternativ you can can add an event to a
+sequence to inject more than one event at the same time.<br>
+  <br><a name="Events_with_Parameters"></a>Events
+may also have standard type
+parameters, which are supported by the Embedded UML Target Debugger.
+Parameters / arguments of events will be displayed as integer values
+inside the animated diagrams. Also event injection with arguments is
+possible. If you have selected to inject an event which has parameters
+(defined in the UML model), a window will pop up and ask for each
+argument. The value for each argument will be insert as unsigned int
+value and cast internaly to the real data type of the event parameter.<br>
+<h3><a name="Filtering_for_Specific_Instances_in_the_Embedded_UML_Target_Debugger" id="Filtering_for_Specific_Instances_in_the_Embedded_UML_Target_Debugger"></a>Filtering</h3>On
+a larger model, showing all events and attributes is confusing, because
+it will not fit in a window and will lead to overhead. Therefore we
+have implemented a filter mechanism on the target side which can be controlled at runtime / compile time. <br>Change filter while runtim:<br>Please
+select the Target tab. Here you find a list of all reactive Objects. By
+enable / disable the depending instance the filter will be switched on
+/ off on the target side.<br><img style="width: 271px; height: 284px;" alt="" src="Images/TD/example/TargetFilter.JPG"><br><br>Setup Filter while compile time:<br>
+  If you want to activate the filter while compiletime please use following properties:<br><img style="width: 257px; height: 105px;" alt="" src="Images/TD/example/compileFilter.JPG"><br>Please use <span style="font-weight: bold;">CG::Class::SendToTargetDebugger</span> for classes. This means that all instances of this class will be filtered on target side.<br>Please use <span style="font-weight: bold;">CG::Relation::SendToTargetDebugger</span>
+for Parts or Compositions. This is usefull if you have more than one
+instance of a class and only want to see the behaviour of special
+instance.<br><br>If you set both values on "unchecked" for your active configuration, all instances are filtered on the target.<br>
+  <br><h3>Communication Buffer Overflows</h3>When
+an event is consumed by the user application, event information is send
+to the UML Target Debugger. This information is stored inside a buffer
+which is send to the UML Target Debugger inside a monitor task. If the
+user application takes to much execution time and the monitor task has
+no chance to send the contant of the buffer to the UML Target Debugger
+the buffer will overflow at some point. If this happen event
+information is lost and a buffer overflow command is send to the UML
+Target Debugger to indicate the user that data has been lost.&nbsp;<br>
+
+
+  <h2>More Information</h2>To make it easier to navigate to your recent used XML files, you can select them in the file menu:<br>
+  <img style="width: 787px; height: 128px;" alt="" src="Images/TD/example/loadRecentXMLFile.png"><br>
+  <h3>FAQ</h3>
+
+  If you have any questions, please have a look at the <a href="WST_2-Usage_6-Target-Debugger_FAQ.htm">Animation FAQ page</a> or contact our <a href="WST_9-Support.htm">support</a> team.<br>
+  
+<h3>Model Driven Automatic Tests execution on a Realtime Target</h3>
+
+  You can also use <a href="WST_2-Usage_6-TestConductor.htm">TestConductor</a> in combination with Animation.<br>
+
+  <br>
+  </div>
+
+  <p id="Footer">This documentation belongs to the Product RXF_Rpy_CPP_V7.05_edu, released on 2019-02-08. &copy;&nbsp;2018 Willert Software Tools GmbH.</p>
+</div>
+</body></html>

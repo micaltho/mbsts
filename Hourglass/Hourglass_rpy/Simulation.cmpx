@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IComponent type="e">
+			<_id type="a">GUID 8fed8d9c-ec8d-4497-b4b0-870f75a19c16</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Configuration</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Environment</_Name>
+													<_Value type="a">RXF</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Cygwin,MSVC,Linux,RXF</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">Simulation</_name>
+			<_modifiedTime type="a">6.22.2022::13:7:10</_modifiedTime>
+			<m_buildType type="a">Executable</m_buildType>
+			<m_configActive type="r">
+				<ICodeGenConfigInfoHandle type="e">
+					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
+					<_hid type="a">GUID d0eb5dfa-e4bf-40cd-ae13-663b20a02069</_hid>
+				</ICodeGenConfigInfoHandle>
+			</m_configActive>
+			<VariationPoints type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</VariationPoints>
+			<SelectedVariants type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</SelectedVariants>
+			<AggregatesList type="e">
+				<value>GUID 3f2b945d-1cce-41e9-a6ec-b74a7a9df830</value>
+				<value>GUID d0eb5dfa-e4bf-40cd-ae13-663b20a02069</value>
+			</AggregatesList>
+		</IComponent>
+		<IFolder type="e">
+			<_id type="a">GUID 3f2b945d-1cce-41e9-a6ec-b74a7a9df830</_id>
+			<_myState type="a">73728</_myState>
+			<_name type="a">Files</_name>
+			<_modifiedTime type="a">6.22.2022::12:20:23</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Application.sbsx</_hfilename>
+							<_hname type="a">Application</_hname>
+							<_hid type="a">GUID 5ac272b1-e5d9-448a-b53e-55d20b79c45d</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Simulation.sbsx</_hfilename>
+							<_hname type="a">Simulation</_hname>
+							<_hid type="a">GUID c4eca665-7b96-4b1a-b380-39a92180c1f9</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		<ICodeGenConfigInfo type="e">
+			<_id type="a">GUID d0eb5dfa-e4bf-40cd-ae13-663b20a02069</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Configuration</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Environment</_Name>
+													<_Value type="a">Cygwin</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Cygwin,MSVC,Linux,RXF</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">DefaultConfig</_name>
+			<_modifiedTime type="a">6.22.2022::12:48:14</_modifiedTime>
+			<_scopeType type="a">Explicit</_scopeType>
+			<_instrumentation type="a">Animation</_instrumentation>
+			<_timeModel type="a">RealTime</_timeModel>
+			<m_generateActors type="a">1</m_generateActors>
+			<_statechartImplementation type="a">Flat</_statechartImplementation>
+			<_checksList type="a">0 ,</_checksList>
+			<_checksList_Default type="a">1</_checksList_Default>
+			<ScopeElements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</ScopeElements>
+			<InitialInstances type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</InitialInstances>
+			<AnimScopeElements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</AnimScopeElements>
+			<m_allInAnimScope type="a">1</m_allInAnimScope>
+			<m_generateUsecases type="a">0</m_generateUsecases>
+			<AggregatesList type="e">
+				<value>GUID fb69f793-f7ad-4750-ac95-63d422157379</value>
+				<value>GUID b152b9e0-7fb6-4a1c-8607-1d78d212231c</value>
+				<value>GUID ca446907-9e7f-4dad-9451-14f154acde4f</value>
+			</AggregatesList>
+		</ICodeGenConfigInfo>
+		<IMHyperLink type="e">
+			<_id type="a">GUID fb69f793-f7ad-4750-ac95-63d422157379</_id>
+			<_modifiedTime type="a">6.22.2022::12:15:40</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Makefile</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">Simulation.mak</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IMHyperLink type="e">
+			<_id type="a">GUID b152b9e0-7fb6-4a1c-8607-1d78d212231c</_id>
+			<_modifiedTime type="a">6.22.2022::12:15:40</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Main File</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">MainSimulation</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IFolder type="e">
+			<_id type="a">GUID ca446907-9e7f-4dad-9451-14f154acde4f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DefaultConfig</_name>
+			<_modifiedTime type="a">6.22.2022::7:46:10</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

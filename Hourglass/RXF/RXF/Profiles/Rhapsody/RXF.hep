@@ -1,0 +1,33 @@
+[Helpers]
+numberOfElements=4
+
+#REM: Rhapsody Helpers and Plugins associated with the RXF Profile
+#REM: $Id: RXFProfile.hep 35391 2016-09-27 14:55:35Z eroemer $
+#REM: $URL: https://svn.willert.de/V7/trunk/Component/Modeling/Rpy/Model/RXF_rpy/RXFProfile.hep $
+
+#REM: Manipulate Code Generation by WSTSimplifier for RXF:
+name1=RXF Simplifier
+isPlugin1=1
+DLLServerCompatible1=TRUE
+isVisible1=0
+JavaMainClass1=rxf.simplifier8.cpp.SimplifiersConnector
+JavaClassPath1=".\Helper\SimplifierRXF.jar"
+
+#REM: Register RXF Checker:
+name2=RXF Checker Cpp
+isPlugin2=1
+DLLServerCompatible2=TRUE
+isVisible2=0
+JavaMainClass2=rxf.checker8.CheckerConnector
+JavaClassPath2=".\Helper\Checker.jar"
+
+name3=FileGenerator
+isPlugin3=1
+JavaMainClass3=rxf.helper8.fileGenerator.FileGeneratorHelper
+JavaClassPath3=".\Helper\SimplifierRXF.jar"
+
+name4=RXF File Generator
+isPluginCommand4=1
+command4=FileGenerator
+isVisible4=0
+helperTriggers4=Before Code Generation

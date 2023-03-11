@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.831.0</version>
+	<lang>C++</lang>
+	<BuildNo>9835765</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<IProfile type="e">
+			<_id type="a">GUID e44941ac-2d2e-458b-8f53-9238d6ef77eb</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ArUML_ARXF</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:10</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">This profile supports modelling and code generation for AUTOSAR Classic and Adaptive Platforms</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">9.7.2021::8:25:10</_modifiedTime>
+			<_lastID type="a">7</_lastID>
+			<weakCGTime type="a">9.7.2021::8:25:10</weakCGTime>
+			<strongCGTime type="a">7.22.2021::14:58:58</strongCGTime>
+			<_defaultComposite type="s">GUID f426d18e-e78e-48ce-8884-0fdd8485bf38</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">9.7.2021::8:25:10</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 4f1c59f8-d5f0-4908-a682-2f99091db521</value>
+				<value>GUID 527a00ed-849b-4729-b3c6-39f6f3873962</value>
+				<value>GUID 926fbd45-aec5-4ae4-bfa0-e177f7982a76</value>
+				<value>GUID 7f4b236f-7006-4be2-aa03-fd1b4b3f6f00</value>
+				<value>GUID f568c070-20c6-4941-9940-91bbf356d057</value>
+				<value>GUID e3cb10b8-3377-4379-aead-9dd89b65dcd2</value>
+				<value>GUID c351a01f-7967-4dc4-ba20-5fd903415c0f</value>
+				<value>GUID ee79d4ac-acd0-4f4b-b076-c30408a8d568</value>
+				<value>GUID cbab07d5-3220-41de-b1f1-923234071da9</value>
+				<value>GUID 29328f4d-a70b-4169-a848-be3b9b7ac296</value>
+				<value>GUID f426d18e-e78e-48ce-8884-0fdd8485bf38</value>
+			</AggregatesList>
+		</IProfile>
+		<IStereotype type="e">
+			<_id type="a">GUID 4f1c59f8-d5f0-4908-a682-2f99091db521</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArPackage</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArApplicationDataType</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:0</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Type</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+			<AggregatesList type="e">
+				<value>GUID 9278c7e2-58d1-4c8b-a545-a43ea92d6145</value>
+			</AggregatesList>
+		</IStereotype>
+		<IGeneralization type="e">
+			<_id type="a">GUID 9278c7e2-58d1-4c8b-a545-a43ea92d6145</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IStereotype</_hm2Class>
+					<_hid type="a">GUID 7f4b236f-7006-4be2-aa03-fd1b4b3f6f00</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+		</IGeneralization>
+		<IStereotype type="e">
+			<_id type="a">GUID 527a00ed-849b-4729-b3c6-39f6f3873962</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Aggregates</_Name>
+													<_Value type="a">Attribute, CpClientPort, CpExclusiveArea, CpInterrunnableVariable, CpRTEOperation, CpReceiverPort, CpRunnable, CpSenderPort, CpServerPort, Link, Object</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArAtomicSwc</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:1</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">Abstract stereotype used as parent of all atomic SWC types</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">9.7.2021::8:25:1</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</_m2Classes>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID 926fbd45-aec5-4ae4-bfa0-e177f7982a76</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">2</size>
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">File</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Generate</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">True, False, Specification, Implementation</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">5</size>
+												<IProperty type="e">
+													<_Name type="a">Aggregates</_Name>
+													<_Value type="a">ApProvidedServicePort, ApRequiredServicePort, ArPort, ArSwcPrototype, CpClientPort, CpConnector, CpReceiverPort, CpSenderPort, CpServerPort</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">BrowserGroupIcon</_Name>
+													<_Value type="a">$OMROOT\Profiles\AUTOSAR\Icons\CompositionSwComponentType_BGI.bmp</_Value>
+													<_Type type="a">File</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">BrowserIcon</_Name>
+													<_Value type="a">$OMROOT\Profiles\AUTOSAR\Icons\CompositionSwComponentType_BI.bmp</_Value>
+													<_Type type="a">File</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">DrawingToolIcon</_Name>
+													<_Value type="a">$OMROOT\Profiles\AUTOSAR\Icons\CompositionSwComponentType_DTI.bmp</_Value>
+													<_Type type="a">File</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArPackage</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArComposition</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:1</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Class</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID 7f4b236f-7006-4be2-aa03-fd1b4b3f6f00</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArPackage</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArDataType</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:2</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</_m2Classes>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID f568c070-20c6-4941-9940-91bbf356d057</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">2</size>
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">File</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Generate</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">True, False, Specification, Implementation</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">2</size>
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ApProvidedServicePort, ApRequiredServicePort, ArPort, CpClientPort, CpReceiverPort, CpSenderPort, CpServerPort</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Targets</_Name>
+													<_Value type="a">ApServiceInterface, CpCSInterface, CpSRInterface</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">arInterfaceType</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:3</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Dependency</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID e3cb10b8-3377-4379-aead-9dd89b65dcd2</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">4</size>
+						<IPropertySubject type="e">
+							<_Name type="a">CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">2</size>
+												<IProperty type="e">
+													<_Name type="a">GeneratePackageCode</_Name>
+													<_Value type="a">Always</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Always ,Never ,Smart</_ExtraTypeInfo>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">InitCleanUpRelations</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">CPP_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">File</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Generate</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">True, False, Specification, Implementation</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">C_CG</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Package</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Simplify</_Name>
+													<_Value type="a">ByUserPostDefault</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">None,Default,ByUser,ByUserPostDefault</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">2</size>
+												<IProperty type="e">
+													<_Name type="a">Aggregates</_Name>
+													<_Value type="a">ActivityDiagram, Actor, ApCppCustomImplementationDataType, ApCppStdImplementationDataType, ApExecutable, ApProcess, ApSWC, ApServiceInterface, ArApplicationDataType, ArComposition, ArDataType, ArPackage, ArRootSwcPrototype, Class, ClassDiagram, CommunicationDiagram, Component, ComponentDiagram, CpCSInterface, CpECU-Abstraction-SWC, CpEcu, CpEcucModule, CpImplementationDataType, CpSRInterface, CpSWC, Dependency, DeploymentDiagram, Derivation, Event, File, Hyperlink, Interface, Object, ObjectModelDiagram, Package, PanelDiagram, Requirement, SWCDiagram, Satisfaction, SequenceDiagram, StructureDiagram, Tag, TaskAllocationDiagram, TaskAllocationTable, TimingDiagram, UseCase, UseCaseDiagram</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArPackage, Project</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArPackage</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:3</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Package</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID c351a01f-7967-4dc4-ba20-5fd903415c0f</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">2</size>
+												<IProperty type="e">
+													<_Name type="a">Aggregates</_Name>
+													<_Value type="a">arInterfaceType</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArComposition</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArPort</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:4</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</_m2Classes>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID ee79d4ac-acd0-4f4b-b076-c30408a8d568</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArPackage</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArRootSwcPrototype</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:4</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Object</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID cbab07d5-3220-41de-b1f1-923234071da9</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">2</size>
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ApExecutable, CpEcu</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Targets</_Name>
+													<_Value type="a">ArRootSwcPrototype</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">arRootSwcPrototype</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:5</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Dependency</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+		</IStereotype>
+		<IStereotype type="e">
+			<_id type="a">GUID 29328f4d-a70b-4169-a848-be3b9b7ac296</_id>
+			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Model</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Stereotype</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">5</size>
+												<IProperty type="e">
+													<_Name type="a">AllowedTypes</_Name>
+													<_Value type="a">ApSWC, ArAtomicSwc, ArComposition, CpECU-Abstraction-SWC, CpSWC</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">BrowserGroupIcon</_Name>
+													<_Value type="a">$OMROOT\Profiles\AUTOSAR\Icons\SwComponentPrototype_BGI.bmp</_Value>
+													<_Type type="a">File</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">BrowserIcon</_Name>
+													<_Value type="a">$OMROOT\Profiles\AUTOSAR\Icons\SwComponentPrototype_BI.bmp</_Value>
+													<_Type type="a">File</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">DrawingToolIcon</_Name>
+													<_Value type="a">$OMROOT\Profiles\AUTOSAR\Icons\SwComponentPrototype_DTI.bmp</_Value>
+													<_Type type="a">File</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Owners</_Name>
+													<_Value type="a">ArComposition</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<_name type="a">ArSwcPrototype</_name>
+			<_modifiedTimeWeak type="a">9.7.2021::8:25:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">9.7.2021::8:25:5</_modifiedTime>
+			<_m2Classes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>Object</value>
+				</IRPYRawContainer>
+			</_m2Classes>
+			<_newTerm type="a">1</_newTerm>
+		</IStereotype>
+		<IClass type="e">
+			<_id type="a">GUID f426d18e-e78e-48ce-8884-0fdd8485bf38</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.18.2021::13:47:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">1.18.2021::13:47:56</weakCGTime>
+			<strongCGTime type="a">1.18.2021::13:47:56</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

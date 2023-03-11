@@ -1,0 +1,28 @@
+../RXF/RXF_Event.h:46:25:RXF::Event::Event(RXF::Event::Id_t, bool)	24	static
+../RXF/RXF_Event.h:53:21:RXF::Event::Id_t RXF::Event::getId() const	16	static
+../RXF/RXF_Event.h:96:21:void RXF::Event::setDestination(RXF::Reactive*)	16	static
+../RXF/RXF_Event.h:128:24:RXF::Event::~Event()	16	static
+../RXF/RXF_Event.h:128:24:virtual RXF::Event::~Event()	16	static
+../RXF/IOxfEventSender.h:39:20:IOxfEventSender::~IOxfEventSender()	16	static
+../RXF/IOxfEventSender.h:39:20:virtual IOxfEventSender::~IOxfEventSender()	16	static
+../RXF/RXF_Reactive.h:93:29:virtual void RXF::Reactive::rootState_entDef()	16	static
+../RXF/RXF_Reactive.h:143:40:virtual RXF::Reactive::TakeEventStatus RXF::Reactive::rootState_processEvent()	16	static
+../RXF/RXF_Reactive.cpp:24:10:virtual void RXF::Reactive::send(RXF::Event*)	16	static
+../RXF/RXF_Reactive.cpp:33:10:virtual void RXF::Reactive::processEvent(const RXF::Event*)	24	static
+../RXF/RXF_Reactive.cpp:60:10:void RXF::Reactive::runToCompletion()	40	static
+../RXF/IOxfEventSender.h:25:7:constexpr IOxfEventSender::IOxfEventSender()	16	static
+../RXF/RXF_Reactive.cpp:95:5:RXF::Reactive::Reactive()	16	static
+../RXF/RXF_Reactive.cpp:99:5:RXF::Reactive::~Reactive()	16	static
+../RXF/RXF_Reactive.cpp:99:5:virtual RXF::Reactive::~Reactive()	16	static
+../RXF/RXF_Reactive.cpp:105:10:virtual bool RXF::Reactive::startBehavior()	24	static
+../RXF/RXF_Reactive.cpp:140:10:void RXF::Reactive::endBehavior()	16	static
+../RXF/RXF_Reactive.cpp:154:10:void RXF::Reactive::handleEvent(const RXF::Event*)	16	static
+../RXF/RXF_Reactive.cpp:159:10:void RXF::Reactive::handleTrigger(const RXF::Event*)	16	static
+../RXF/RXF_Reactive.cpp:176:10:virtual void RXF::Reactive::handleNotConsumed(const RXF::Event*)	16	static
+../RXF/RXF_Reactive.cpp:181:10:void RXF::Reactive::popNullTransition()	16	static
+../RXF/RXF_Reactive.cpp:194:10:bool RXF::Reactive::shouldCompleteRun() const	16	static
+../RXF/RXF_Reactive.cpp:199:10:void RXF::Reactive::setActiveContext(RXF::Active*, bool)	24	static
+../RXF/RXF_Reactive.cpp:208:10:bool RXF::Reactive::isActive() const	16	static
+../RXF/RXF_Reactive.cpp:213:10:void RXF::Reactive::setActive(bool)	16	static
+../RXF/RXF_Reactive.cpp:225:10:bool RXF::Reactive::isBehaviorStarted() const	16	static
+../RXF/RXF_Reactive.cpp:230:10:void RXF::Reactive::setBehaviorStarted()	16	static

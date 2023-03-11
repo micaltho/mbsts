@@ -1,0 +1,3 @@
+../GeneratedModel/JoystickMiddleHandler.cpp:15:1:JoystickMiddleHandler::JoystickMiddleHandler()	16	static
+../GeneratedModel/JoystickMiddleHandler.cpp:18:1:JoystickMiddleHandler::~JoystickMiddleHandler()	16	static
+../GeneratedModel/JoystickMiddleHandler.cpp:18:1:virtual JoystickMiddleHandler::~JoystickMiddleHandler()	16	static

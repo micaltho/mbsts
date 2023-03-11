@@ -1,0 +1,7 @@
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7-m\nofp\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+C:\Users\joklappe\Rhapsody\platform\framework\inc/TermColor.h:131:10:void Platform::BSP::TermColor::setCol(Platform::BSP::TermColor::Color) const	16	static
+C:\Users\joklappe\Rhapsody\platform\framework\inc/TermColor.h:362:24:static Platform::BSP::TermColor& Platform::BSP::TermColor::getInstance()	8	static
+C:\Users\joklappe\Rhapsody\platform\framework\inc/TermColor.h:403:5:Platform::BSP::TermColor::TermColor()	24	static
+C:\Users\joklappe\Rhapsody\platform\framework\inc/TermColor.h:411:5:Platform::BSP::TermColor::~TermColor()	16	static
+../platform/framework/src/TermColor.cpp:23:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../platform/framework/src/TermColor.cpp:23:1:cpp)	8	static

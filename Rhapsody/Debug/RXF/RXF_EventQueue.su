@@ -1,0 +1,9 @@
+../RXF/RXF_Event.h:87:26:RXF::Reactive* RXF::Event::getDestination() const	16	static
+../RXF/RXF_EventQueue.cpp:19:5:RXF::EventQueue::EventQueue(RXF::Event**, uint32_t)	32	static
+../RXF/RXF_EventQueue.cpp:30:10:bool RXF::EventQueue::isEmpty() const	16	static
+../RXF/RXF_EventQueue.cpp:35:10:bool RXF::EventQueue::isFull() const	16	static
+../RXF/RXF_EventQueue.cpp:40:10:bool RXF::EventQueue::put(RXF::Event*)	24	static
+../RXF/RXF_EventQueue.cpp:58:12:RXF::Event* RXF::EventQueue::get()	24	static
+../RXF/RXF_EventQueue.cpp:79:10:void RXF::EventQueue::cancelEvents(const RXF::Reactive*)	24	static
+../RXF/RXF_EventQueue.cpp:97:10:void RXF::EventQueue::cancelTimeoutEvent(const RXF::TimeoutEvent*)	24	static
+../RXF/RXF_EventQueue.cpp:113:10:void RXF::EventQueue::cleanUp()	16	static

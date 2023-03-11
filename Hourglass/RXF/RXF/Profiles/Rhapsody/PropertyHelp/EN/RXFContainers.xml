@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: RXFContainers.xml 72434 2021-09-29 10:00:34Z jtrageser $ -->
+<Head xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xml_schemas/property_help.xsd">
+<ChapterBook>
+    <ChapterBookName>RXFContainers</ChapterBookName>
+    <Section>
+        <Para>The RXFContainers subject contains metaclasses for the container classes delivered with the Realtime eXecution Framework RXF that allow working with static or dynamic memory alloction.</Para>
+    </Section>
+    <HeadingRunIn>
+        <HeadingRunInName>Qualified</HeadingRunInName>
+		<Section>
+			<Para>Qualified container class: Map</Para>
+		</Section>
+        <Term>
+            <TermName>MapType</TermName>
+            <Section>
+                <Para>Selection of the map variant to be used: static or dynamic.</Para>
+                <Para>StaticMap will require the relation multiplicity be set to a fixed value.</Para>
+                <Para>Map will ignore the multiplicity and create a dynamic map that uses the heap for it's items.</Para>
+            </Section>
+        </Term>
+    </HeadingRunIn>
+</ChapterBook>
+</Head>

@@ -1,0 +1,46 @@
+C:\Users\joklappe\Rhapsody\RXF/RXF_Event.h:53:21:RXF::Event::Id_t RXF::Event::getId() const	16	static
+C:\Users\joklappe\Rhapsody\RXF/RXF_Reactive.h:179:29:const RXF::Event* RXF::Reactive::getCurrentEvent() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:16:1:AccelerationMeasuring::AccelerationMeasuring(uint32_t)	32	static
+../GeneratedModel/AccelerationMeasuring.cpp:23:1:AccelerationMeasuring::AccelerationMeasuring()	32	static
+../GeneratedModel/AccelerationMeasuring.cpp:28:1:AccelerationMeasuring::~AccelerationMeasuring()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:28:1:virtual AccelerationMeasuring::~AccelerationMeasuring()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:32:6:void AccelerationMeasuring::calibrate()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:40:14:int32_t AccelerationMeasuring::getSmoothAccelerationX()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:46:14:int32_t AccelerationMeasuring::getSmoothAccelerationY()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:52:14:int32_t AccelerationMeasuring::getSmoothAccelerationZ()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:58:6:void AccelerationMeasuring::measure()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:93:14:int32_t AccelerationMeasuring::getAccelerationX0() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:97:6:void AccelerationMeasuring::setAccelerationX0(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:101:14:int32_t AccelerationMeasuring::getAccelerationY0() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:105:6:void AccelerationMeasuring::setAccelerationY0(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:109:14:int32_t AccelerationMeasuring::getAccelerationZ0() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:113:6:void AccelerationMeasuring::setAccelerationZ0(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:117:14:int32_t AccelerationMeasuring::getAvgAccelerationX() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:121:6:void AccelerationMeasuring::setAvgAccelerationX(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:125:14:int32_t AccelerationMeasuring::getAvgAccelerationY() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:129:6:void AccelerationMeasuring::setAvgAccelerationY(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:133:14:int32_t AccelerationMeasuring::getAvgAccelerationZ() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:137:6:void AccelerationMeasuring::setAvgAccelerationZ(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:141:14:int32_t AccelerationMeasuring::getCurrentAccelerationX() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:145:6:void AccelerationMeasuring::setCurrentAccelerationX(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:149:14:int32_t AccelerationMeasuring::getCurrentAccelerationY() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:153:6:void AccelerationMeasuring::setCurrentAccelerationY(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:157:14:int32_t AccelerationMeasuring::getCurrentAccelerationZ() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:161:6:void AccelerationMeasuring::setCurrentAccelerationZ(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:165:14:int32_t AccelerationMeasuring::getIntervall() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:169:6:void AccelerationMeasuring::setIntervall(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:173:15:uint32_t AccelerationMeasuring::getN() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:177:6:void AccelerationMeasuring::setN(uint32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:181:6:void AccelerationMeasuring::setSmoothAccelerationX(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:185:6:void AccelerationMeasuring::setSmoothAccelerationY(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:189:6:void AccelerationMeasuring::setSmoothAccelerationZ(int32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:193:15:uint32_t AccelerationMeasuring::getTickTimeAcceleration() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:197:6:void AccelerationMeasuring::setTickTimeAcceleration(uint32_t)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:201:19:AccelerationData* AccelerationMeasuring::getItsAccelerationData() const	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:205:6:void AccelerationMeasuring::setItsAccelerationData(AccelerationData*)	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:209:6:virtual bool AccelerationMeasuring::startBehavior()	24	static
+../GeneratedModel/AccelerationMeasuring.cpp:219:6:void AccelerationMeasuring::cleanUpRelations()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:226:6:virtual void AccelerationMeasuring::send_evCalibrate()	32	static
+../GeneratedModel/AccelerationMeasuring.cpp:230:14:RXF::Event** AccelerationMeasuring::getQueueMemory()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:234:6:virtual void AccelerationMeasuring::rootState_entDef()	16	static
+../GeneratedModel/AccelerationMeasuring.cpp:242:32:virtual RXF::Reactive::TakeEventStatus AccelerationMeasuring::rootState_processEvent()	32	static

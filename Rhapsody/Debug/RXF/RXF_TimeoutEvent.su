@@ -1,0 +1,15 @@
+../RXF/RXF_Event.h:46:25:RXF::Event::Event(RXF::Event::Id_t, bool)	24	static
+../RXF/RXF_Event.h:87:26:RXF::Reactive* RXF::Event::getDestination() const	16	static
+../RXF/RXF_Event.h:96:21:void RXF::Event::setDestination(RXF::Reactive*)	16	static
+../RXF/RXF_Event.h:128:24:RXF::Event::~Event()	16	static
+../RXF/RXF_Event.h:128:24:virtual RXF::Event::~Event()	16	static
+../RXF/RXF_TimerCallback.h:24:24:RXF::TimerCallback::~TimerCallback()	16	static
+../RXF/RXF_TimerCallback.h:24:24:virtual RXF::TimerCallback::~TimerCallback()	16	static
+../RXF/RXF_Reactive.h:188:24:RXF::Active* RXF::Reactive::getActiveContext() const	16	static
+../RXF/RXF_TimerCallback.h:16:11:constexpr RXF::TimerCallback::TimerCallback()	16	static
+../RXF/RXF_TimeoutEvent.cpp:17:5:RXF::TimeoutEvent::TimeoutEvent(RXF::Reactive*)	16	static
+../RXF/RXF_TimeoutEvent.cpp:25:5:RXF::TimeoutEvent::~TimeoutEvent()	16	static
+../RXF/RXF_TimeoutEvent.cpp:25:5:virtual RXF::TimeoutEvent::~TimeoutEvent()	16	static
+../RXF/RXF_TimeoutEvent.cpp:30:10:void RXF::TimeoutEvent::start(RXF::Timer::Time_t)	16	static
+../RXF/RXF_TimeoutEvent.cpp:45:10:void RXF::TimeoutEvent::cancel(bool)	24	static
+../RXF/RXF_TimeoutEvent.cpp:65:10:virtual void RXF::TimeoutEvent::onTimeout()	16	static

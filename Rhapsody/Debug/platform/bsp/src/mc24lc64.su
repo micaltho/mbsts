@@ -1,0 +1,12 @@
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/i2cdevice.h:76:10:virtual Platform::BSP::I2CDevice::~I2CDevice()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:46:7:Platform::BSP::EepromDriver<Platform::BSP::MC24LC64, Platform::BSP::I2CDevice>::~EepromDriver()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:46:7:virtual Platform::BSP::EepromDriver<Platform::BSP::MC24LC64, Platform::BSP::I2CDevice>::~EepromDriver()	16	static
+../platform/bsp/src/mc24lc64.cpp:31:4:Platform::BSP::MC24LC64::MC24LC64(Platform::BSP::I2CDevice::Interface, Platform::BSP::MC24LC64::ChipSelect)	40	static
+../platform/bsp/src/mc24lc64.cpp:51:9:bool Platform::BSP::MC24LC64::pWriteData(uint16_t, uint16_t, const uint8_t*)	80	dynamic
+../platform/bsp/src/mc24lc64.cpp:107:9:bool Platform::BSP::MC24LC64::pReadData(uint16_t, uint16_t, uint8_t*)	48	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:102:5:Platform::BSP::EepromDriver<T, U>::EepromDriver(typename U::Interface, uint8_t, uint8_t, std::size_t, std::size_t, std::size_t) [with T = Platform::BSP::MC24LC64; U = Platform::BSP::I2CDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:87:27:std::size_t Platform::BSP::EepromDriver<T, U>::getPageSize() const [with T = Platform::BSP::MC24LC64; U = Platform::BSP::I2CDevice]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/eepromdriver.h:77:27:std::size_t Platform::BSP::EepromDriver<T, U>::getSize() const [with T = Platform::BSP::MC24LC64; U = Platform::BSP::I2CDevice]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mc24lc64.h:31:7:Platform::BSP::MC24LC64::~MC24LC64()	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/mc24lc64.h:31:7:virtual Platform::BSP::MC24LC64::~MC24LC64()	16	static

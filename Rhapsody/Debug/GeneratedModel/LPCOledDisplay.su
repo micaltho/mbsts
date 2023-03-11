@@ -1,0 +1,47 @@
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7-m\nofp\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:214:1:LPCOledDisplay::LPCOledDisplay()	24	static
+../GeneratedModel/LPCOledDisplay.cpp:351:1:LPCOledDisplay::~LPCOledDisplay()	16	static
+../GeneratedModel/LPCOledDisplay.cpp:351:1:virtual LPCOledDisplay::~LPCOledDisplay()	16	static
+../GeneratedModel/LPCOledDisplay.cpp:354:6:void LPCOledDisplay::AccelerometerSettings(int32_t, int32_t, int32_t)	72	static
+../GeneratedModel/LPCOledDisplay.cpp:388:6:void LPCOledDisplay::GravitationFromLeftToRight()	48	static
+../GeneratedModel/LPCOledDisplay.cpp:493:6:void LPCOledDisplay::GravitationFromRightToLeft()	48	static
+../GeneratedModel/LPCOledDisplay.cpp:598:6:void LPCOledDisplay::Hourglass(uint32_t, uint32_t)	56	static
+../GeneratedModel/LPCOledDisplay.cpp:661:6:void LPCOledDisplay::MainMenu()	16	static
+../GeneratedModel/LPCOledDisplay.cpp:674:6:void LPCOledDisplay::StartTimeSettings(uint32_t)	72	static
+../GeneratedModel/LPCOledDisplay.cpp:706:6:void LPCOledDisplay::TimeFactorSettings(uint32_t)	72	static
+../GeneratedModel/LPCOledDisplay.cpp:752:6:void LPCOledDisplay::emptyWatch_Signal()	32	static
+../GeneratedModel/LPCOledDisplay.cpp:779:6:void LPCOledDisplay::fallingSandDown()	48	static
+../GeneratedModel/LPCOledDisplay.cpp:835:6:void LPCOledDisplay::fallingSandUp()	48	static
+../GeneratedModel/LPCOledDisplay.cpp:889:6:void LPCOledDisplay::fillGlassWithSand()	32	static
+../GeneratedModel/LPCOledDisplay.cpp:896:6:virtual void LPCOledDisplay::init()	16	static
+../GeneratedModel/LPCOledDisplay.cpp:901:6:virtual void LPCOledDisplay::updateDisplay(uint32_t, uint32_t, uint32_t, int32_t, int32_t, int32_t)	24	static
+../GeneratedModel/LPCOledDisplay.cpp:921:15:uint32_t LPCOledDisplay::getEmptyWatch_counter() const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:925:6:void LPCOledDisplay::setEmptyWatch_counter(uint32_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:929:20:static const uint8_t LPCOledDisplay::getPixels_Blink_Signal_One(int32_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:933:20:static const uint8_t LPCOledDisplay::getPixels_Blink_Signal_Zero(int32_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:937:6:bool LPCOledDisplay::getSandIsDown() const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:941:6:void LPCOledDisplay::setSandIsDown(bool)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:945:6:bool LPCOledDisplay::getSandIsUp() const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:949:6:void LPCOledDisplay::setSandIsUp(bool)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:953:8:double LPCOledDisplay::getFallingSandFactor() const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:957:6:void LPCOledDisplay::setFallingSandFactor(double)	24	static
+../GeneratedModel/LPCOledDisplay.cpp:961:15:static uint32_t LPCOledDisplay::getFromRightToLeft()	4	static
+../GeneratedModel/LPCOledDisplay.cpp:965:6:static void LPCOledDisplay::setFromRightToLeft(uint32_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:969:15:uint32_t LPCOledDisplay::getLastCurrentTime() const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:973:6:void LPCOledDisplay::setLastCurrentTime(uint32_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:977:14:uint8_t LPCOledDisplay::getNumOfRowsWithSand() const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:981:6:void LPCOledDisplay::setNumOfRowsWithSand(uint8_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:985:14:uint8_t LPCOledDisplay::getPixel_init(int32_t) const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:989:6:void LPCOledDisplay::setPixel_init(int32_t, uint8_t)	24	static
+../GeneratedModel/LPCOledDisplay.cpp:993:14:uint8_t LPCOledDisplay::getPixels(int32_t) const	16	static
+../GeneratedModel/LPCOledDisplay.cpp:997:6:void LPCOledDisplay::setPixels(int32_t, uint8_t)	24	static
+../GeneratedModel/LPCOledDisplay.cpp:1001:14:static uint8_t LPCOledDisplay::getPixels_state(int32_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:1005:6:static void LPCOledDisplay::setPixels_state(int32_t, uint8_t)	16	static
+../GeneratedModel/LPCOledDisplay.cpp:1009:25:Platform::BSP::SSD1305* LPCOledDisplay::getItsSSD1305() const	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:383:6:void Platform::BSP::MonoChromeDisplay<U>::clrscr(uint8_t) [with U = Platform::BSP::SSPDevice]	24	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:545:6:void Platform::BSP::MonoChromeDisplay<U>::print(const char*, bool) [with U = Platform::BSP::SSPDevice]	40	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:586:6:void Platform::BSP::MonoChromeDisplay<U>::bitmap(const uint8_t*, uint32_t, uint32_t, Platform::BSP::MonoChromeDisplay<U>::PixelStorage, uint8_t, uint8_t) [with U = Platform::BSP::SSPDevice]	96	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:567:6:void Platform::BSP::MonoChromeDisplay<U>::newline(uint8_t) [with U = Platform::BSP::SSPDevice]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:487:6:void Platform::BSP::MonoChromeDisplay<U>::ascii(uint8_t, uint8_t, uint8_t, bool) [with U = Platform::BSP::SSPDevice]	32	static
+c:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\arm-none-eabi\include\c++\10.3.1\bits\stl_algobase.h:230:5:const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long unsigned int]	16	static
+C:\Users\joklappe\Rhapsody\platform\bsp\inc/MonoChromeDisplay.h:394:6:void Platform::BSP::MonoChromeDisplay<U>::pixel(uint32_t, uint32_t, bool) const [with U = Platform::BSP::SSPDevice]	40	static

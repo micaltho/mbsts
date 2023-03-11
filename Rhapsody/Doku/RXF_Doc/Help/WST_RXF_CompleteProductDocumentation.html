@@ -1,0 +1,1689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>RXF Documentation</title>
+  <link rel="stylesheet" href="wst.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="wst_print.css" type="text/css" media="print">
+</head>
+<body>
+<div id="View">
+  <div id="Content">
+
+
+<!-- CONTENT FROM FILE WST_General_Table-Of-Contents.htm -->
+<a name="FILE_WST_General_Table-Of-Contents"></a>
+
+<h1>Full Table of Contents - Willert Software Tools Documentation</h1>
+  </ul>
+   <li><a href="index.htm">index</a><br>
+  <ul>
+   <li><a href="#FILE_WST_1-Introduction">Introduction</a><br>
+  <ul>
+   <li><a href="#FILE_WST_1-Introduction_2-Restrictions">Restrictions</a><br>
+   <li><a href="#FILE_WST_1-Introduction_9-UML-Target-Debugger">UML Target Debugger</a><br>
+  </ul>
+   <li><a href="#FILE_WST_2-Usage">Usage</a><br>
+  <ul>
+   <li><a href="#FILE_WST_2-Usage_1-Installation">Installation</a><br>
+   <li><a href="#FILE_WST_2-Usage_2-Whats-new-in-V7">Whats new in V7</a><br>
+   <li><a href="#FILE_WST_2-Usage_3-Getting-Started-1">Getting Started 1</a><br>
+   <li><a href="#FILE_WST_2-Usage_3-Getting-Started-2">Getting Started 2</a><br>
+   <li><a href="#FILE_WST_2-Usage_4-RXF-Component">RXF Component</a><br>
+   <li><a href="#FILE_WST_2-Usage_5-Buildsets">Buildsets</a><br>
+   <li><a href="#FILE_WST_2-Usage_6-Target-Debugger">Target Debugger</a><br>
+  <ul>
+   <li><a href="#FILE_WST_2-Usage_6-Target-Debugger_FAQ">FAQ</a><br>
+  </ul>
+   <li><a href="#FILE_WST_2-Usage_7-TestConductor">TestConductor</a><br>
+   <li><a href="#FILE_WST_2-Usage_8-CodeCoverage">CodeCoverage</a><br>
+   <li><a href="#FILE_WST_2-Usage_9-Uninstall">Uninstall</a><br>
+  </ul>
+   <li><a href="#FILE_WST_3-Technology">Technology</a><br>
+  <ul>
+   <li><a href="#FILE_WST_3-Technology_1-Memory-Management">Memory Management</a><br>
+   <li><a href="#FILE_WST_3-Technology_2-High-Water-Marks">High Water Marks</a><br>
+   <li><a href="#FILE_WST_3-Technology_3-Realtime">Realtime</a><br>
+   <li><a href="#FILE_WST_3-Technology_4-Error-Handling">Error Handling</a><br>
+   <li><a href="#FILE_WST_3-Technology_6-Asynchronous-Messages">Asynchronous Messages</a><br>
+   <li><a href="#FILE_WST_3-Technology_9-Configuration-Management">Configuration Management</a><br>
+  </ul>
+   <li><a href="#FILE_WST_9-Support">Support</a><br>
+   <li><a href="#FILE_WST_General">General</a><br>
+  <ul>
+   <li><a href="#FILE_WST_General_1-Useful-Links">Useful Links</a><br>
+   <li><a href="#FILE_WST_General_Alphabetical-Index">Alphabetical Index</a><br>
+  </ul>
+    
+
+<!-- CONTENT FROM FILE WST_1-Introduction.htm -->
+<a name="FILE_WST_1-Introduction"></a>
+
+<h1>Willert Software Tools RXF - Introduction</h1>
+
+<h2>Embedded UML RXF</h2>
+
+<span><span>Embedded UML RXF&#8482;</span><span>&nbsp;(Real-time eXecution
+Framework) from Willert Software Tools is the interface between a UML
+model and the target platform. It facilitates the use of UML in
+connection with code generation for even small target platforms.</span><span></span></span><br>
+
+
+<h2><a name="Product_Details"></a>Product RXF_Rpy_CPP_V7.05_edu</h2>
+
+For a seamless integration of the <em>Embedded UML RXF</em><span><em>&#8482;</em></span>
+in your specific hardware and development tools environment, this
+product was prepared to support the following components:<br>
+
+<pre>
+== Product RXF_Rpy_CPP ==
+Environment ....... : Generic Environment
+ModelingLang ...... : Rhapsody in C++
+Modeling .......... : IBM Rational Rhapsody
+Core .............. : C++
+Customer .......... : Generic
+
+<br></pre>
+<h2><a name="Help_File_Usage"></a>Using These Help Files</h2>
+
+All major pages of the help contents are available via the navigation
+table-of-contents displayed on the left side of each page. Under the
+"General" section you can also open an extended "Table of Contents" or
+an "Alphabetical Index" containing keywords used inside the help pages
+and the available links to the matching help sections. If you
+experience problems with the left side navigation table-of-contents,
+please make sure JavaScript is enabled and allowed for these help files
+in your browser.
+<h2>How to Get Started</h2>
+It is recommended to get familiar with the installation of your product
+by reading the "Usage" section of the help. At least you should take
+the time to read the "<a href="#FILE_WST_2-Usage_1-Installation">Installation</a>" section and then go through the "<a href="#FILE_WST_2-Usage_3-Getting-Started-1">Getting Started</a>" tutorial. <br>
+<br>
+
+
+  
+
+<!-- CONTENT FROM FILE WST_1-Introduction_2-Restrictions.htm -->
+<a name="FILE_WST_1-Introduction_2-Restrictions"></a>
+
+<h1><a name="Rectrictions" id="Rectrictions"></a>Product Restrictions</h1>The
+Embedded UML RXF is adapted to seamlessly integrate into the
+development environment toolchain. This requires several interfaces
+which may result in restrictions which are not caused by the RXF
+itself, but also the RXF has some restrictions.<br><br>
+<h2><a name="RXF Framework Restrictions" id="Framework_Restrictions"></a>RXF Framework Restrictions</h2>
+<p>
+<ul>
+<li/>Destruction of Active and Active-Reactive Classes is not yet supported
+<li/>Unordered relations using OMCollection, OMStaticArray are not supported, as they can not be allocated from static fixed size Pools and therefore are not useful in embedded systems. Use ordered Relations (OMList) instead.
+<li/>In statecharts, default Transitions and every other states, that are connected to the initial state via a null transition are executed from the context that calls Start Behavior. In earlier Versions, default transitions from the initial state were executed not before startDispatching(). It is bad practice to use outgoing null transitions. Be careful with that!
+<li/>Only Statechart Implementation Flat is supported. Code generation for Statechart Implementation Reusable is not supported.
+<li/>Activity diagram code generation is not supported.
+</ul>
+</p>
+
+<br>
+
+
+<!-- CONTENT FROM FILE WST_1-Introduction_9-UML-Target-Debugger.htm -->
+<a name="FILE_WST_1-Introduction_9-UML-Target-Debugger"></a>
+
+  <h1><a name="Animation" id="Animation"></a><a name="Target_Animation" id="Target_Animation"></a><a name="Debugging_on_UML_level" id="Debugging_on_UML_level"></a><a name="UML_Debugger" id="UML_Debugger"></a><a name="Monitor_on_target" id="Monitor_on_target"></a>Embedded UML Target Debugger - Introduction</h1>
+
+  <p>The Embedded UML Target Debugger is a product developed by Willert Software Tools GmbH.
+  It allows you to analyse the software behavior on target.
+  This is similar to a conventional high level language debugger, but on UML level.
+  This includes:</p>
+
+  <ul>
+    <li>live animation of sequence diagrams to trace the event order and state changes on target.</li>
+  <li>live animation of embedded timing diagrams showing the events and state changes on a tick timer granularity timeline.</li>
+
+    <li>see which instances of your objects which have a statechart have been created and destroyed.</li>
+
+    <li>navigate through a model element tree to show attributes or the current state of a statechart for any instance.</li>
+
+    
+
+    <li>inject
+events from the host-side and track the reaction of the target.</li><li>see timeout events which have elapsed on target in the diagrams.</li>
+
+    <li>monitor the elapsed time-ticks between two events.</li>
+  </ul>
+  <br>
+  <img style="width: 800px;" alt="" src="Images/TD/example/TDWorking.JPG"><br>
+  <br>
+It consists of a Windows application which let you control the
+debugging and see the feedback from target and a monitor solution which
+is part of the executable on target. <p>The Embedded UML Target Debugger has been designed with a
+minimal overhead in footprint and disturbance of the behavior of your
+model in mind. Therefore, most of the work is done at runtime on your
+PC and as little as possible on your target. On the PC, you can view an
+animated sequence diagram of your target live. The target only sends
+very short messages when objects are created, destroyed or events are
+being send. It also can react to commands from the host. The messages
+and commands never contain symbolic data, but only memory addresses or
+identification codes to keep the data size small. This requires:</p>
+<ul>
+<li>Information used at startup of the&nbsp;Embedded UML Target Debugger on your PC.
+    This information is stored in an XML file.
+This file is created&nbsp;using a simplifier helper
+during Rhapsody's code generation.</li><li>Information send from the target, like which
+object has been created or destroyed, which event is send etc. For
+sending information and receiving commands from the&nbsp;Embedded UML
+Target Debugger on the PC, we need some interface. This can be a serial
+interface but also CAN, JTAG or whatever I/O interface can be used. For
+this example, we are working with a serial interface. But other
+interfaces are available and you are free to implement whatever I/O you
+like. A sample DLL interface for the host side is bundled with the
+Embedded UML Target Debugger.<br>
+</li>
+</ul>
+
+  You can also use TestConductor in combination with Animation via an additional plugin.
+
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage.htm -->
+<a name="FILE_WST_2-Usage"></a>
+
+  <h1><a name="Usage" id="Usage"></a>Product Usage</h1>In this section, you will find information on how to use your product RXF_Rpy_CPP. This covers:<br>
+<ul>
+  <li><a href="#FILE_WST_2-Usage_1-Installation"></a>How your product is being <a href="#FILE_WST_2-Usage_1-Installation">installed</a> and what the installed directory structure looks like.</li>
+  <li>How you can <a href="#FILE_WST_2-Usage_9-Uninstall">uninstall</a> Willert products.</li>
+  <li>A <a href="#FILE_WST_2-Usage_3-Getting-Started-1">getting started</a>
+tutorial which should be the first steps to go through after the
+product has been installed to verify the correct co-working of all
+installed tools.</li>
+  <li>Additional information about the advanced usage of your product.<br>
+  </li>
+</ul>
+<br>
+  <br>
+
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage_1-Installation.htm -->
+<a name="FILE_WST_2-Usage_1-Installation"></a>
+
+  <h1><a name="Installation_of_Product" id="Installation_of_Product"></a>Installation</h1>The
+installation of a generic RXF by Willert Software Tools requires you to already
+have installed:<br>
+<ul>
+  <li>Your Modeling tool IBM Rational Rhapsody</li>
+</ul>
+A release of an RXF always comes with a Setup,
+which needs to be executed in order to install the RXF. It will ask you
+for some program paths. It will copy files, expand macros inside files and
+configure all tools. Since each RXF is installed in a
+separate directory, there is no need to make a backup of a previous
+installation with an older version number.<br><br>Its
+highly recommended to have the RXF&nbsp; installed in the same
+directory on every Developers PC. Use for example C:\Willert or
+C:\DevTools\Willert. It also makes config management and collaborative
+work easier. Read <a href="file:///C:/V7/Component/Core/CPP/Doc/Help/WST_3-Technology_9-Configuration-Management.htm">Configuration Management</a> for best practice config management with Rhapsody and the RXF.<br>
+<br>
+To install a product just launch <span style="font-weight: bold;">Setup.exe</span> and follow the steps which are displayed.<br>
+<br>
+<img style="width: 488px; height: 355px;" alt="" src="Images/Installation_SetupSteps02.png"><br>
+<h2><a name="Installation_Problems"></a><a name="Setup_Problems"></a>Possible Problems During Setup</h2>
+If you experience any problems, please first check the following possible solutions:<br>
+<ul>
+  <li>Make sure you have the necessary read/write access privileges in the destination directory or directories.<br>
+    <br>
+  </li>
+  <li>Make sure you have enough disk space available.<br>
+    <br>
+  </li>
+  <li>Only Windows 7 and Windows 10 are supported operating systems.<br>
+    <br>
+  </li>
+  <li>Sometimes direct installation from or to a network drive, long source
+path names and in rare cases directly from a DVD may cause problems. If
+setup failed you may retry it after copying all files from the
+installation folder (including "WILLERT" folder) onto a directory on
+your local drive (e.g. "C:\Temp\WillertSetup\") and launching Setup.exe from there.<br>
+    <br>
+  </li>
+  <li>Setup will write an installation log file with helpful
+information for our support team into the destination folder. It will
+be named WST_Install_Log_<span style="font-style: italic;">&lt;date&gt;</span>_<span style="font-style: italic;">&lt;time&gt;</span>.txt.
+If Setup can not access the specified destination path to write the log
+file, it will show this error message and try to write it to drive C:
+in the root directory:<br>
+    <img style="width: 444px; height: 159px;" alt="" src="Images/Installation_Error_WritingProtocol0.png"><br>
+    <br>
+  </li>
+  <li>The "WILLERT" folder beside Setup.exe contains all the files that will be copied to your
+installation directory. But it will perform several operations on them
+during installation like macro expansions, conditional operations, path
+replacements etc. So please don't copy any files from the WILLERT
+folder contents to your destination directory manually, always use
+Setup.exe.</li>
+</ul>
+If these possible solutions do not help, please contact our <a href="#FILE_WST_9-Support">support</a>, if possible including the log file.<br>
+<h2><a name="Installation_Directory"></a>Contents of an Installation Directory</h2>
+
+There are some files and a folder located beside Setup.exe. This section briefly describes what they are.<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 166px;"><img style="width: 164px; height: 149px;" alt="" src="Images/Installation_Directory0.png"><br>
+      </td>
+      <td style="vertical-align: top;"><small>1. Folder containing files required by the Setup. Please never copy contents manually.<br>
+2. Autorun information, useful if the Setup is located on a DVD<br>
+3. License information, will also be displayed during Setup<br>
+4. Readme, specific for your product, will also be displayed during Setup<br>
+5. An entry point to the HTML RXF Documentation<br>
+6. The actual Setup that has the be executed<br>
+7. Configuration and command file in a proprietary format for Setup.exe </small><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2><a name="Multi-User_Setup"></a><a name="Installation_Path"></a>Multi-User Setup with Windows 7<br>
+</h2>
+When installing the RXF in Windows 7 the default paths for the Willert
+folder is located under the user's homepath. It is recommended if a single user
+should work on one PC with the RXF and makes sure read/write access to
+that directory is no problem. But if multiple users on one machine
+should work with the RXF, it is recommended to install the RXF and also
+other toolchains (like IBM Rational Rhapsody and your IDE and Compiler) directly in a dedicated
+directory on the hard disk's root. For exaple C:\Willert\ or
+C:\Dev\Willert. This makes sure these folders are accessible for all
+users on most setups.<br>
+<br>
+
+
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage_2-Whats-new-in-V7.htm -->
+<a name="FILE_WST_2-Usage_2-Whats-new-in-V7"></a>
+
+<h1><a name="RXF_Migration"></a><a name="V6_to_V7_Migration"></a><a name="V7_-_Whats_New"></a>What's New in V7 (Willert
+RXF Version 7)<br>
+</h1>
+The
+RXF is currently available in major version 7 and has been completely
+redesigned as it is generated from a rhapsody model now. It allows
+Willert
+Software Tools to create more generic product releases. The
+customer benefits from reduced dependencys to special components like
+board, compiler, IDE and RTOS, which helps the customer to be more
+flexible in the tool selection.<br>
+<h2>Memory Management<br>
+</h2>
+RXF V7 has an improved Memory Management, which uses static Memory
+Pools for internaly used dynamic memory allocation. This is faster and
+more transparent than the old V6 Memory Management.<br>
+<h2><a name="Tags_for_WSTDeployer"></a>WSTDeployer<br>
+</h2>
+The WSTDeployer is now independent of the IDE to deploy to what allows
+one Framework to be used with multiple IDEs. Also the Deployer allows
+selective Deployment of RXF Sources, which makes it possible to deliver
+multiple RTOS adaptions with one framework.<br>
+<h2>OXF Container Classes</h2>
+As the deployer needs to deploy all selected Variants from Framework
+Sources flat to one RXF directory, also the oxf container class folder
+is deployed flat now. If include pahts like
+&lt;oxf\omcollec.h&gt;,
+&lt;oxf\omlist.h&gt; or &lt;oxf\ommap.h&gt; are added
+manually to the
+user model the have to be changed to &lt;omcollec.h&gt;,
+&lt;omlist.h&gt; or &lt;ommap.h&gt;. For generated
+code, this is fixed
+automatically through the new Framework Profile.<br>
+<br>
+<h2><a name="Rhapsody_Integration_in_V7"></a>Rhapsody
+Integration<br>
+</h2>
+No WST_RXF_V6.prp or WST_RXF_V7.prp file is required and included
+in SiteC.prp or SiteC++.prp. Properties are now defined in the
+<span style="font-style: italic;">RXF</span>
+stereotype as part of the product specific profile.<br>
+<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_2-Usage_3-Getting-Started-1.htm -->
+<a name="FILE_WST_2-Usage_3-Getting-Started-1"></a>
+
+<h1><a name="Example_Project" id="Example_Project"></a><a name="Deployment_Example" id="Deployment_Example"></a><a name="Blinky_Sample_Model" id="Blinky_for_KeilRV"></a>Getting Started
+Example - Part 1<br>
+</h1>
+This
+page will guide you through the first steps of using your product
+RXF_Rpy_CPP_V7.05_edu. The goal is to generate source code from an
+included sample UML project with Rhapsody
+<h2>Generating Code from the Rhapsody Model<br>
+</h2>
+<br>
+<br>
+Open the Rhapsody project Blinky from the directory<br>C:\DevTools\Willert\RXF_Rpy_CPP_V7.05_edu\Samples\Model\Blinky:<br>
+<br>
+Open the Components and select the RTOS you want to use.<br>
+<img alt="" src="Images/GettingStarted/SelectComponent.png"><br>
+Therefore perform a right click on your configuration you want to use and selct "Set as Active Configuration".<br>
+<br>
+<a name="Profiles"></a>The configuration
+is using the stereotype <span style="font-style: italic;">RXF</span> which
+is defined in the profile <span style="font-style: italic;">WST_Rpy_CPP_Profile</span>.
+Each RXF by Willert Software Tools comes with its own profile with the
+stereotype <span style="font-style: italic;">RXF.</span> <span style="font-style: italic;">RXF</span> sets the proper
+environment, some properties for the RXF and defines some Tags. The
+referenced setting, <span style="font-style: italic;">WSTStyle</span>,
+is used to set Rhapsody GUI details which makes it easier for you to
+view and maintain your models. It does not influence the code generation.<br>
+<br>
+How the RXF can be configured in detail can be found in the section <a href="#FILE_WST_2-Usage_7-RXF-Configuration">"RXF Configuration"</a><br>
+<br>
+<span style="font-style: italic;"></span><br>
+You can now press the button "Generate/Make/Run" in Rhapsody (or use <span style="font-style: italic;">Generate/Make/Run</span> entry from <span style="font-style: italic;">Code</span> menu) to perform these steps:<br>
+<ul>
+  <li><span style="font-weight: bold;">Generate</span> source files.</li>
+  <ul>
+    <li>Rhapsody will show several generated .cpp and .h files along with
+a .bat file in the <span style="font-style: italic;">Log</span> tab.</li>
+    <li>A successful code generation will end with the log entries "<span style="font-style: italic;">Code Generation Done</span>" and "<span style="font-style: italic;">0&nbsp; Error(s), 0&nbsp; Warning(s),
+0&nbsp; Message(s)</span>".<br>
+    </li>
+  </ul>
+  <li>The <span style="font-weight: bold;">Make</span> step
+executes the generated batch file from the previous step. The batch
+file generates a RXF configuration
+file and than launch the deployer to embed the generated source files
+into your IDE project. The building of the executable will be performed
+inside
+your IDE and must be executed by the user. The generated configuration
+file is:<br>
+  </li>
+  <ul>
+    <li><a id="WST_CFG.h" name="WST_CFG.h"></a>WST_CFG.h
+which is an include file which contains constants and defines to configure the RXF which are derived
+from properties and tags set in the model like buffer sizes etc.<br>
+The RXF can be configured completely by the model. No defines must be set on code level.
+Therefore different models can use the same RXF wit different RXF configurations.</li>
+  </ul><li>The&nbsp;<span style="font-weight: bold;">Run</span>
+step opens the cofigured IDE Project and in addition can be used by the
+user to execute user defined applications / scripts. The Batch
+File&nbsp;C:\Dev Tools\Willert\RXF_Rpy_CPP_V7.05_edu\Tools\RhapsodyRun.bat is executed in this step.
+  </li>
+</ul>
+
+<h2><a name="Deployer" id="Deployer"></a>WSTDeployer</h2>
+<span style="font-style: italic;"></span>The WSTDeployer will deploy
+Rhapsody generated source files the RXF configuration file WST_CFG.h into your IDE. 
+Until now the generated source is independent from compiler and IDE.<br>
+<br>
+The first time you press the "Generate/Make/Run" button the Deployer window will automatically pop up.<br>
+<br>
+<b>First</b> select your IDE which you want to deploy to:<br>
+<img alt="" src="Images/GettingStarted/DeployerSelectIDE.png"><br>
+<br>
+<b>Second</b> select your project file which you want to deploy to:<br>
+<img alt="" src="Images/GettingStarted/DeployerSelectProject.png"><br>
+<br>
+An empty example project file you find under:<br>
+&lt;RXF installation folder&gt;/Samples/Model/Blinky/IDEProjects/&lt;RTOS&gt;/&lt;Board&gt;/&lt;IDE&gt;<br>
+
+<br>
+The IDE Project Folders are sorted by RTOS and in each RTOS Folder there are different Bord Projects for different IDEs.<br>
+<span style="font-weight: bold;"><br>
+Be sure the RTOS selection made before in the Tags of RXF Configuration
+matches the RTOS in your IDE Project. Otherwise the Framework Sources
+will not work with the RTOS sources.</span><br>
+<br>
+<b>Third</b> Configure deployer options<br>
+<img alt="" src="Images/GettingStarted/DeployerConfig.png"><br>
+You can chose between two options: Copy source files into the IDE project or reference them into the IDE project.<br>
+When you chose to copy them you can define here the name of the folders where they are copied to.<br>
+<br>
+After pressing OK the files are deployed into your IDE project and you
+get information of the deployment into your Rhapsody console.<br>
+<br>
+<b>Info:</b>If you want to change the Deployer settings, open "Tools" -&gt; "RXF_Rpy_CPP_V7.05_edu Deployer Configuration"<br>
+<img alt="" src="Images/OpenDeployerConfig.png">
+<br>
+<br><a href="#FILE_WST_2-Usage_3-Getting-Started-2"><img style="border: 0px solid ; width: 90px; height: 90px;" alt="Continue reading Part 2 of this Getting Started Tutorial" src="Images/Clipart-continue_button.png" align="middle"></a><a href="#FILE_WST_2-Usage_3-Getting-Started-2"><big>Continue Reading Part 2 of this Getting Started Tutorial</big></a>&nbsp;<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_2-Usage_3-Getting-Started-2.htm -->
+<a name="FILE_WST_2-Usage_3-Getting-Started-2"></a>
+
+<h1><a name="Example_Project" id="Example_Project"></a><a name="Deployment_Example" id="Deployment_Example"></a><a name="Blinky_Sample_Model" id="Blinky_for_KeilRV"></a><a name="IDE" id="IDE"></a><a name="Building_Example_Project" id="Keil_uVision_Example"></a><a name="GettingStarted_Project" id="GettingStarted"></a>Getting Started
+Example - Part 2<br>
+</h1>
+This
+page will guide you through the necessary steps to build your generated
+source files inside your compiler/linker toolchain.<br>
+Please make sure you have followed the steps of the <a href="#FILE_WST_2-Usage_3-Getting-Started-1">Getting
+Started Example Part 1</a> and deployed your generated code sucessfully to your IDE before continuing on this page.<br>
+<h2>Building Target Executable<br>
+
+</h2>The selected IDE Project from the last step should be open now. If
+not, open the selected IDE project located in
+C:\Dev Tools\Willert\RXF_Rpy_CPP_V7.05_edu\Samples\Model\Blinky\IDEProjects
+manually now.<br>
+<br>
+You may need to configure the debug settings to your
+needs and hardware. Please check debugging settings carefully
+(depending on Simulator Software or Debugger Hardware).<br>
+<br>
+Now build and rund and verify it is working correctly. If the project
+is running on target, you will
+see two LEDs blinking in individual timings (running in separate tasks)
+on the evaluation board. If you chose the OORTX as RTOS, only one LED
+will blink, because OORTX does not support active Classes / multiple
+RTOS Tasks. If you have compiled for windows or linux, a
+terminal window with LED on and LED off statements should appear.<br>
+<span style="font-style: italic;"></span>
+<h3 style="font-weight: normal;"><a name="Debugging_on_Hardware" id="Debugging_on_Hardware"></a><a name="Hardware_Mode_Debugging" id="Hardware_Mode_Debugging"></a>Debugging on Hardware</h3>
+You can set up the debug configuration according to your needs. <br>
+<br>
+After downloading / flashing to target and entering debugging mode, you
+can debug the software on Source level as usual.<br>
+<br>
+<img style="width: 82px; height: 90px;" alt="You've reached the goal of this tutorial!" src="Images/Clipart-goal_reached.png" align="middle">If you have reached this point, you have now
+successfully verified the
+correct working of your installation!<br>
+<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_2-Usage_4-RXF-Component.htm -->
+<a name="FILE_WST_2-Usage_4-RXF-Component"></a>
+
+<h1><a name="WSTDeployer"></a><a name="IDE_Integration"></a>RXF Component Properties<br></h1>
+<br>
+The RXF can be completely configured inside your model.<br>
+<br>
+By applying the stereotype <b>"RXF",</b> new Properties Perspectives become available:<br>
+<br>
+<img style="width: 750px; height: 304px;" src="Images/RXF-Config/WillertRXF_PropertyPerspectives.png" alt=""><br>
+<br>
+Use those Properties to configure you RXF<br><img style="width: 460px; height: 289px;" src="Images/RXF-Config/WillertRXF_PropertyPerspectives_Tabs.png" alt="">
+<br>
+<br>
+In the near feature Property Documentation will be available directly from Rhapsody.<br>
+As long as Rhapsody Property Docu is not available, find it here:<br>
+<br>
+<a name="TAG_RTOS"></a>
+<img src="Images/RXF-Config/rtos.png"><br>
+Select the RTOS you want to use. Be aware that this
+tag only tells the deployer which RXF sources to deploy. No RTOS files
+are added to the IDE automatically. Your IDE Project has to contain all needed RTOS sources.<br>
+<br>
+<a name="TAG_Target"></a>
+<img src="Images/RXF-Config/Target.png"><br>
+Select the Target you want to use.<br>
+Specific Target adaptations can be done inside your IDE project.<br>
+<br>
+<a name="TAG_EntryPoint"></a> WST_MAIN<br>
+
+Should the RXF provide the main() operation or is it provided by RTOS / UserCode?<br>
+If this tag is set to
+fallse, no main() is generated and the RXF has to be started by the user
+by calling the operations WST_MTSK_start() and WST_RTOS_startKernel(). These Operations can be called from a C or C++ context.
+Take care that the RXF is initialized correct when using an own main routine.<br>
+<br>
+<a name="TAG_CMSIS_device_header"></a>
+<img src="Images/RXF-Config/CMSISHeader.png"><br>
+Only needed if Target == CMSIS<br>If
+you use the CMSIS software pack mechanism for ARM CortexM development,
+a file RTE_Components.h will be auto generated by uVision. In this file
+you will finde a define CMSIS_devie_header wich contains the correct
+include file for your selected controller. If your IDE don't provide
+this mechanism, you can enter your CMSIS device header file here, for
+example type "lpc17xx.h" here (with Quotes).<br>
+<br>
+<a name="TAG_WST_MAX_TIMEOUTS"></a>
+<img src="Images/RXF-Config/MaxTimeouts.png"><br>
+Define how many UML Timeouts can be <b>active</b> at the same time.<br>
+<br>
+<a name="TAG_WST_MS_PER_TICK"></a>
+<img src="Images/RXF-Config/msTick.png"><br>
+Set how many milliseconds representing one system tick / RTOS tick.<br>
+This information is needed to convert UML timer into RTOS timer.<br>
+<br>
+<a name="TAG_WST_TIMEOUT_GUARANTEE_TIME"></a>
+<img src="Images/RXF-Config/TimeoutGuranteeTime.png"><br>
+Because timeouts are synchronized to a tick, the tick is responsible for the granularity.
+Timeouts are round up to the next possible multiple of a tick period.<br>
+If the system is used to capacity, a timeout could be scheduled at the end of a tick period.<br>
+If this happens, the resulting timout time would be less than expected.<br>
+To ensure a timout with minimum the desired value, 1 tick has to be added.<br>
+This means that timeouts that are scheduled at the beginning of a tick period will take 1 tick longer than expected!<br>
+Be aware that the timeout is only scheduled at this time and it can take even longer till it is scheduled.<br>
+<br>
+<a name="TAG_WST_FSM_MAX_NULL_STEPS"></a>
+<img src="Images/RXF-Config/maxNullSteps.png"><br>
+How many null transitions (transition without a trigger) can be
+performed in a row until the WST error handler is called. (Infinity
+loop protection)<br>
+<br>
+<a name="TAG_WST_HWM_ENABLED"></a>
+<img src="Images/RXF-Config/HWM.png"><br>
+Enables the high water marks to check how many memory blocks have been used at the same time. For more information please look <a href="#FILE_WST_3-Technology_2-High-Water-Marks">here</a>.<br>
+<br>
+<a name="TAG_WST_MTSK_AND_DEFAULT_PRIORITY"></a>
+<img src="Images/RXF-Config/priority.png"><br>
+Define the main task an default task priority.<br>
+<br>
+<a name="TAG_WST_MTSK_AND_DEFAULT_STACK_SIZE"></a>
+<img src="Images/RXF-Config/StackSize.png"><br>
+Define the main task an default task stack size.<br>
+<br>
+<a name="TAG_EVT_*"></a>
+<img src="Images/RXF-Config/evtMem.png"><br>
+The memory management is described in the section <a href="#FILE_WST_3-Technology_1-Memory-Management">Memory Management.</a><br>
+<br>
+<a name="TAG_WST_PORTS_ENABLED"></a>
+<img src="Images/RXF-Config/Ports.png"><br>
+Define if ports are supported by the RXF or not to save resources.<br>
+<br>
+<a name="TAG_WST_LIST_BLOCK_COUNT"></a>
+<img src="Images/RXF-Config/ListBlockCount.png"><br>
+Define the default value of how many ListBlocks are used in ordered associations.<br>
+<br>
+<a name="TAG_WST_LIST_BLOCK_SIZE"></a>
+<img src="Images/RXF-Config/listBlockSize.png"><br>
+Define the default value of the size of a ListBlock used in ordered associations.<br>
+<br>
+<a name="TAG_WST_MAP_BLOCK_COUNT"></a>
+<img src="Images/RXF-Config/mapBlockCount.png"><br>
+Define the default value of how many MapBlocks are used in an associations with a qualifier.<br>
+<br>
+<a name="TAG_WST_MAP_BLOCK_SIZE"></a>
+<img src="Images/RXF-Config/mapBlockSize.png"><br>
+Define the default value of the size of a MapBlock used in an associations with a qualifier.<br>
+<br>
+<a name="TAG_UpdateProjectPath"></a>
+<img src="Images/RXF-Config/updateProjectPath.png"><br>
+By activate this tag every time the code generation is triggered the
+parameter "CPP_CG.WillertRXF.ProjectPath" is set to the current path of
+the Rhapsody model. This can be useful if the model is under subversion
+control
+and the model is checked out at different locations. Therefore the
+property "CPP_CG.WillertRXF.ProjectPath" can be used to start user
+applications / scripts which are stored relative to the model path. The
+reason: While code generation / execution
+Rhapsody only provides the path of the generated code path but not the
+path to the model.<br>
+<b>Info:</b> this property will only be changed if the new value is different from the previous value but if it is different it will change 
+the model itself and you need a write permission<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_2-Usage_5-Buildsets.htm -->
+<a name="FILE_WST_2-Usage_5-Buildsets"></a>
+
+<h1><a name="Debug_Buildset" id="Usage"></a><a name="Release_Buildset"></a><a name="RxfConstants.h_File_Generation" id="RxfConstants.h"></a><a style="font-style: italic;" name="BuildCommandSet_Property" id="Property_BuildCommandSet"></a><a name="CPPCompileSwitches_Property"></a>
+Buildsets (Debug / Release)</h1>
+It is very likely that you want to distinguish between optimized
+production code, and code you want to debug. For this, your product
+supports two buildsets, as defined in the property <span style="font-style: italic;">CPP_CG::WillertRXF::</span><span style="font-style: italic;">BuildCommandSet</span>.<br>
+<br>
+The main difference is the defines which will be generated into WST_CFG.h.<br>
+The Debug Buildset will define <span style="font-family: monospace;">_DEBUG</span>
+and <span style="font-family: monospace;">HIGHWATERMARKS</span> per
+default, while Release will define <span style="font-family: monospace;">NDEBUG</span>. This is because the
+Rhapsody generated makefile will use one of the properties <span style="font-style: italic;">CPPCompileDebug</span> or <span style="font-style: italic;">CPPCompileRelease</span> inside the <span style="font-style: italic;">CPPCompileSwitches</span> property.<br>
+<br>
+These resulting <span style="font-style: italic;">CppCompileSwitches</span>
+should include <span style="font-weight: bold;">-D&lt;macro
+definition&gt; options only</span>. The reason for this, is that you
+build your application in your IDE. That is where you specify for
+example include paths and other options. The options or macros set via the property <span style="font-style: italic;">CppCompileSwitches</span> result in
+#defines in a generated CFG.h when you select <span style="font-style: italic;">Code&nbsp;|&nbsp;Build</span> or <span style="font-style: italic;">Code&nbsp;|&nbsp;Rebuild</span> in
+Rhapsody.<br>
+<br>
+<table style="text-align: left; width: 100%; background-color: rgb(255, 255, 204);" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 100px; vertical-align: top;"><span style="font-weight: bold;">NOTE</span></td>
+      <td>If you are creating a library from the RXF sources which gets used inside your application, the options or constants set
+via property <span style="font-style: italic;">CppCompileSwitches</span> must match the options in your IDE project to
+create RXF libraries. You should not compile the RXF libraries with for
+example support for UML ports, or use highwatermarks in a debug
+version, and use different options to compile your application with.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_2-Usage_6-Target-Debugger.htm -->
+<a name="FILE_WST_2-Usage_6-Target-Debugger"></a>
+
+  <h1><a name="Animation" id="Animation"></a><a name="Target_Animation" id="Target_Animation"></a><a name="Debugging_on_UML_level" id="Debugging_on_UML_level"></a><a name="UML_Debugger" id="UML_Debugger"></a><a name="Monitor_on_target" id="Monitor_on_target"></a>Embedded UML Target Debugger - Usage Example</h1>
+
+  <p>The
+Embedded UML Target Debugger is a product developed by Willert Software
+Tools GmbH. It allows you to analyse the software behavior on your
+target using UML Diagrams.
+This is similar to a conventional high level language debugger, but on
+UML level. Basically the UML Target Debugger will write Sequence
+Diagrams and Timing Diagrams from the information that the RXF
+Framework on your target provides.<br>Care has been taken to ensure that the influence on the real-time behaviour of the RXF is as minimal as possible.&nbsp;</p><p>To
+create the diagrams, the Target Debugger needs information. This
+information is&nbsp; in the model and also in the generated source
+code.Minimalizing the influence on real-time behaviour means: sending as little information as possible from the target to the host. </p><p>The
+Target debugger will read most of the symbolic information it needs
+from an XML file that was generated during code generation. The user
+does not have to do anything to do this, the RXF code generation will
+do that automatically for you. The symbols used in the generated
+diagrams are coded so that only&nbsp;small pieces of information must
+be sent pysically via teh Target Debugger Communication channel.</p><p>This
+communication channel is something that must be implemented when
+adapting the Target Debugger to the users environment. It can be
+anything that can be used on target and host. Serial, TCP/IP, CAN, JTAG
+or something propriartry.&nbsp; </p><p>This page will guide you through the first steps how to use
+the&nbsp;Embedded UML Target Debugger.</p>To be able to work with the Embedded UML Target Debugger and view the target animation, &nbsp;please first go through the <a href="#FILE_WST_2-Usage_3-Getting-Started-1">GettingStarted example</a>. We will extend this example to explain the target Debugger.<br>
+  <br>
+<br>
+
+  <h2>Basic Functionality - Getting Started with the Embedded UML Target Debugger</h2>For
+the first steps with our Embedded UML Target Debugger, it is highly
+recommended to use our example model instead of your own model. This
+example will be based on IBM Rational Rhapsody as UML Tool. However the
+steps and Target Debugger functionality when working with another UML
+tool are very similar. We will use <a name="Blinky_UML_Sample_Model_with_Animation" id="OORTXAnimationDemo_Rhapsody_Sample_Model"></a>Blinky.rpy, which is a good starting point.<span style="font-style: italic;"><br></span><br><br>
+  In your Rhapsody Model make sure to have the RXFAnimation stereotype is set for your active component or Configuration.<span style="font-style: italic;"></span> This will trigger the code generator to generate the needed XML file and also the necessary extra code.<br><br>Additional you need to set an WSTMonitorIO_* Stereotype to select the
+communication channel you want to use to transmit Data between the
+Target and the UML Target Debugger. In this case the ITM channel is
+selected by using the Stereotype WSTMonitorIO_CortexITM. If no
+applicable Communication Stereotype is available for which supports
+your device please contact the Willert Support: support@willert.de<br><br style="font-style: italic;">
+  <img style="width: 561px; height: 114px;" alt="" src="Images/TD/example/AnimationStereotypes.jpg"><br><br>After setting these Stereotypes&nbsp;  some additional Tags will be added to your Component / Configuration.<br>This is&nbsp; shown in the picture below.<br><br><img style="width: 482px; height: 273px;" alt="" src="Images/TD/example/AnimationTags.JPG"><br>The
+Subject "RXFAnimation" contains general settings for the Monitor. The
+Subject "WSTMonitorIO_*" contains settings for the choosen
+communication
+between Target and UML Target Debugger and can contain additional
+settings depending on the communication type selected. For example port
+number
+for a TCP/IP connection or message ID for a CAN connection. Here are
+some of teh used tags with a description:<br><ul><li>AnimationType: You can choose between WST_FULL_ANIMATION <span style="font-weight: bold;">(default)</span>&nbsp; and WST_TRACE_ANIMATION.</li><ul><li>FULL:&nbsp; Split the information of an Event into three packages<br>1. Event is put into the message queue<br>2. Event consumtion start<br>3. Event consumption end&nbsp;</li><li>TRACE: Event information is send to UML Target Debugger in one package at event start to avoid overhead.</li></ul><li>MaxParallelStates:
+This numeric value should represent the count of parallelStates of the
+the statechart with the most parallel states. If this number is to
+large unnecessary data is send to the UML Target Debugger. If this
+numer is to small there is the posibility of loosing data. You can find
+out the number of parallel States by checking the count of state
+attributes of the class which has the suffix "_active". <span style="font-weight: bold;">(Default: 4U)</span></li><li>sendParameters: Switch on/off of sending event / operation parameter. <span style="font-weight: bold;">(Default: Yes)</span></li><li>MaxPrintIntObjects:
+Number of filtered instances which can send integer values to the UML
+Target Debugger. (This feature will be described more in detail). If
+you don not need this functionality you can switch it of by setting the
+value to 0. <span style="font-weight: bold;">(Default: 0)</span></li><li>MonitorTaskStackSize:
+The monitor uses a task to send / receive data. This Tag can be used to
+define the stack size of the monitor task. <span style="font-weight: bold;">(Default: 1024U)</span></li><li>MonitorTaskName: Name of the monitor task.&nbsp;<span style="font-weight: bold;">(Default: "MonitorTask")</span></li><li>MonitorReceiveCommandBufferSize:
+Maximum size of a command which can be handled by the monitor when
+receiving a command from the UML Target Debugger. 32U should be
+sufficient as long as you don't want to inject events with a huge
+amount of parameter data.&nbsp;<span style="font-weight: bold;">(Default: 32U)</span></li><li>MonitorSendBufferSize: Buffer to
+collect data while your application is running which are send to the
+UML Target Debugger when the monitor task is active.<span style="font-weight: bold;"> (Default: 1024U)</span></li><li>MonitorReceiveBufferSize:
+Buffer which stores received data from the UML Target Debugger which
+are handled inside the monitor task.&nbsp;<span style="font-weight: bold;">(Default: 32U)</span></li></ul>
+  <br>
+Make sure you have an empty GettingStarted IDE&nbsp;project you can
+deploy to. (If the GettingStarted is not empty, there is a
+GettingStartedBackup that should be empty, just copy it and rename it).<br>
+You can now perform a Generate/Make/Run in Rhapsody. This will generate
+code, generate the RXF files and start the deployer. Select the
+GettingStarted Project (Or the project you just copied) and the
+deployer
+will deploy the Rhapsody generated files to your IDE, and build the <a href="#FILE_WST_2-Usage_3-Getting-Started-1">GettingStarted example</a>.
+After a successful build in your IDE, flash the executable to the
+target<span style="font-style: italic; font-weight: bold;"> but do not start program execution yet!</span>. The target program must
+be reset and stopped. Otherwise the Embedded UML Target Debugger will
+miss important information about dynamically created objects the target
+sends.<br>
+  <br> Now start the&nbsp;Embedded UML Target Debugger on
+the PC. Launch the batch file
+located under &lt;RXF installation folder&gt;\Tools\TargetDebugger\Embedded_Uml_Target_Debugger.bat.<br><br>
+  The Embedded UML Target Debugger first need to read the <a name="XML_file_for_animation" id="XML_file_for_animation"></a>XML
+file which has been generated&nbsp;using a
+simplifier helper during Rhapsody's code generation. This file is
+called as your active configuration.xml and created in the path model
+file. You can open the XML file using <span style="font-style: italic;">File | Open XML File</span> or via button on the toolbar:&nbsp;
+
+  <p><img style="width: 243px; height: 119px;" alt="" src="Images/TD/example/AnimationOpenXML.jpg"></p><br>
+After the XMLData.xml file was opened, you have to select the target
+communication plugin you want to use from the drop down list by clicking on the IO plugin selection button:<br><img style="width: 243px; height: 119px;" alt="" src="Images/TD/example/AnimationOpenIOCommunication.jpg"><br>In the
+next step you can select the communication parameters depending on the
+communication interface. This example works with the Keil Plugin
+communication. (Communication chain: UML Target Debugger &lt;-&gt; Keil µVision &lt;-&gt; ITM interface of a Cortex-M device)<br>
+  <br>
+  <img style="width: 203px; height: 123px;" alt="" src="Images/TD/example/AnimationSelectCommunication.jpg"><br>
+  <br>
+  After selecting a plugin a configuration window will pop up to config the communication with the target.<br><img style="width: 425px; height: 235px;" alt="" src="Images/TD/example/ITMConfig.JPG"><br><span style="font-weight: bold;">Important
+for this plugin before press Ok:</span> <br><ol><li>Make sure that µVision is already running because this
+plugin will connect directly to µVision.&nbsp;</li><li>Make sure that the
+µVision API is enabled by checking:<br><img style="width: 331px; height: 501px;" alt="" src="Images/TD/example/uVisionConf1.png"><br><img style="width: 451px; height: 182px;" alt="" src="Images/TD/example/uVisionConf2.JPG"></li></ol>After confirming the plugin with "Ok" a console message should appear that te plugin is initilized successful.
+  <br>
+  <img style="width: 316px; height: 76px;" alt="" src="Images/TD/example/pluginConnectedSuccessful.JPG"><br>
+  <br>
+  In retrospect it is always possible to change the communication plugin and settings by using the toolbar buttons.<br>
+  <br>
+Now&nbsp;switch back to your IDE and start program
+execution on target, as the Embedded UML Target Debugger now listens
+for commands sent from target. In the tree view on the left you can now
+also see values of attributes and states.<br>
+  You will see something like this:<br>
+  <br>
+  <img style="width: 1116px; height: 749px;" alt="" src="Images/TD/example/TDWorking.JPG"><br>
+  <br>
+  <br>
+
+  <h2>Explaining the GUI</h2><br><img src="Images/TD/example/TD_GUI.JPG" alt=""><br><br><h2>The Menu</h2>
+  This area contains short cuts to the most common functions of the UML Target Debugger.<br>
+  The same functions can be found in the tools menu.
+  <br><h2>The Browser Area</h2>
+  The browser Area is split into three parts:<br>
+  <h3>Objects:</h3>
+  After the Target Debugger is started, the XML file is loaded and the
+communication channel was setup and started, the target can start
+sending information.
+ <h3>Views:</h3>
+The view tab manage your recorded / loaded sessions.<br>
+<img src="Images/TD/ViewOptions.png" alt=""><br>
+You can generate / edit views on your recorded data.<br>
+<img src="Images/TD/ViewFilter.png" alt=""><br>
+This means you can filter your recorded data by event information (sender / receiver / event type )<br>
+Additional you can save and load such filter views.<br>
+<br>
+Open a selected view in a separate window to compare it with another view.<br> 
+<br>
+You can save a selected view to your computer to share it with colleges.<br> 
+<br>
+You can save a selected view as *.csv file.<br>
+  <h3>Target:</h3>
+This tab give you control about the target filter.<br>
+This means you can select while runtime which events and instances are send from your Target to the UML Target Debugger.<br>
+This can be very important when your model becomes very big and you have to separate which information is send to the 
+UML Target Debugger to avoid a buffer overflow on target side.  
+<h2>The Diagram Area</h2>
+This area shows your selected view as sequence or timing diagram.<br>
+<h2>Console</h2>The Console window shows information on actions you perform to get a feedback of what you did.<br>
+<br><br>This is the "normal" functionality of the Target Debugger.
+There is much more, the following chapters explain (briefly) some of
+the more advanced features.<h2>Advanced Features</h2><br>
+You can also click on an attribute / state:
+at that moment in runtime, the Embedded UML Target Debugger on the PC
+will query the target to send the actual value - such information is
+sent only on request by the PC in order to reduce the I/O traffic as
+much as possible. The information shown on events is actually
+transferred in a compact way and not as the strings you see, again to
+reduce traffic and thus runtime disturbance. The Request for the
+attribute value / state is send to the target when you colapse the item
+in the tree view.<br>
+<br>
+<h3>Timing Diagrams</h3>
+The Embedded UML
+Target Debugger is able to switch from the default sequence diagram
+view to a timing diagram view. It is a useful diagram similar to the
+timing diagrams known from technical data sheets to visualize state
+changes proportional to the time axis.<br>
+
+  <img style="width: 645px; height: 451px;" alt="" src="Images/TD/example/TimingDiagramm.JPG"><br>
+
+  <br>
+Zooming in and out is possible using the mouse wheel, if available. You
+can change the start tick by dragging inside the diagram with mouse or
+by using the Zoom controll below the timing diagram.<br>
+<br>
+
+
+  <h3><a name="Event_Injection_via_Embedded_UML_Target_Debugger" id="Event_Injection_via_Embedded_UML_Target_Debugger"></a>Event Injection</h3>Its
+also possible to inject events by the Embedded UML Target Debugger to stimulate a specific behaviour on the target side.<br><br><img style="width: 553px; height: 87px;" alt="" src="Images/TD/example/eventInjectionToolMenue.png"><br>
+  <br>
+  Clicking this button will activate another Window:<br><img style="width: 713px; height: 491px;" alt="" src="Images/TD/example/eventInjectionWindow.JPG"><br><br>To
+inject an event you just select the event name, an destination object
+an press on Inject Event. Alternativ you can can add an event to a
+sequence to inject more than one event at the same time.<br>
+  <br><a name="Events_with_Parameters"></a>Events
+may also have standard type
+parameters, which are supported by the Embedded UML Target Debugger.
+Parameters / arguments of events will be displayed as integer values
+inside the animated diagrams. Also event injection with arguments is
+possible. If you have selected to inject an event which has parameters
+(defined in the UML model), a window will pop up and ask for each
+argument. The value for each argument will be insert as unsigned int
+value and cast internaly to the real data type of the event parameter.<br>
+<h3><a name="Filtering_for_Specific_Instances_in_the_Embedded_UML_Target_Debugger" id="Filtering_for_Specific_Instances_in_the_Embedded_UML_Target_Debugger"></a>Filtering</h3>On
+a larger model, showing all events and attributes is confusing, because
+it will not fit in a window and will lead to overhead. Therefore we
+have implemented a filter mechanism on the target side which can be controlled at runtime / compile time. <br>Change filter while runtim:<br>Please
+select the Target tab. Here you find a list of all reactive Objects. By
+enable / disable the depending instance the filter will be switched on
+/ off on the target side.<br><img style="width: 271px; height: 284px;" alt="" src="Images/TD/example/TargetFilter.JPG"><br><br>Setup Filter while compile time:<br>
+  If you want to activate the filter while compiletime please use following properties:<br><img style="width: 257px; height: 105px;" alt="" src="Images/TD/example/compileFilter.JPG"><br>Please use <span style="font-weight: bold;">CG::Class::SendToTargetDebugger</span> for classes. This means that all instances of this class will be filtered on target side.<br>Please use <span style="font-weight: bold;">CG::Relation::SendToTargetDebugger</span>
+for Parts or Compositions. This is usefull if you have more than one
+instance of a class and only want to see the behaviour of special
+instance.<br><br>If you set both values on "unchecked" for your active configuration, all instances are filtered on the target.<br>
+  <br><h3>Communication Buffer Overflows</h3>When
+an event is consumed by the user application, event information is send
+to the UML Target Debugger. This information is stored inside a buffer
+which is send to the UML Target Debugger inside a monitor task. If the
+user application takes to much execution time and the monitor task has
+no chance to send the contant of the buffer to the UML Target Debugger
+the buffer will overflow at some point. If this happen event
+information is lost and a buffer overflow command is send to the UML
+Target Debugger to indicate the user that data has been lost.&nbsp;<br>
+
+
+  <h2>More Information</h2>To make it easier to navigate to your recent used XML files, you can select them in the file menu:<br>
+  <img style="width: 787px; height: 128px;" alt="" src="Images/TD/example/loadRecentXMLFile.png"><br>
+  <h3>FAQ</h3>
+
+  If you have any questions, please have a look at the <a href="#FILE_WST_2-Usage_6-Target-Debugger_FAQ">Animation FAQ page</a> or contact our <a href="#FILE_WST_9-Support">support</a> team.<br>
+  
+<h3>Model Driven Automatic Tests execution on a Realtime Target</h3>
+
+  You can also use <a href="#FILE_WST_2-Usage_6-TestConductor">TestConductor</a> in combination with Animation.<br>
+
+  <br>
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage_6-Target-Debugger_FAQ.htm -->
+<a name="FILE_WST_2-Usage_6-Target-Debugger_FAQ"></a>
+
+  <h1><a name="FAQ_Animation" id="FAQ_Animation"></a>Animation FAQ</h1>This page is supposed to answer questions related to the Embedded UML Target Debugger and animation generally.<br>
+
+  <ul>
+    <li><a href="#Animation_does_not_work">Why do I not see any animation</a> - there is no error shown.</li>
+
+    <li>The application on the PC shows "<a href="#COM1_not_found">Can not find COMx</a>" on the error tab.</li>
+  <li>The communication between the <a href="#Keil_uVision_Target_Debugger_Interface">Target Debugger and Keil µVision</a> does not work. <br>
+  </li>
+
+  </ul><br>
+  <br>
+
+  <h4><a name="Animation_does_not_work" id="Animation_does_not_work"></a>Why do I not see any animation - there is no error shown.</h4>There are two obvious reasons for this:<br>
+
+  <ul>
+    <li>Did you use the stereotype RXFAnimation from your product's <a href="#Profiles">profile</a> in your Component in Rhapsody and perform a regenerate code to optain the newest XML file?<br></li>
+
+    <li>Did you <a href="#XML_file_for_animation">open the XML file</a> in the animation program on the PC and is there no error message?<br></li>
+
+    <li>Did the generate / make / run in Rhapsody show any problems? Usually you should see something like this at the end:<br></li>
+
+    <li>Also in your IDE you usually see some kind of message about the creation of the XML file. There should not be error messages.<br>
+
+  </li>
+  </ul><h4><a name="COM1_not_found" id="COM1_not_found"></a>Can not find COMx</h4><img style="width: 199px; height: 65px;" alt="" src="Images/WindowsCOM0B.jpg"><br>
+  <br>
+You can use the communication setup dialog to configure&nbsp; the COM
+port which should be used. You can also check your Windows system
+settings and configure the number to be used for your serial port.<br>
+  <br>
+  Go to your Hardware system settings:<br>
+  <br>
+
+  <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td><img style="width: 419px; height: 479px;" alt="" src="Images/WindowsCOM1.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 419px; height: 479px;" alt="" src="Images/WindowsCOM2.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 283px; height: 399px;" alt="" src="Images/WindowsCOM3.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 411px; height: 257px;" alt="" src="Images/WindowsCOM4.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 412px; height: 448px;" alt="" src="Images/WindowsCOM5.jpg"></td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td><img style="width: 634px; height: 284px;" alt="" src="Images/WindowsCOM6.jpg"><br>
+        <br>
+(depending on your other hardware configuration you might even ignore
+the message that a desired COM port is already being used)</td>
+
+        <td><br>
+</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="text-align: center;"></div>
+        <br>
+</td>
+
+        <td style="vertical-align: top;"><br></td>
+      </tr>
+    </tbody>
+  </table><br>
+Exit and re-launch the Embedded UML Target Debugger on your PC and
+reopen the XML file, so it will re-initialize the serial interface:<br>
+  <br>
+  <img style="width: 183px; height: 149px;" alt="" src="Images/WindowsCOM7.jpg"><br>
+  <br>
+<h4><a name="Keil_uVision_Target_Debugger_Interface"></a>Communication between the Target Debugger and Keil µVision</h4>
+The Embedder UML Target Debugger can communicated with Keil µVision via the
+"UVSOCK" TCP/IP interface. Please activate it and configure the same
+port number in Keil µVision and the Embedded UML Target Debugger
+communication interface settings:<br>
+<br>
+<img style="width: 487px; height: 244px;" alt="UVSOCK configuration in Keil uVision" src="Images/TargetDebugger_Keil_uVision_Port_Config.png"><br>
+<br>
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage_7-TestConductor.htm -->
+<a name="FILE_WST_2-Usage_7-TestConductor"></a>
+
+  <h1><a name="Rhapsopdy_Test_Conductor" id="Rhapsopdy_Test_Conductor"></a>Rhapsody Test Conductor</h1>
+
+  <p>You can use Rhapsody TestConductor in combination with your target.
+  Before you can do this, please first get familiar with the <a href="#FILE_WST_2-Usage_6-Target-Debugger">Embedded UML Target Debugger Example</a>.</p>
+
+  <p>The
+current version of the Embedded UML Target Debugger contains a basic
+support for execution of Rhapsody Test Conductor test cases on the
+target as well as the calculation of the code coverage.<br>
+  <br>
+  The UML Target Debugger is an interface between the TestConductor, the target and the IDE as shown in picture below:<br>
+  <br>
+  <img alt="Create test architecture" src="Images/TestConductorGeneral.png">&nbsp;</p><p><br>
+
+  </p><ul>
+    <br>
+	<li>Configure the UML Target Debugger<br><ol>
+	<li>Start the UML Target Debugger</li>
+	<li>Select your data communication plugin by clicking on the blue plugin icon in the toolbar:<br>
+	<img alt="" src="Images/TD/selectIOPlugin.png"></li>
+	<li>Select your TestConductor IDE specific plugin byclicking on the red plugin icon in the toolbar:<br>
+	<img alt="" src="Images/TD/selectTCPlugin.png"></li></ol></li>
+	<li><b>Using the TestConductor Step by Step:</b>
+	<ul>
+		<li><b>1.</b> Create a Test architecture<br>
+		<img alt="Create test architecture" src="Images/TestConductorCreateTestArchitecture.png">
+		</li>
+		<br>
+		<li><b>2.</b> Open Component Features and Set Sterotypes<br>
+		<table border="0">
+			<tbody><tr>
+				<td valign="top"><img alt="Create test architecture" src="Images/TestConductorCompFeature.png"></td>
+			</tr>
+			<tr>
+				<td align="center" valign="top"><br><img alt="Create test architecture" src="Images/arrow.png"><br></td>
+			</tr>
+			<tr>
+				<td><img alt="Create test architecture" src="Images/TestConductorCompStereotypen.png"></td>
+			</tr>		
+		</tbody></table>
+		</li>
+		<br>
+		<li><b>3.</b> Open Configuration Features<br>
+		<img alt="Create test architecture" src="Images/TestConductorConfigFeature.png">
+		</li>
+		<br>
+		<li><b>3.1</b> Set Sterotype "WSTTargetTestingConfiguration" in the General tab<br>
+		<img style="width: 503px; height: 443px;" alt="Create test architecture" src="Images/TestConductorConfigStereotypen.png">
+		</li>
+		<br>
+		<li><b>3.2</b> Configuration Settings (Step becomes obsolete at Rhapsody 8.1.3)<br>
+			<ul>
+				<li>Set Animation Mode to "None"</li>
+			</ul>
+		<img alt="Create test architecture" src="Images/TestConductorConfigSettings.png">
+		</li>
+		<br>
+		<li><b>3.3</b> Set the path to your IDE Project in the Tag tab<br>
+			<ul>
+				<li>Set the Tag "TargetProxyIDEProject" to your IDE project including your project file name. (e. g. c:/Project/Blinky.uvproj)</li>
+			</ul>
+		<img alt="Create test architecture" src="Images/TestConductorConfigTags.png">
+		</li>
+		<br>
+		<b>Important:</b> Please make sure that the UML Target Debugger is started and the communication<br>
+		between the UML Target Debugger and the target is established by selecting a communication plugin.<br>
+		This is necessary  to build and execute the test architecture.<br>
+		<br>
+		Now you are ready to create Test Cases and execute them the same way you used to do it as on the host.
+	</ul>	
+	</li>
+<br> <br>
+    <li>After a test is executed, the received results from the target will automaticly send to the Test Conductor.</li>
+  </ul>
+
+<br>
+Here you can find the documentation how to calculate the code coverage while executing your model on the target: <a href="#FILE_WST_2-Usage_6-CodeCoverage">Code Coverage</a>
+<br>
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage_8-CodeCoverage.htm -->
+<a name="FILE_WST_2-Usage_8-CodeCoverage"></a>
+
+  <h1><a name="Rhapsopdy_Test_Conductor" id="Rhapsopdy_Test_Conductor"></a>Rhapsody Test Conductor Code Coverage</h1>
+
+  <p>Before you start with this chapter please get familar with the chaptar <a href="#FILE_WST_2-Usage_6-TestConductor">Test Conductor</a>.</p>
+
+
+  <ul>
+    <br>
+	<li>
+	<b>Using the TestConductor Code Coverage for small targets Step by Step:</b><br>
+	<br>
+	<ul>
+		<li><b>1.</b>First we recomand to make a copy of your current test configuration and rename it as <YourTestConfigName>_Coverage.<br>
+			After setup this configuration you can easy switch between normal test execution and test execution with code Coverage.<br>
+			<br>			
+		</li>
+		<li><b>2.</b>Generate the target configuration XML file. (Only need to be done once!)<br>
+			<br>
+			For capuring the code coverage the generated source code needs to be instrumented.<br>
+			This is done by an extern tool. This tool needs aditional information about the target like typesizes, endianes etc. <br>
+			These information neededs to be stored in a target configuration XML file which is linked in the TCCodeAnnotationOptions.xml described in step 2:<br>
+			<font face="courier new" color="blue">&lt;TargetConfigFile </font><font face="courier new" color="black">absolute_path</font><font face="courier new" color="red">=</font><font face="courier new" color="black">&quot;&lt;PATH&gt;\targetconfig.xml&quot;</font><font face="courier new" color="blue">/&gt;</font><br>
+			<br>
+			
+			To create this file you have two options:<br>
+			<ul>
+				<li>
+					<b>A.</b> Execute following Rhapsody model on your target platform:<br>
+					&lt;Rhapsody Instalation Path&gt;/TestConductor/CodeCoverage/TargetConfiguration<br>
+				</li>
+				<li>
+					<b>B.</b> Add following C file into your IDE:<br>
+					&lt;Rhapsody Instalation Path&gt;/TestConductor/CodeCoverage/TargetConfiguration/src/targetconf.c<br>
+					Add following defines to the top of the file or into your IDE project settings:<br>
+					TC_MAIN_WITH_VOID_ARGS //Your main needs no parameter<br>
+					TC_MAIN=main //name of your main operation<br>
+					TC_XML_OUTPUT_KIND=1 // Output will be printf<br>
+					TC_ERR_OUTPUT_KIND=1 // Error output will be printf<br>
+					<br>
+					If your devive don't support a printf output you can modify the operation <b>&quot;gen_out()&quot;</b>.<br> 
+					In this operation you can implement your own communication chanel to the host computer like UART or ethernet.
+				</li>
+			</ul>
+			Here you can find an example configuration XML file for a Cortex-M3<br>
+			<a href="XML/targetconfigCm3.xml">Target Configuration File for Cm3</a><br>
+			<br>			
+		</li>
+		<li>
+			<b>3.</b> Create your own TCCodeAnnotationOptions.xml<br>
+			<br>
+			You can find this File in the Rhapsody installation folder /TestConductor (Not your share folder in your user directory).<br>
+			How to configure this file is decribed inside the file.<br>
+			<br>
+			Here you find two example files for:
+			<ul>
+				<li><a href="XML/TCCodeAnnotationOptionsVS.xml">Visual Studio</a></li>
+				<li><a href="XML/TCCodeAnnotationOptionsKeil.xml">Keil µVision</a></li>
+			</ul>
+			<br>
+		</li>
+		<li>
+			<b>4.</b> Setup the Tags in your test configuration<br>
+			<br>
+			You need to modify following tags:<br>
+			<ul>
+				<li>CodeCoverageOptionsFile: Absolute or relative to your code generation path to your TCCodeAnnotationOptions.xml file of step 2.</li>
+				<li>ComputeCodeCoverage: Checked</li>
+				<li>TargetProxyIDEProject: <AbsolutePathIDEProject>/<ProjectFile></li>
+				<li style="color: #888;">(Check if correct) TargetProxyCodeModelSubFolder: Relative path to your IDE Project where your generated sources are stored. Default for all RXF products is &quot;GeneratedModel&quot;</li>
+			</ul>
+			<br>
+			<img alt="Code Coverage Tag Setup" src="Images/TestConductorConfigCodeCovTags.png"><br>
+			<br>
+		</li>
+		<li>
+			<b>5.</b> Configure the WSTCodeAnotation.bat<br>
+			To calculate the code coverage the generated code of your system under test, the code must be anotated.<br>
+			This is done by an application from BTC. This anotation is done automaticly while running make inside Rhapsody.<br>
+			To make sure the anotation tool of BTC works correct it needs the following additional information of your building environment: 
+			<ul>
+				<li>Path to the BTC annotation tool in the Rhapsody installation folder</li>
+				<li>Path to your IDE project</li>
+				<li>Includes</li>
+				<li>Defines</li>
+			</ul>
+			<br>
+			These defines and includes must be added into the file WSTCodeAnotation.bat which you can find here: &quot;&lt;RXF installation Path&gt;\Tools\&quot;<br>
+			Please make sure, that you also add hidden includes of your IDE.<br>
+			<br>
+		</li>
+		<li>
+			<b>6.</b> Regenerate Your Code by update your test package<br>
+			Now you are ready to run your test cases.
+		</li>
+
+<br>
+<br>
+  
+
+<!-- CONTENT FROM FILE WST_2-Usage_9-Uninstall.htm -->
+<a name="FILE_WST_2-Usage_9-Uninstall"></a>
+
+  <h1><a name="Uninstaller"></a><a name="Remove Software"></a>Deinstallation of the Product</h1>
+You may use the Windows control panel functionality to remove installed
+software from your machine. Willert products can be removed one by one
+this way. After all product specific files have been removed by the
+Willert uninstaller during a guided deinstallation procedure, only the
+folder C:\Dev Tools\Willert\Uninstall will stay on your system. It contains
+information about all products and the associated deinstallations that
+have been installed on your machine. You may remove the whole
+C:\Dev Tools\Willert folder after deinstalling <span style="font-style: italic;">ALL</span> Willert products from your machine.
+
+  
+
+<!-- CONTENT FROM FILE WST_3-Technology.htm -->
+<a name="FILE_WST_3-Technology"></a>
+
+  <h1>RXF Technology<br>
+</h1>This chapter describes the more detailed working of the Realtime
+eXecution Framework and allows to fine tune applications using the RXF
+to improve and optimize them and the co-working with our RXF
+technologies.<br>
+  <br>
+  <br>
+
+  
+
+<!-- CONTENT FROM FILE WST_3-Technology_1-Memory-Management.htm -->
+<a name="FILE_WST_3-Technology_1-Memory-Management"></a>
+
+<h1><a name="Realtime_compliant_Dynamic_Memory_Management" id="Realtime_compliant_Dynamic_Memory_Management"></a>Realtime
+Compliant Dynamic Memory Management</h1>
+<br>
+In many realtime embedded systems, the use of dynamic
+memory management via the standard C library functions <span style="font-style: italic;">malloc()</span> and
+<span style="font-style: italic;">free()</span> or in C++ the operators <span style="font-style: italic;">new</span> and <span style="font-style: italic;">delete</span> is not wanted or even not allowed. The main reason for not using heap functions is
+fragmentation: after allocating and freeing chunks of memory, the heap
+gets cluttered with areas which are in use, and areas which are free
+and it becomes more and more difficult to find a suitable area for some
+object or structure which must be allocated at runtime. Another
+reason is that the standard functions are not real-time compliant,
+calling them at the same time from different threads will cause errors.<br>
+<br>
+Instead of using the heap, the RXF offers static pools for various
+purposes and overrides the operators new and delete in selected classes
+to map allocation of these classes to fixted static pools at compile
+time. There are static pools available<br>
+<ul>
+  <li>for events (Default, Small, Medium, Large)</li>
+  <li>for timeouts. Each tm() you are specifying in your
+UML model results in a timer object which is kept in this
+pool.</li><li>for List and Map Items</li>
+  <li>for user classes that need to be allocated dynamically<br>
+</li>
+</ul>
+The size of the blocks and the number of blocks of each pool can be configured via tags in the RXF component<span style="font-style: italic;"></span>.<br>
+<h2>Events</h2>Events are normally generated dynamically, using the
+operator new. The size
+of an event will vary, depending on the number of arguments. That's why
+it might not be the most efficient option to allocate all of them from
+one pool and the framework provides 4 Pools where all events are automatically allocated from:<br>
+<br>
+<span style="font-weight: bold;">Automatic Pool Selection</span><br>To
+keep memory allocation for events as simple as possible an event
+automatically will find a pool with the right size, as long as there is
+one, that is big enough. The event will start to look for a right pool
+with the Default Pool. If the size does not fit, it will look in the
+Small, Medium and Large Event Pool. The Sizes are definded in the RXF
+Component Tags:<br>
+<ul><li>WST_EVT_DEFAULT_BLOCK_COUNT (default Value  = 64)</li><li>WST_EVT_DEFAULT_BLOCK_SIZE (default Value  = sizeof(WST_EVT) )</li><li>WST_EVT_SMALL_BLOCK_COUNT (default Value  = 32)</li><li>WST_EVT_SMALL_BLOCK_SIZE (default Value  = sizeof(WST_EVT) + 4 )</li><li>WST_EVT_MEDIUM_BLOCK_COUNT (default Value  = 32)</li><li>WST_EVT_MEDIUM_BLOCK_SIZE (default Value  = sizeof(WST_EVT) + 8 )</li><li>WST_EVT_LARGE_BLOCK_COUNT (default Value  = 16)</li><li>WST_EVT_LARGE_BLOCK_SIZE (default Value  = sizeof(WST_EVT) + 16 )</li></ul>
+In Debug Mode you can monitor the pool usage with high watermarks and
+adjust the cound and size of pool blocks if the default values do not
+fit anymore. If all pools are to small and no memory can be allocated
+at runtime, the
+error handler will be called with error code MPL_ALLOC_FAILED. If a
+pool is full, the error code will be MPL_ALLOC_FAILED_POOL_FULL.<br><br>The
+Event Table can be used to have a better overview over all project
+events and their number and type of arguments. In combination with <a href="#FILE_WST_3-Technology_2-High-Water-Marks">High Water Marks</a> it can be used to optimize the pool sizes.
+
+<h2>Timeouts</h2>As all timer / timeout objects are the same size, they
+are all allocated from the timer pool. A timer object holds all
+information to controll a timer (mostly an RTOS timer) and in case of
+timeout it is actually translated into an event. The timeout object
+itself remains in the timeout pool, and its address is inserted in the
+event queue of the destination task.<br>
+The number of available timeouts can be configured via the tag WST_MAX_TIMEOUTS.<br>
+Setting WST_MAX_TIMEOUTS to 0 will cause the framework to remove all timer
+code and thus be much smaller.<br>
+<h2>List and Map Items</h2>In Rhapsody List and Map Items have to be
+allocated dynamically. If the List and Map Pools are deactivated, the
+heap will be used. To prevent heap usage, pools can be activated by
+setting the Tags<br><ul><li>WST_LIST_BLOCK_COUNT (default Value  = 0)</li><li>WST_LIST_BLOCK_SIZE (default Value  = sizeof(OMList&lt;void *&gt;::Item) )</li><li>WST_MAP_BLOCK_COUNT (default Value  = 0)</li><li>WST_MAP_BLOCK_SIZE (default Value  = sizeof(OMMap&lt;int, void *&gt;::Item)</li></ul>If you ask yourself why the sizes are specified like this: sizeof(OMMap^&lt;int, void *^&gt;::Item):<br>You have to escape &lt; and &gt; with ^<h2>Objects of user Classes<br>
+</h2>
+<a name="Mixed_Mode_Static_and_Dynamic_Memory" id="Mixed_Mode_Static_and_Dynamic_Memory"></a>If
+you wan't to allocate objects of a user class dynamically by default
+new and delete will allocate memory from the heap. If you wan't to use
+pools for user classes to, you can use the common way in rhapsody by
+setting the property BaseNumberOfInstances to the required maximum
+amount of instances. A specific pool for this class will be created and
+operators new and delete will be mapped to this pool. By setting
+BaseNumberOfInstances the content of the Properties
+StaticMemoryIncludeFile, StaticMemoryPoolDeclaration and
+StaticMemoryPoolImplementation will be included in the generated code.
+If you wan't to implement an own memory management for user classes,
+you can override these properties to fit your needs.<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_3-Technology_2-High-Water-Marks.htm -->
+<a name="FILE_WST_3-Technology_2-High-Water-Marks"></a>
+
+  <h1><a name="High_water_marks" id="High_water_marks"></a>High Water Marks</h1>
+All memory pools can be configured via properties which you can set
+in your model. We have implemented high water marks for these so you
+can inspect at runtime how much resources of these pools are actually
+used.<br>
+  <br>The high watermarks of the common pools can be found as attribute countMax in each of the following locations:<br>
+
+  <ul>
+  <li>For the timer pool:&nbsp;<span style="font-style: italic;">WST_TMR</span>_<span style="font-style: italic;">timerPool</span>
+  </li><li>For the default event pool:&nbsp;<span style="font-style: italic;">WST_EVT_</span><span style="font-style: italic;">defaultPool</span></li>
+  <li>For the small event pool:&nbsp;<span style="font-style: italic;">WST_EVT</span>_<span style="font-style: italic;">smallPool</span>
+  </li><li>For the medium event pool:&nbsp;<span style="font-style: italic;">WST_EVT</span>_<span style="font-style: italic;">mediumPool</span>
+  </li><li>For the large event pool:&nbsp;<span style="font-style: italic;">WST_EVT_</span><span style="font-style: italic;">largePool</span></li>
+  <li>For the list pool:&nbsp;<span style="font-style: italic;">WST_LIST_pool</span></li>
+  <li>For the map pool:&nbsp;<span style="font-style: italic;">WST_MAP_pool</span></li>
+  </ul>If you use user pools, you can find the high watermarks as attribute <span style="font-style: italic;">maxCount</span> in the specific pool.<br>
+<br>
+The high water marks allow you to fine-tune the number of elements provided in the static pools.<br>
+<br>
+They are enabled if the Tag WST_HWM_ENABLED is set. Then you can add the pools to
+your debugger's watch window to analyze the high water marks after a
+system has performed the desired tasks. In uVision this would look like this:<br>
+  <br>
+  <img style="width: 500px; height: 855px;" alt="High Water Mark Watch Winndow" src="Images/HighWaterMarkWatch.png"><br>
+  <br>
+
+  
+
+<!-- CONTENT FROM FILE WST_3-Technology_3-Realtime.htm -->
+<a name="FILE_WST_3-Technology_3-Realtime"></a>
+
+
+<h1><a name="Deterministic_Realtime_Reaction" id="Deterministic_Realtime_Reaction"></a>
+  Deterministic Realtime Behavior
+</h1>
+
+Deterministic here does not imply fixed-sequence polling.
+Although this is possible too, the RXF uses a different method to achieve a deterministic behavior.
+The RXF serves your generated application.
+It will provide services like sending and receiving events, setting and handling timers and more.
+<br>
+
+<h2><a name="Managing Events"></a>
+  How Events are processed.
+</h2>
+
+When an event is sent, the framework will store it in a queue where
+it will be handled as soon as possible. The handling of events is also
+done by the framework. Handling events also means handling expired
+timers that are converted to events when they expire.
+<br><br>
+An event for a specific object will be given to the generated event
+handle function of the Objects Class. This function carries out all the
+associated actions (On Entry, On Exit, in State, in Transitions) and
+will return the control to the framework when finished.
+<br><br>
+This will guarantee a flawless handling of events in a deterministic
+way. Actions can be delayed by other actions but only for a time that
+can easily be calculated. Actions that require hard real-Time can be
+safely moved to the interrupt level without loss of performance or
+design capabilities.
+<br><br>
+Actions are not pre-emptive and cannot be interrupted by other tasks.
+Interrupts are not disabled or disabled for a maximum of 4 instruction
+cycles (depending on the CPU). The RTOS based RXF (offering a full OSAL
+implementation) is of course designed to preserve all RTOS capabilities.
+<br>
+
+<h2><a name="Triggerd Operations"></a>
+  Triggerd Operations.
+</h2>
+
+Be very carefull using triggered operations. Triggered operation calls
+can be ignored by the framework when the depending statechart already 
+handles an event. In this case the behavior of the RXF is different as
+the behavior of the OXF from IBM. The OXF blocks the calling triggerd 
+operation with an mutex if an event is already handled. We highly recommend
+to not use triggered operations.<br>
+
+<h2><a name="Managing Timouts"></a>
+  How Time-outs (tm(xx) ) are handled.
+</h2>
+When the tm(xx) statement is used in a state-machine,
+the user wants a certain delay in the processing of states.
+tm(xx) in a transition means: Wait at least xx milliseconds
+and then take this transition (and execute all attached actions)
+<br><br>
+The timer ticks are derived from a system tick that is either implemented
+in the framework (By using a hardware timer)
+or by using the timer ticks from an operating system.
+Both ways have a limit to the minimal time that can be used.
+If the timer tick is 10ms then no timeout can be under 10ms.
+Also no timeout should be other then a multiple of 10.
+<br><br>
+When this happens to be the case, the framework calculates the correct
+timout value.
+Due to the fact that the timer is derived from an external tick source,
+it is possible that a timeout request occurs
+just before a tick would happen or just after a tick has happened.
+The granularity of the ticks is the minimum tick value.
+This means that using a tm(10) on a 10 millisecond tick system can
+give you a tick time between 10ms and 20ms.
+<br><br>
+[tm(0)] will always expire when the next tick is there. (so maximum of 10mS)<br>
+[tm(1)] will always expire at the second next tick (so 10ms-20ms later)<br>
+[tm(2) - tm(10)] will give the same result as a tm(1)<br>
+tm(11) - expires after 20ms-30ms<br>
+and so on.<br>
+So the parameter in tm(xx) indicates the MINIMUM time to pass before
+the transition is taken!<br>
+<b>Note:</b> Please read the decription of the tag <a href="#FILE_WST_3-Technology_1-RXF-Configuration">"WST_TIMEOUT_GUARANTEE_TIME"</a>
+<br>
+<h2><a name="NULL_Transitions"></a>
+  NULL-Transitions in a State Machine.
+</h2>
+In a statechart it is possible to model state transitions which are
+directly to be taken, without waiting for an event as a trigger. These
+are so called NULL-transitions. The RXF includes a mechanism to detect
+endless loops of NULL-transitions (e.g. because of a design failure in
+Modeling a state machine) during runtime. An endless loop is detected,
+if more than a defined number of NULL-transitions occur in a row. This
+maximum number of directly following NULL-transitions can be configured
+in WST_FSM.h via define WST_DEFAULT_MAX_NULL_STEPS.
+<br><br>
+
+
+
+<!-- CONTENT FROM FILE WST_3-Technology_4-Error-Handling.htm -->
+<a name="FILE_WST_3-Technology_4-Error-Handling"></a>
+
+<h1><a name="Error_handler" id="Error_handler"></a>Error Handling</h1>
+Runtime errors in the RXF are handled by the error
+handler <span style="font-style: italic;">WST_ERR::error()</span>.
+The error handler will catch use of NULL pointers, lack of resources,
+etc.<br>
+<br>
+The error handler function is called from several places in the Framework, the first argument
+indicates the error that occured, the second parameter is not always used but for instance
+in case of an RTOS failure, the RTOS error code is passed here.
+<br>
+<br>
+The function <span style="font-style: italic;">WST_ERR::error()</span>&nbsp;is&nbsp;implemented
+as an endless loop in the source file WST_ERR.cpp. It is strongly
+recommended to provide an own error handler
+implementation which fits your application needs.<br>
+The recommended way to modify the error handler is using the RXFConfigurationPackage-Stereotype of this Framework:<br>
+<ul>
+  <li>Create a new Package in you UML Model</li>
+  <li>Apply the stereotype RXFConfigurationPackage to this Package. The
+Package now is located under RXFConfigurationPackages and a Template
+Implementation of WST_ERR is copied to this Package.</li>
+  <li>Modify the Implementation of WST_ERR::error() to fit your needs.<br>
+  </li>
+</ul>
+<h2>Documentation of Enumerated Error Codes</h2>The error code names
+are mostly self explaining and mostly used only in one or few places in
+the RXF code. I you are manually debugging your code on source code
+level it is recommended to look at the error code and use the call
+stack feature or your debugger to examine where the error has occured.<br>
+<br>
+Detailed Documentation of the Error Codes is located in the RXF Model and can be found as comments in WST_ERR.h<br>
+
+
+<!-- CONTENT FROM FILE WST_3-Technology_6-Asynchronous-Messages.htm -->
+<a name="FILE_WST_3-Technology_6-Asynchronous-Messages"></a>
+
+<h1><a name="Event_Handling"></a><a name="CGEN"></a><a name="RiCGEN"></a><a name="FIRE"></a><a name="Messages"></a>Asynchronous Messages<br>
+</h1>
+The Willert RXF supports communication via asynchronous messages, also
+known as events. This is a strong mechanism for decoupling object
+oriented software in run time behavior.<br>
+<br>
+Event receptions in a UML model are usually consumed by classes which
+have their behavior modelled via a statechart. An event can for example
+be perfectly used to trigger a transiton to another state.<br>
+<br>
+Events can be sent from any part of the application, usually within
+user code. The RXF supports different macros to send an event to a
+receiving object:<br>
+<br>
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 50%;">Use Case<br>
+      </td>
+      <td style="vertical-align: top; width: 30%;">Macro<br>
+      </td>
+	  <td style="vertical-align: top; width: 30%;">C-Code alternative<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Sending an <b>static</b> event from an interrupt service routine, where events may
+not be allocated dynamically, but where a me pointer of the sender is
+available.<br></td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN_ISR</span>(&lt;static event&gt;)</td>
+	  <td style="vertical-align: top;"><b>FIRE_ISR</b>(&lt;destination object&gt;, &lt;static event object&gt;)</td>
+    </tr>
+	<tr>
+      <td style="vertical-align: top;">Sending an <b>dynamic</b> event from anywhere to an specific destination object.<br></td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN</span>(&lt;receiver address&gt;, &lt;event name ( &lt;parameters&gt; )&gt;)</td>
+	  <td style="vertical-align: top;"><span style="font-weight: bold;">FIRE</span>(&lt;destination object&gt;, &lt;event name ( &lt;parameters&gt; )&gt;)</td>
+    </tr>
+	<tr>
+      <td style="vertical-align: top;">Sending an <b>static</b> event from anywhere to an specific destination object.<br></td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN_STATIC</span>(&lt;receiver address&gt;, &lt;static event object&gt;)</td>
+	  <td style="vertical-align: top;"> - </td>
+    </tr>
+	<tr>
+      <td style="vertical-align: top;">Sending an <b>dynamic</b> event from an interrupt service routine.<br>
+	  <b>Not recommended</b> because dynamic allocation of events may take to long time for an interrupt service routine.</td>
+      <td style="vertical-align: top;">&lt;destination object&gt; -&gt; <span style="font-weight: bold;">GEN_ISR_DYNAMIC</span>(&lt;receiver address&gt;, &lt;event name ( &lt;parameters&gt; )&gt;)</td>
+	  <td style="vertical-align: top;"> - </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+
+
+<!-- CONTENT FROM FILE WST_3-Technology_9-Configuration-Management.htm -->
+<a name="FILE_WST_3-Technology_9-Configuration-Management"></a>
+
+<h1><a name="Software_Configuration_Management"></a><a name="SCV"></a>Software
+Configuration Management (SCM)</h1>If
+you work on one model with a team, its absolutly neccessary to put your
+model into a config management solution. If you do this, a question
+will be, where to put the RXF and from which location to include the
+RXF_Rpy_CPP_Profile. The next steps will lead you throug our best
+prectice aproach. Precondition is that your config management tool
+supports externals - we use SVN and it works fine:<br><br>1. Install RXF to a folder that is available on every Developers PC (for Example C:\Willert or C:\DevToolsWillert)<br>2. Check in the Willert folder - This Folder has to be checked out to the same directory on each Dev PC<br>3. Check in your user model<br>4. Add the Config folder from your Willert RXF folder as external relative to your user model<br>5. Add the Framework Profile (RXF_Rpy_CPP_Profile) to your user Model from this external location.<br><br>Thats's it.<br><br>This
+approach has the advantage that the installed RXF is under config
+management to and you can easily switch versions by changing the RXF
+version number in your external. Only the Willert folder has to be
+checked out to the same directory on every Dev PC, the user model can
+be checked out to any directory (if only relative paths are used) -
+Nevertheless we would recomment to use same&nbsp;checkout directories
+(and also same Tool Paths) on every Dev PC.
+<h2><a name="Subversion_Support"></a><a name="svn_Support"></a>Subversion
+Support (svn)<br>
+</h2>
+<br>For Subversion support the setting WSTSubversion can be included
+from Share\Settings\WST_RXF_V7\WSTSubversion. Feel free to use it and
+please provide feedback to support@willert.de if anything is missing.
+
+
+<!-- CONTENT FROM FILE WST_9-Support.htm -->
+<a name="FILE_WST_9-Support"></a>
+
+  <h1><a name="Requesting_Support" id="Requesting_Support"></a><a name="Contacting_Willert_for_Support_Questions" id="Contacting_Willert_for_Support_Questions"></a>Support</h1>Before
+contacting Willert with a support question, please make sure you have
+read the relevant sections for your question from this documentation.
+You can use the <a href="#FILE_WST_General_Alphabetical-Index">Alphabetical Index</a> to locate the question related sections of the <span style="font-weight: bold;">online documentation</span>.
+  Also make sure you have read the readme file&nbsp;which was displayed during framework installation and is available in <span style="font-weight: bold;">Readme.txt</span> in your product directory.<br>
+  <br>
+  On the Web there are also different resources that might help you to find a quick answer to your question:<br>
+
+  <ul>
+    <li>The <span style="font-weight: bold;">FAQ</span> section of our homepage: <a href="http://www.willert.de">http://www.willert.de</a></li>
+
+    <li>Our <span style="font-weight: bold;">support forum</span> for RXF, UML and Rhapsody questions: <a href="http://www.umlforum.de/">http://www.umlforum.de/</a></li>
+
+    <li>The websites of your tool manufacturers</li>
+  </ul><br>
+
+  <h2>Contacting Willert Software Tools' Support Team</h2>Willert
+Software tools handles support questions following a defined process to
+prioritize support questions and answer as soon as possible.<br>
+  <br>
+  Please contact us, following these guidelines:<br>
+
+  <ul>
+    <li>send all your support questions via email to <a style="font-weight: bold;" href="mailto:support@willert.de">support@willert.de</a></li>
+
+    <li>preferably in <span style="font-weight: bold;">english</span></li>
+
+    <li>the <span style="font-weight: bold;">subject</span> line should very <span style="font-weight: bold;">briefly describe</span> your question<br>
+(e.g.
+    preferably <br>
+"<span style="font-style: italic;">RXF_Rpy_CPP_V7.05_edu: missing RxfConstants.h</span>"<br>
+ instead of "<span style="font-style: italic;">RXF problem</span>")</li>
+
+    <li>your email must include the following <span style="font-weight: bold;">version information</span>:</li>
+
+    <li style="list-style-type: none; list-style-image: none; list-style-position: outside; display: inline;">
+      <ul>
+        <li>RXF version: <span style="font-style: italic;">RXF_Rpy_CPP_V7.05_edu</span></li>
+
+        <li>Rhapsody version, e.g.
+        Rhapsody in C 7.6 Build xxxx</li>
+
+        <li>Toolchain versions, e.g.
+        Keil uVision4.2x, Keil MDK-ARM V4.22</li>
+
+        <li>RTOS version, if applicable</li>
+
+        <li>Hardware Configuration Wizard (e.g.
+        DAvE or ProcessorExpert) version, if applicable</li>
+      </ul>
+    </li>
+
+    <li><span style="font-weight: bold;">Attachments</span> of relevant files, <a href="#Support_Attachments">see below</a>.</li>
+  </ul>You will&nbsp;soon receive a confirmation email which includes a unique id for your question in our support ticket system.
+  Please include the ticket number (e.g.
+  #123) in the subject line of every additional email you send us regarding that topic.
+  After receiving an answer from our support team, please send your replies to <a href="mailto:support@willert.de">support@willert.de</a>
+again. Following our process the mail will be handled as soon as
+possible by the support team even if the team member you last heard
+from is currently unavailable.<br>
+  <br>
+
+  <h2><a name="Support_Attachments" id="Support_Attachments"></a>Attachments</h2>You should think about attaching one or more of the following files&nbsp;to your support email you send to <a href="mailto:support@willert.de">support@willert.de</a>, to enable us to quickly find a helpful answer:<br>
+
+  <ul>
+    <li>in general</li>
+
+    <li style="list-style-type: none; list-style-image: none; list-style-position: outside; display: inline;">
+      <ul>
+        <li><span style="font-weight: bold;">screenshots</span> often help understanding your question.
+        Please attach screenshots in JPG or PNG format.</li>
+      </ul>
+    </li>
+
+    <li>especially if you experience problems shortly after a product has been installed:</li>
+
+    <li style="list-style-type: none; list-style-image: none; list-style-position: outside; display: inline;">
+      <ul>
+        <li><span style="font-weight: bold;">WST_Install_Log_&lt;date&gt;_&lt;time&gt;.txt</span>, containing detailed information about possible problems during RXF installation</li><li>&lt;your Rhapsody&gt;\Share\Properties\<span style="font-weight: bold;">Site&lt;Language&gt;.prp</span>, helpful if the installer had problems modifying this file</li>
+      </ul>
+    </li>
+
+    <li>if you experience a problem that might be related to the WSTDeployer:</li>
+
+    <li style="list-style-type: none; list-style-image: none; list-style-position: outside; display: inline;">
+      <ul>
+        <li>Tools\WSTDeployer\<span style="font-weight: bold;">WSTDeployerLog.txt</span>, containing a detailed log of &nbsp;everything that happened or went wrong during deployment</li>
+      </ul>
+    </li>
+
+    <li>if your question is related to your UML model</li>
+
+    <li style="list-style-type: none; list-style-image: none; list-style-position: outside; display: inline;">
+      <ul>
+        <li>The UML model
+including needed external files, compressed as a ZIP archive. Often
+there is no other way to answer your model specific questions than
+looking at the model ourselves. If you may not send your model, the
+model is too complex to easily describe when it goes wrong or if
+special hard- and software is required for reproduction, you should
+consider creating a tiny example model that lets you reproduce the same
+problem and send the tiny one.</li>
+      </ul>
+    </li>
+  </ul><br>
+  <br>
+
+  
+
+<!-- CONTENT FROM FILE WST_General.htm -->
+<a name="FILE_WST_General"></a>
+
+<h1>General Topics - RXF Documentation</h1>
+This sections contains documentation which is not directly related to
+the usage of RXF_Rpy_CPP, but is helpful when developing model
+driven software.<br>
+<br>
+
+
+
+  
+
+<!-- CONTENT FROM FILE WST_General_1-Useful-Links.htm -->
+<a name="FILE_WST_General_1-Useful-Links"></a>
+
+<h1>Useful Links</h1>
+
+On the Web there are also different resources that are very helpful
+when working with Embedded Systems, UML, Code Generation and / or
+Requirements Management:<br>
+
+
+  
+<ul>
+<li>The <span style="font-weight: bold;">FAQ</span> section of our homepage: <a href="http://www.willert.de/">http://www.willert.de</a></li><li>Our <span style="font-weight: bold;">support forum</span> for RXF, UML, Rhapsody and Enterprise Architect related questions: <a href="http://www.umlforum.de/">http://www.umlforum.de/</a></li><li>The websites of your tool manufacturers</li>
+</ul>
+<br>
+
+
+
+  
+
+  </div>
+
+  <p id="Footer">RXF Documentation &copy;&nbsp;2012 Willert Software Tools GmbH.</p>
+</div>
+</body>
+</html>
